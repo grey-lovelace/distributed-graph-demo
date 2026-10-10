@@ -1,0 +1,21 @@
+# Done-means check: one speaker, their sessions, each session's room, and each session's average rating.
+# This operation crosses all four subgraphs.
+query SpeakerProfile($speakerId: ID!) {
+  speaker(id: $speakerId) {
+    name
+    title
+    company
+    companyType
+    averageRating
+    sessions {
+      title
+      startsAt
+      averageRating
+      reviewCount
+      room {
+        name
+        capacity
+      }
+    }
+  }
+}

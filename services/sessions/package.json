@@ -1,0 +1,19 @@
+{
+  "name": "sessions",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "bun src/index.ts"
+  },
+  "dependencies": {
+    "@apollo/server": "5.5.1",
+    "@apollo/subgraph": "2.15.1",
+    "@as-integrations/express5": "1.1.2",
+    "express": "5",
+    "graphql": "16.14.2"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.4.2",
+    "@types/express": "^5.0.6"
+  }
+}

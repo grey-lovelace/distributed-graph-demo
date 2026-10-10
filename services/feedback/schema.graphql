@@ -1,0 +1,74 @@
+# This line opts the subgraph in to Apollo Federation 2.
+extend schema
+  @link(url: "https://specs.apollo.dev/federation/v2.5", import: ["@key"])
+
+type Query {
+  """
+  Returns attendee reviews sorted by submission time. Both filters are optional,
+  and the filters combine with AND.
+  """
+  reviews(
+    "Only return reviews of this session, for example \"session-12\"."
+    sessionId: ID
+
+    "Only return reviews of this speaker, for example \"speaker-07\"."
+    speakerId: ID
+  ): [Review!]!
+}
+
+"""
+One attendee's review of one session and one of its speakers.
+The Feedback service owns this type.
+"""
+type Review {
+  "The unique review ID, for example \"review-042\"."
+  id: ID!
+
+  "The attendee's rating of the session content, as a whole number from 1 (poor) to 5 (excellent)."
+  sessionRating: Int!
+
+  "The attendee's rating of the speaker's delivery, as a whole number from 1 (poor) to 5 (excellent)."
+  speakerRating: Int!
+
+  "An optional free-text comment from the attendee. It is null when the attendee left no comment."
+  comment: String
+
+  "The moment the attendee submitted the review, as an ISO 8601 date-time in UTC, for example \"2026-11-12T15:02:00Z\"."
+  submittedAt: String!
+
+  "The session that this review is about."
+  session: Session!
+
+  "The speaker that this review rates."
+  speaker: Speaker!
+}
+
+# This subgraph does not own Session. It refers to a session by id
+# and adds review fields to the Session entity.
+type Session @key(fields: "id") {
+  id: ID!
+
+  "Every attendee review of this session, sorted by submission time."
+  reviews: [Review!]!
+
+  """
+  The mean of all session ratings for this session, from 1.0 to 5.0, rounded to two decimal places.
+  It is null when the session has no reviews yet.
+  """
+  averageRating: Float
+
+  "The number of attendee reviews of this session. It is 0 when there are no reviews yet."
+  reviewCount: Int!
+}
+
+# This subgraph does not own Speaker. It refers to a speaker by id
+# and adds a rating field to the Speaker entity.
+type Speaker @key(fields: "id") {
+  id: ID!
+
+  """
+  The mean of all speaker ratings this speaker received, across all of their sessions,
+  from 1.0 to 5.0, rounded to two decimal places. It is null when the speaker has no reviews yet.
+  """
+  averageRating: Float
+}

@@ -1,0 +1,37 @@
+# This line opts the subgraph in to Apollo Federation 2.
+extend schema
+  @link(url: "https://specs.apollo.dev/federation/v2.5", import: ["@key"])
+
+type Query {
+  "Returns every room at the conference venue, sorted from largest to smallest capacity."
+  rooms: [Room!]!
+
+  "Returns the room with the given ID, or null if no room has that ID."
+  room(
+    "The room ID, for example \"room-01\"."
+    id: ID!
+  ): Room
+}
+
+"""
+A room at the conference venue where sessions take place.
+The Rooms service owns this type. The Sessions service adds the list of
+sessions that take place in the room.
+"""
+# @key makes Room an entity. Other subgraphs can refer to a room by its id.
+type Room @key(fields: "id") {
+  "The unique room ID, for example \"room-01\"."
+  id: ID!
+
+  "The name of the room as shown on the venue signs, for example \"Main Hall\"."
+  name: String!
+
+  "The floor the room is on. 0 is the ground floor, and higher numbers are higher floors."
+  floor: Int!
+
+  "The maximum number of seated attendees the room can hold."
+  capacity: Int!
+
+  "True if sessions in this room are live-streamed to remote attendees."
+  hasStreaming: Boolean!
+}

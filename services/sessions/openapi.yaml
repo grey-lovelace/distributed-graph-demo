@@ -1,0 +1,137 @@
+openapi: 3.0.3
+info:
+  title: Sessions API
+  version: 1.0.0
+  description: >
+    The talks and workshops on the conference schedule.
+    A session refers to its speakers and its room by ID only.
+    Fetch the speakers from the Speakers API and the room from the Rooms API.
+servers:
+  - url: http://localhost:4002
+paths:
+  /api/sessions:
+    get:
+      summary: List sessions sorted by start time. Every filter is optional, and the filters combine with AND.
+      operationId: listSessions
+      parameters:
+        - name: day
+          in: query
+          description: Only return sessions on this calendar day, in YYYY-MM-DD format.
+          schema:
+            type: string
+            format: date
+            example: "2026-11-12"
+        - name: track
+          in: query
+          description: Only return sessions in this track.
+          schema:
+            $ref: "#/components/schemas/Track"
+        - name: startsAfter
+          in: query
+          description: Only return sessions that start at or after this moment, as an ISO 8601 date-time with a time zone.
+          schema:
+            type: string
+            format: date-time
+            example: "2026-11-12T12:00:00Z"
+        - name: speakerId
+          in: query
+          description: Only return sessions that this speaker presents.
+          schema:
+            type: string
+            example: speaker-07
+        - name: roomId
+          in: query
+          description: Only return sessions that take place in this room.
+          schema:
+            type: string
+            example: room-01
+      responses:
+        "200":
+          description: The matching sessions.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Session"
+  /api/sessions/{id}:
+    get:
+      summary: Get one session by ID. Returns 404 if no session has that ID.
+      operationId: getSession
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: The session ID.
+          schema:
+            type: string
+            example: session-12
+      responses:
+        "200":
+          description: The session.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Session"
+        "404":
+          description: No session has that ID.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+components:
+  schemas:
+    Session:
+      type: object
+      description: A talk or workshop on the conference schedule.
+      required: [id, title, abstract, track, level, startsAt, endsAt, speakerIds, roomId]
+      properties:
+        id:
+          type: string
+          description: The unique session ID.
+          example: session-12
+        title:
+          type: string
+          description: The session title, as printed in the conference programme.
+        abstract:
+          type: string
+          description: A one- or two-sentence summary of what the session covers.
+        track:
+          $ref: "#/components/schemas/Track"
+        level:
+          $ref: "#/components/schemas/Level"
+        startsAt:
+          type: string
+          format: date-time
+          description: The moment the session starts, as an ISO 8601 date-time in UTC. The venue is in London, so UTC is also the local time at the venue.
+          example: "2026-11-12T13:30:00Z"
+        endsAt:
+          type: string
+          format: date-time
+          description: The moment the session ends, as an ISO 8601 date-time in UTC.
+          example: "2026-11-12T14:15:00Z"
+        speakerIds:
+          type: array
+          description: The IDs of the people presenting the session. Look them up with GET /api/speakers/{id} on the Speakers API.
+          items:
+            type: string
+            example: speaker-07
+        roomId:
+          type: string
+          description: The ID of the room where the session takes place. Look it up with GET /api/rooms/{id} on the Rooms API.
+          example: room-01
+    Track:
+      type: string
+      description: The conference track that a session belongs to.
+      enum: [ARCHITECTURE, AI, DEVELOPER_EXPERIENCE, PLATFORM, DATA]
+    Level:
+      type: string
+      description: The experience level that a session is aimed at.
+      enum: [BEGINNER, INTERMEDIATE, ADVANCED]
+    Error:
+      type: object
+      required: [error]
+      properties:
+        error:
+          type: string
+          description: A message that explains what went wrong.

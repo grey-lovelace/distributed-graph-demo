@@ -1,0 +1,115 @@
+# This line opts the subgraph in to Apollo Federation 2.
+extend schema
+  @link(url: "https://specs.apollo.dev/federation/v2.5", import: ["@key"])
+
+type Query {
+  """
+  Returns conference sessions sorted by start time. Every filter is optional,
+  and the filters combine with AND.
+  """
+  sessions(
+    "Only return sessions on this calendar day, in YYYY-MM-DD format, for example \"2026-11-12\"."
+    day: String
+
+    "Only return sessions in this track."
+    track: Track
+
+    """
+    Only return sessions that start at or after this moment.
+    Use an ISO 8601 date-time with a time zone, for example "2026-11-12T12:00:00Z".
+    """
+    startsAfter: String
+  ): [Session!]!
+
+  "Returns the session with the given ID, or null if no session has that ID."
+  session(
+    "The session ID, for example \"session-12\"."
+    id: ID!
+  ): Session
+}
+
+"""
+A talk or workshop on the conference schedule.
+The Sessions service owns this type. It stores only the IDs of the speakers and the room.
+The router fetches the speaker and room details from the Speakers and Rooms services.
+"""
+# @key makes Session an entity. Other subgraphs can refer to a session by its id.
+type Session @key(fields: "id") {
+  "The unique session ID, for example \"session-12\"."
+  id: ID!
+
+  "The session title, as printed in the conference programme."
+  title: String!
+
+  "A one- or two-sentence summary of what the session covers."
+  abstract: String!
+
+  "The conference track that the session belongs to."
+  track: Track!
+
+  "The experience level that the session is aimed at."
+  level: Level!
+
+  """
+  The moment the session starts, as an ISO 8601 date-time in UTC, for example "2026-11-12T13:30:00Z".
+  The venue is in London, so UTC is also the local time at the venue.
+  """
+  startsAt: String!
+
+  "The moment the session ends, as an ISO 8601 date-time in UTC, for example \"2026-11-12T14:15:00Z\"."
+  endsAt: String!
+
+  "The people presenting the session. Most sessions have one speaker, and some have two."
+  speakers: [Speaker!]!
+
+  "The room where the session takes place."
+  room: Room!
+}
+
+# This subgraph does not own Speaker. It refers to a speaker by id
+# and adds the sessions field to the Speaker entity.
+type Speaker @key(fields: "id") {
+  id: ID!
+
+  "The sessions this speaker presents, sorted by start time."
+  sessions: [Session!]!
+}
+
+# This subgraph does not own Room. It refers to a room by id
+# and adds the sessions field to the Room entity.
+type Room @key(fields: "id") {
+  id: ID!
+
+  "The sessions that take place in this room, sorted by start time."
+  sessions: [Session!]!
+}
+
+"A themed track of sessions. Each session belongs to exactly one track."
+enum Track {
+  "Sessions about API and system architecture, including GraphQL Federation."
+  ARCHITECTURE
+
+  "Sessions about AI agents, language models, and the Model Context Protocol."
+  AI
+
+  "Sessions about documentation, tooling, and developer onboarding."
+  DEVELOPER_EXPERIENCE
+
+  "Sessions about infrastructure, operations, security, and performance."
+  PLATFORM
+
+  "Sessions about data modeling, streaming, search, and governance."
+  DATA
+}
+
+"The experience level that a session is aimed at."
+enum Level {
+  "No prior knowledge of the topic is needed."
+  BEGINNER
+
+  "Some hands-on experience with the topic is expected."
+  INTERMEDIATE
+
+  "Deep experience with the topic is expected."
+  ADVANCED
+}

@@ -1,0 +1,22 @@
+# Answers the question: "Which top-rated sessions this afternoon are in the biggest room, and who is giving them?"
+# Pass the afternoon start time for today, for example "2026-11-12T12:00:00Z".
+# This operation crosses all four subgraphs.
+query AfternoonSessions($day: String!, $startsAfter: String!) {
+  sessions(day: $day, startsAfter: $startsAfter) {
+    title
+    startsAt
+    endsAt
+    track
+    averageRating
+    reviewCount
+    room {
+      name
+      capacity
+    }
+    speakers {
+      name
+      company
+      companyType
+    }
+  }
+}

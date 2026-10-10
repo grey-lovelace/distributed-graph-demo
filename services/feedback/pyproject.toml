@@ -1,0 +1,10 @@
+[project]
+name = "feedback"
+version = "1.0.0"
+description = "Attendee reviews of conference sessions and speakers."
+requires-python = ">=3.13"
+dependencies = [
+    "ariadne==1.1.1",
+    "fastapi==0.143.0",
+    "uvicorn==0.54.0",
+]

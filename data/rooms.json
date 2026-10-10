@@ -1,0 +1,44 @@
+[
+  {
+    "id": "room-01",
+    "name": "Main Hall",
+    "floor": 0,
+    "capacity": 800,
+    "hasStreaming": true
+  },
+  {
+    "id": "room-02",
+    "name": "Riverside Theatre",
+    "floor": 1,
+    "capacity": 420,
+    "hasStreaming": true
+  },
+  {
+    "id": "room-03",
+    "name": "Gallery Room",
+    "floor": 1,
+    "capacity": 210,
+    "hasStreaming": true
+  },
+  {
+    "id": "room-04",
+    "name": "Workshop A",
+    "floor": 2,
+    "capacity": 120,
+    "hasStreaming": false
+  },
+  {
+    "id": "room-05",
+    "name": "Workshop B",
+    "floor": 2,
+    "capacity": 80,
+    "hasStreaming": false
+  },
+  {
+    "id": "room-06",
+    "name": "Library Room",
+    "floor": 3,
+    "capacity": 40,
+    "hasStreaming": false
+  }
+]

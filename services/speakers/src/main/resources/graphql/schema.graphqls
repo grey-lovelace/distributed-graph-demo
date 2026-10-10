@@ -1,0 +1,58 @@
+# This line opts the subgraph in to Apollo Federation 2.
+extend schema
+  @link(url: "https://specs.apollo.dev/federation/v2.5", import: ["@key"])
+
+type Query {
+  "Returns every speaker at the conference, sorted by name."
+  speakers: [Speaker!]!
+
+  "Returns the speaker with the given ID, or null if no speaker has that ID."
+  speaker(
+    "The speaker ID, for example \"speaker-07\"."
+    id: ID!
+  ): Speaker
+}
+
+"""
+A person who presents one or more sessions at the conference.
+The Speakers service owns this type. Other services add fields to it,
+such as the speaker's sessions and the speaker's average rating.
+"""
+# @key makes Speaker an entity. Other subgraphs can refer to a speaker by its id.
+type Speaker @key(fields: "id") {
+  "The unique speaker ID, for example \"speaker-07\"."
+  id: ID!
+
+  "The speaker's full name, as printed in the conference programme."
+  name: String!
+
+  "The speaker's job title at their company, for example \"Principal Consultant\"."
+  title: String!
+
+  "The name of the company or organization the speaker works for."
+  company: String!
+
+  "The kind of organization the speaker works for."
+  companyType: CompanyType!
+
+  "A short biography of the speaker in one or two plain-text sentences."
+  bio: String!
+
+  "The subjects the speaker is known for, for example \"GraphQL Federation\" or \"AI agents\"."
+  topics: [String!]!
+}
+
+"The kind of organization that a speaker works for."
+enum CompanyType {
+  "A consulting firm that delivers projects for client organizations."
+  CONSULTANCY
+
+  "A company that builds and sells its own software product."
+  PRODUCT
+
+  "A large organization whose main business is not software, such as a bank or a transport authority."
+  ENTERPRISE
+
+  "A non-profit organization, a charity, or a volunteer group."
+  NONPROFIT
+}

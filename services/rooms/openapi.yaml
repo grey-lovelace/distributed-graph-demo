@@ -1,0 +1,79 @@
+openapi: 3.0.3
+info:
+  title: Rooms API
+  version: 1.0.0
+  description: The rooms at the conference venue where sessions take place.
+servers:
+  - url: http://localhost:4003
+paths:
+  /api/rooms:
+    get:
+      summary: List all rooms, sorted from largest to smallest capacity.
+      operationId: listRooms
+      responses:
+        "200":
+          description: Every room at the venue.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Room"
+  /api/rooms/{id}:
+    get:
+      summary: Get one room by ID. Returns 404 if no room has that ID.
+      operationId: getRoom
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: The room ID.
+          schema:
+            type: string
+            example: room-01
+      responses:
+        "200":
+          description: The room.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Room"
+        "404":
+          description: No room has that ID.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+components:
+  schemas:
+    Room:
+      type: object
+      description: A room at the conference venue where sessions take place.
+      required: [id, name, floor, capacity, hasStreaming]
+      properties:
+        id:
+          type: string
+          description: The unique room ID.
+          example: room-01
+        name:
+          type: string
+          description: The name of the room as shown on the venue signs.
+          example: Main Hall
+        floor:
+          type: integer
+          description: The floor the room is on. 0 is the ground floor, and higher numbers are higher floors.
+          example: 0
+        capacity:
+          type: integer
+          description: The maximum number of seated attendees the room can hold.
+          example: 800
+        hasStreaming:
+          type: boolean
+          description: True if sessions in this room are live-streamed to remote attendees.
+    Error:
+      type: object
+      required: [error]
+      properties:
+        error:
+          type: string
+          description: A message that explains what went wrong.

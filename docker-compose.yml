@@ -1,0 +1,174 @@
+# The self-hosted Hive schema registry: its web app, API, databases and workers.
+# hive/docker-compose.yml explains what each part does and how it differs from Hive's official file.
+include:
+  - path: hive/docker-compose.yml
+    env_file: hive/hive.env
+
+# The settings that the four publish-* services share.
+x-publish-subgraph: &publish-subgraph
+  image: ghcr.io/graphql-hive/cli:0.66.0
+  entrypoint: ["sh", "/hive/schema-registry.sh"]
+  volumes:
+    - ./hive/schema-registry.sh:/hive/schema-registry.sh:ro
+    - ./services:/services:ro
+    - hive-tokens:/hive-tokens:ro
+
+services:
+  # ---------------------------------------------------------------------------
+  # hive-setup runs once after all of Hive is healthy. It creates the demo user,
+  # the organization, the Federation project and the access tokens.
+  # It writes the tokens to the hive-tokens volume. See hive/setup.py.
+  # Because it depends on every Hive service, starting the router starts all of Hive.
+  # ---------------------------------------------------------------------------
+
+  hive-setup:
+    image: python:3.13-slim
+    command: ["python", "/hive/setup.py"]
+    volumes:
+      - ./hive/setup.py:/hive/setup.py:ro
+      - hive-tokens:/hive-tokens
+    depends_on:
+      server:
+        condition: service_healthy
+      app:
+        condition: service_healthy
+      usage:
+        condition: service_healthy
+      usage-ingestor:
+        condition: service_healthy
+      workflows:
+        condition: service_healthy
+      s3_reverse_proxy:
+        condition: service_started
+
+  # ---------------------------------------------------------------------------
+  # The four subgraph services. Each one serves GraphQL at /graphql,
+  # REST under /api, an OpenAPI spec at /openapi.json, and Swagger UI at /docs.
+  # Each service gets only its own JSON file from the top-level data folder.
+  # ---------------------------------------------------------------------------
+
+  speakers:
+    build: ./services/speakers
+    volumes:
+      - ./data/speakers.json:/app/data/speakers.json:ro
+    ports:
+      - "4001:4001"
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://localhost:4001/openapi.json"]
+      interval: 3s
+      timeout: 3s
+      retries: 40
+
+  sessions:
+    build: ./services/sessions
+    volumes:
+      - ./data/sessions.json:/app/data/sessions.json:ro
+    ports:
+      - "4002:4002"
+    healthcheck:
+      test: ["CMD", "bun", "-e", "const r = await fetch('http://localhost:4002/openapi.json'); process.exit(r.ok ? 0 : 1)"]
+      interval: 3s
+      timeout: 3s
+      retries: 40
+
+  rooms:
+    build: ./services/rooms
+    volumes:
+      - ./data/rooms.json:/app/data/rooms.json:ro
+    ports:
+      - "4003:4003"
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://localhost:4003/openapi.json"]
+      interval: 3s
+      timeout: 3s
+      retries: 40
+
+  feedback:
+    build: ./services/feedback
+    volumes:
+      - ./data/reviews.json:/app/data/reviews.json:ro
+    ports:
+      - "4004:4004"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:4004/openapi.json')"]
+      interval: 3s
+      timeout: 3s
+      retries: 40
+
+  # ---------------------------------------------------------------------------
+  # Each publish-* container publishes one subgraph's schema file to the Hive registry,
+  # like a CI pipeline would. Hive composes the supergraph after each publish.
+  # Publishing does not need the subgraph to be running, because Hive never calls the subgraph.
+  # See hive/schema-registry.sh.
+  # ---------------------------------------------------------------------------
+
+  publish-speakers:
+    <<: *publish-subgraph
+    command: ["publish", "speakers"]
+    depends_on:
+      hive-setup:
+        condition: service_completed_successfully
+
+  publish-sessions:
+    <<: *publish-subgraph
+    command: ["publish", "sessions"]
+    depends_on:
+      hive-setup:
+        condition: service_completed_successfully
+
+  publish-rooms:
+    <<: *publish-subgraph
+    command: ["publish", "rooms"]
+    depends_on:
+      hive-setup:
+        condition: service_completed_successfully
+
+  publish-feedback:
+    <<: *publish-subgraph
+    command: ["publish", "feedback"]
+    depends_on:
+      hive-setup:
+        condition: service_completed_successfully
+
+  # ---------------------------------------------------------------------------
+  # The Apollo Router serves the composed graph on port 4000.
+  # The image is the Apollo Router with Hive's plugin built in. The plugin downloads
+  # the supergraph from Hive and checks for a new version every 10 seconds.
+  # It also sends usage reports to Hive.
+  # Start the router after at least one subgraph has published its schema.
+  # ---------------------------------------------------------------------------
+
+  router:
+    image: ghcr.io/graphql-hive/apollo-router:router2.18.0-plugin3.2.0
+    # The router loads the Hive tokens from the file that hive-setup wrote, and then starts.
+    entrypoint: ["sh", "-c", ". /hive-tokens/hive.env && exec /dist/router --config /config/router.yaml"]
+    # The router exits if Hive has no supergraph yet. When everything starts at once,
+    # Docker restarts it until the first subgraph has published its schema.
+    restart: on-failure
+    ports:
+      - "4000:4000"
+    environment:
+      APOLLO_TELEMETRY_DISABLED: "true"
+    volumes:
+      - ./router/router.yaml:/config/router.yaml:ro
+      - hive-tokens:/hive-tokens:ro
+    depends_on:
+      hive-setup:
+        condition: service_completed_successfully
+
+  # ---------------------------------------------------------------------------
+  # Placeholder for the Apollo MCP Server. It is not built yet.
+  # It will expose the operations in ./queries as MCP tools for AI agents.
+  # ---------------------------------------------------------------------------
+
+  # mcp-server:
+  #   image: ghcr.io/apollographql/apollo-mcp-server:<version>
+  #   ports:
+  #     - "8000:8000"
+  #   volumes:
+  #     - ./queries:/queries:ro
+  #   depends_on:
+  #     - router
+
+volumes:
+  hive-tokens:

@@ -1,0 +1,30 @@
+# Configuration for the Apollo Router.
+# The router gets the supergraph from Hive, so this file has no supergraph path.
+supergraph:
+  listen: 0.0.0.0:4000
+  # Introspection lets tools such as Sandbox and AI agents read the schema.
+  introspection: true
+
+# Apollo Sandbox is served at http://localhost:4000.
+sandbox:
+  enabled: true
+homepage:
+  enabled: false
+
+# Show subgraph error messages to the client. This is useful in a demo, but not in production.
+include_subgraph_errors:
+  all: true
+
+health_check:
+  listen: 0.0.0.0:8088
+  enabled: true
+
+plugins:
+  # A client can send the header "Apollo-Expose-Query-Plan: true" to get the query plan
+  # in the response. Sandbox uses this to show the query plan panel.
+  experimental.expose_query_plan: true
+
+  # Hive's plugin sends a report of each operation to Hive. The Hive web app shows
+  # which clients use which fields. Hive also uses the reports in schema checks.
+  # The plugin reads HIVE_TOKEN, HIVE_ENDPOINT and HIVE_TARGET_ID from the environment.
+  hive.usage: {}

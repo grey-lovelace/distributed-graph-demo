@@ -1,0 +1,392 @@
+[
+  {
+    "id": "speaker-01",
+    "name": "Amara Okafor",
+    "title": "Principal Consultant",
+    "company": "Northwind Consulting",
+    "companyType": "CONSULTANCY",
+    "bio": "Amara Okafor is a principal consultant at Northwind Consulting. Amara helps clients with graphql federation and microservices.",
+    "topics": [
+      "GraphQL Federation",
+      "Microservices",
+      "Domain-driven design"
+    ]
+  },
+  {
+    "id": "speaker-02",
+    "name": "Lukas Brandt",
+    "title": "Staff Engineer",
+    "company": "Parcelly",
+    "companyType": "PRODUCT",
+    "bio": "Lukas Brandt is a staff engineer at Parcelly. Lukas builds products that help teams with graphql federation and api design.",
+    "topics": [
+      "GraphQL Federation",
+      "API design",
+      "Microservices"
+    ]
+  },
+  {
+    "id": "speaker-03",
+    "name": "Priya Raman",
+    "title": "Chief Architect",
+    "company": "Meridian Bank",
+    "companyType": "ENTERPRISE",
+    "bio": "Priya Raman is a chief architect at Meridian Bank. Priya helps a large organisation with domain-driven design and event-driven systems.",
+    "topics": [
+      "Domain-driven design",
+      "Event-driven systems",
+      "Microservices"
+    ]
+  },
+  {
+    "id": "speaker-04",
+    "name": "Tomás Ferreira",
+    "title": "API Lead",
+    "company": "Brightline Partners",
+    "companyType": "CONSULTANCY",
+    "bio": "Tomás Ferreira is a api lead at Brightline Partners. Tomás helps clients with graphql federation and event-driven systems.",
+    "topics": [
+      "GraphQL Federation",
+      "Event-driven systems",
+      "Domain-driven design"
+    ]
+  },
+  {
+    "id": "speaker-05",
+    "name": "Hannah Cole",
+    "title": "Platform Architect",
+    "company": "Atlas Logistics",
+    "companyType": "ENTERPRISE",
+    "bio": "Hannah Cole is a platform architect at Atlas Logistics. Hannah helps a large organisation with graphql federation and domain-driven design.",
+    "topics": [
+      "GraphQL Federation",
+      "Domain-driven design",
+      "Event-driven systems"
+    ]
+  },
+  {
+    "id": "speaker-06",
+    "name": "Kenji Watanabe",
+    "title": "Engineering Manager",
+    "company": "Tidepool",
+    "companyType": "PRODUCT",
+    "bio": "Kenji Watanabe is a engineering manager at Tidepool. Kenji builds products that help teams with domain-driven design and microservices.",
+    "topics": [
+      "Domain-driven design",
+      "Microservices",
+      "GraphQL Federation"
+    ]
+  },
+  {
+    "id": "speaker-07",
+    "name": "Sofia Marchetti",
+    "title": "AI Engineering Lead",
+    "company": "Lumen Labs",
+    "companyType": "PRODUCT",
+    "bio": "Sofia Marchetti is a ai engineering lead at Lumen Labs. Sofia builds products that help teams with llm evaluation and prompt engineering.",
+    "topics": [
+      "LLM evaluation",
+      "Prompt engineering",
+      "Model Context Protocol"
+    ]
+  },
+  {
+    "id": "speaker-08",
+    "name": "Daniel Mensah",
+    "title": "Director of AI Practice",
+    "company": "Northwind Consulting",
+    "companyType": "CONSULTANCY",
+    "bio": "Daniel Mensah is a director of ai practice at Northwind Consulting. Daniel helps clients with prompt engineering and ai agents.",
+    "topics": [
+      "Prompt engineering",
+      "AI agents",
+      "LLM evaluation"
+    ]
+  },
+  {
+    "id": "speaker-09",
+    "name": "Grace Liu",
+    "title": "Machine Learning Engineer",
+    "company": "Open Health Alliance",
+    "companyType": "NONPROFIT",
+    "bio": "Grace Liu is a machine learning engineer at Open Health Alliance. Grace helps a non-profit organisation with prompt engineering and llm evaluation.",
+    "topics": [
+      "Prompt engineering",
+      "LLM evaluation",
+      "Model Context Protocol"
+    ]
+  },
+  {
+    "id": "speaker-10",
+    "name": "Mateo Alvarez",
+    "title": "Senior Consultant",
+    "company": "Keystone Digital",
+    "companyType": "CONSULTANCY",
+    "bio": "Mateo Alvarez is a senior consultant at Keystone Digital. Mateo helps clients with prompt engineering and llm evaluation.",
+    "topics": [
+      "Prompt engineering",
+      "LLM evaluation",
+      "AI agents"
+    ]
+  },
+  {
+    "id": "speaker-11",
+    "name": "Aisha Rahman",
+    "title": "Head of Applied AI",
+    "company": "Meridian Bank",
+    "companyType": "ENTERPRISE",
+    "bio": "Aisha Rahman is a head of applied ai at Meridian Bank. Aisha helps a large organisation with llm evaluation and prompt engineering.",
+    "topics": [
+      "LLM evaluation",
+      "Prompt engineering",
+      "Model Context Protocol"
+    ]
+  },
+  {
+    "id": "speaker-12",
+    "name": "Oliver Grant",
+    "title": "Founder",
+    "company": "Promptwise",
+    "companyType": "PRODUCT",
+    "bio": "Oliver Grant is a founder at Promptwise. Oliver builds products that help teams with retrieval-augmented generation and prompt engineering.",
+    "topics": [
+      "Retrieval-augmented generation",
+      "Prompt engineering",
+      "AI agents"
+    ]
+  },
+  {
+    "id": "speaker-13",
+    "name": "Chloe Dubois",
+    "title": "Developer Advocate",
+    "company": "Parcelly",
+    "companyType": "PRODUCT",
+    "bio": "Chloe Dubois is a developer advocate at Parcelly. Chloe builds products that help teams with onboarding and testing.",
+    "topics": [
+      "Onboarding",
+      "Testing",
+      "API documentation"
+    ]
+  },
+  {
+    "id": "speaker-14",
+    "name": "Samuel Adeyemi",
+    "title": "Developer Experience Lead",
+    "company": "Atlas Logistics",
+    "companyType": "ENTERPRISE",
+    "bio": "Samuel Adeyemi is a developer experience lead at Atlas Logistics. Samuel helps a large organisation with code generation and testing.",
+    "topics": [
+      "Code generation",
+      "Testing",
+      "Onboarding"
+    ]
+  },
+  {
+    "id": "speaker-15",
+    "name": "Ingrid Larsen",
+    "title": "Technical Writer",
+    "company": "Code for Communities",
+    "companyType": "NONPROFIT",
+    "bio": "Ingrid Larsen is a technical writer at Code for Communities. Ingrid helps a non-profit organisation with testing and developer portals.",
+    "topics": [
+      "Testing",
+      "Developer portals",
+      "Code generation"
+    ]
+  },
+  {
+    "id": "speaker-16",
+    "name": "Ravi Patel",
+    "title": "Principal Engineer",
+    "company": "Brightline Partners",
+    "companyType": "CONSULTANCY",
+    "bio": "Ravi Patel is a principal engineer at Brightline Partners. Ravi helps clients with api documentation and developer portals.",
+    "topics": [
+      "API documentation",
+      "Developer portals",
+      "Code generation"
+    ]
+  },
+  {
+    "id": "speaker-17",
+    "name": "Emily Novak",
+    "title": "Staff Developer Advocate",
+    "company": "Tidepool",
+    "companyType": "PRODUCT",
+    "bio": "Emily Novak is a staff developer advocate at Tidepool. Emily builds products that help teams with developer portals and testing.",
+    "topics": [
+      "Developer portals",
+      "Testing",
+      "API documentation"
+    ]
+  },
+  {
+    "id": "speaker-18",
+    "name": "Yusuf Demir",
+    "title": "Engineering Director",
+    "company": "Civic Transit Authority",
+    "companyType": "ENTERPRISE",
+    "bio": "Yusuf Demir is a engineering director at Civic Transit Authority. Yusuf helps a large organisation with api documentation and developer portals.",
+    "topics": [
+      "API documentation",
+      "Developer portals",
+      "Code generation"
+    ]
+  },
+  {
+    "id": "speaker-19",
+    "name": "Marta Kowalski",
+    "title": "SRE Lead",
+    "company": "Lumen Labs",
+    "companyType": "PRODUCT",
+    "bio": "Marta Kowalski is a sre lead at Lumen Labs. Marta builds products that help teams with performance and api gateways.",
+    "topics": [
+      "Performance",
+      "API gateways",
+      "Security"
+    ]
+  },
+  {
+    "id": "speaker-20",
+    "name": "Jonas Weber",
+    "title": "Cloud Architect",
+    "company": "Keystone Digital",
+    "companyType": "CONSULTANCY",
+    "bio": "Jonas Weber is a cloud architect at Keystone Digital. Jonas helps clients with api gateways and performance.",
+    "topics": [
+      "API gateways",
+      "Performance",
+      "Observability"
+    ]
+  },
+  {
+    "id": "speaker-21",
+    "name": "Fatima Zahra",
+    "title": "Security Engineer",
+    "company": "Meridian Bank",
+    "companyType": "ENTERPRISE",
+    "bio": "Fatima Zahra is a security engineer at Meridian Bank. Fatima helps a large organisation with api gateways and security.",
+    "topics": [
+      "API gateways",
+      "Security",
+      "Kubernetes"
+    ]
+  },
+  {
+    "id": "speaker-22",
+    "name": "Liam O'Connor",
+    "title": "Platform Engineer",
+    "company": "Open Health Alliance",
+    "companyType": "NONPROFIT",
+    "bio": "Liam O'Connor is a platform engineer at Open Health Alliance. Liam helps a non-profit organisation with security and performance.",
+    "topics": [
+      "Security",
+      "Performance",
+      "API gateways"
+    ]
+  },
+  {
+    "id": "speaker-23",
+    "name": "Mei Chen",
+    "title": "Performance Engineer",
+    "company": "Promptwise",
+    "companyType": "PRODUCT",
+    "bio": "Mei Chen is a performance engineer at Promptwise. Mei builds products that help teams with api gateways and observability.",
+    "topics": [
+      "API gateways",
+      "Observability",
+      "Performance"
+    ]
+  },
+  {
+    "id": "speaker-24",
+    "name": "Carlos Mendes",
+    "title": "Infrastructure Manager",
+    "company": "Atlas Logistics",
+    "companyType": "ENTERPRISE",
+    "bio": "Carlos Mendes is a infrastructure manager at Atlas Logistics. Carlos helps a large organisation with performance and security.",
+    "topics": [
+      "Performance",
+      "Security",
+      "Observability"
+    ]
+  },
+  {
+    "id": "speaker-25",
+    "name": "Nadia Petrova",
+    "title": "Data Architect",
+    "company": "Northwind Consulting",
+    "companyType": "CONSULTANCY",
+    "bio": "Nadia Petrova is a data architect at Northwind Consulting. Nadia helps clients with data modeling and caching.",
+    "topics": [
+      "Data modeling",
+      "Caching",
+      "Streaming"
+    ]
+  },
+  {
+    "id": "speaker-26",
+    "name": "Ethan Brooks",
+    "title": "Data Engineer",
+    "company": "Parcelly",
+    "companyType": "PRODUCT",
+    "bio": "Ethan Brooks is a data engineer at Parcelly. Ethan builds products that help teams with data modeling and search.",
+    "topics": [
+      "Data modeling",
+      "Search",
+      "Caching"
+    ]
+  },
+  {
+    "id": "speaker-27",
+    "name": "Zainab Yusuf",
+    "title": "Head of Data",
+    "company": "Civic Transit Authority",
+    "companyType": "ENTERPRISE",
+    "bio": "Zainab Yusuf is a head of data at Civic Transit Authority. Zainab helps a large organisation with data governance and caching.",
+    "topics": [
+      "Data governance",
+      "Caching",
+      "Streaming"
+    ]
+  },
+  {
+    "id": "speaker-28",
+    "name": "Hugo Laurent",
+    "title": "Search Engineer",
+    "company": "Tidepool",
+    "companyType": "PRODUCT",
+    "bio": "Hugo Laurent is a search engineer at Tidepool. Hugo builds products that help teams with streaming and search.",
+    "topics": [
+      "Streaming",
+      "Search",
+      "Caching"
+    ]
+  },
+  {
+    "id": "speaker-29",
+    "name": "Ana Costa",
+    "title": "Data Consultant",
+    "company": "Brightline Partners",
+    "companyType": "CONSULTANCY",
+    "bio": "Ana Costa is a data consultant at Brightline Partners. Ana helps clients with data modeling and caching.",
+    "topics": [
+      "Data modeling",
+      "Caching",
+      "Streaming"
+    ]
+  },
+  {
+    "id": "speaker-30",
+    "name": "Peter Lindqvist",
+    "title": "Volunteer Data Lead",
+    "company": "Code for Communities",
+    "companyType": "NONPROFIT",
+    "bio": "Peter Lindqvist is a volunteer data lead at Code for Communities. Peter helps a non-profit organisation with streaming and search.",
+    "topics": [
+      "Streaming",
+      "Search",
+      "Data modeling"
+    ]
+  }
+]

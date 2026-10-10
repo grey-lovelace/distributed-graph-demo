@@ -1,0 +1,7 @@
+# Build output and installed dependencies
+services/speakers/build/
+services/speakers/.gradle/
+services/sessions/node_modules/
+services/feedback/.venv/
+__pycache__/
+.DS_Store

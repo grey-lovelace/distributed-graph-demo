@@ -1,0 +1,23 @@
+# Shows one session with its speakers and every attendee review.
+query SessionReviews($sessionId: ID!) {
+  session(id: $sessionId) {
+    title
+    abstract
+    level
+    speakers {
+      name
+      averageRating
+    }
+    averageRating
+    reviewCount
+    reviews {
+      sessionRating
+      speakerRating
+      comment
+      submittedAt
+      speaker {
+        name
+      }
+    }
+  }
+}

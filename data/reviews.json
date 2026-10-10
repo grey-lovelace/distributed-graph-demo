@@ -1,0 +1,3449 @@
+[
+  {
+    "id": "review-001",
+    "sessionId": "session-01",
+    "speakerId": "speaker-17",
+    "sessionRating": 4,
+    "speakerRating": 3,
+    "comment": "Great examples.",
+    "submittedAt": "2026-11-12T10:11:00Z"
+  },
+  {
+    "id": "review-002",
+    "sessionId": "session-01",
+    "speakerId": "speaker-17",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": "Great examples.",
+    "submittedAt": "2026-11-12T10:25:00Z"
+  },
+  {
+    "id": "review-003",
+    "sessionId": "session-01",
+    "speakerId": "speaker-17",
+    "sessionRating": 4,
+    "speakerRating": 3,
+    "comment": null,
+    "submittedAt": "2026-11-12T10:48:00Z"
+  },
+  {
+    "id": "review-004",
+    "sessionId": "session-03",
+    "speakerId": "speaker-01",
+    "sessionRating": 5,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-12T10:49:00Z"
+  },
+  {
+    "id": "review-005",
+    "sessionId": "session-03",
+    "speakerId": "speaker-03",
+    "sessionRating": 5,
+    "speakerRating": 5,
+    "comment": "Exactly what I came here to learn.",
+    "submittedAt": "2026-11-12T11:05:00Z"
+  },
+  {
+    "id": "review-006",
+    "sessionId": "session-01",
+    "speakerId": "speaker-17",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": "Great examples.",
+    "submittedAt": "2026-11-12T11:25:00Z"
+  },
+  {
+    "id": "review-007",
+    "sessionId": "session-04",
+    "speakerId": "speaker-29",
+    "sessionRating": 2,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-12T11:48:00Z"
+  },
+  {
+    "id": "review-008",
+    "sessionId": "session-01",
+    "speakerId": "speaker-17",
+    "sessionRating": 4,
+    "speakerRating": 2,
+    "comment": "Great examples.",
+    "submittedAt": "2026-11-12T11:52:00Z"
+  },
+  {
+    "id": "review-009",
+    "sessionId": "session-01",
+    "speakerId": "speaker-17",
+    "sessionRating": 4,
+    "speakerRating": 2,
+    "comment": "Clear and practical.",
+    "submittedAt": "2026-11-12T11:55:00Z"
+  },
+  {
+    "id": "review-010",
+    "sessionId": "session-01",
+    "speakerId": "speaker-17",
+    "sessionRating": 2,
+    "speakerRating": 5,
+    "comment": null,
+    "submittedAt": "2026-11-12T12:08:00Z"
+  },
+  {
+    "id": "review-011",
+    "sessionId": "session-07",
+    "speakerId": "speaker-27",
+    "sessionRating": 3,
+    "speakerRating": 5,
+    "comment": "Some useful ideas.",
+    "submittedAt": "2026-11-12T12:11:00Z"
+  },
+  {
+    "id": "review-012",
+    "sessionId": "session-03",
+    "speakerId": "speaker-03",
+    "sessionRating": 5,
+    "speakerRating": 3,
+    "comment": "Exactly what I came here to learn.",
+    "submittedAt": "2026-11-12T12:13:00Z"
+  },
+  {
+    "id": "review-013",
+    "sessionId": "session-03",
+    "speakerId": "speaker-03",
+    "sessionRating": 5,
+    "speakerRating": 5,
+    "comment": null,
+    "submittedAt": "2026-11-12T12:16:00Z"
+  },
+  {
+    "id": "review-014",
+    "sessionId": "session-04",
+    "speakerId": "speaker-29",
+    "sessionRating": 3,
+    "speakerRating": 3,
+    "comment": "Solid overview.",
+    "submittedAt": "2026-11-12T12:24:00Z"
+  },
+  {
+    "id": "review-015",
+    "sessionId": "session-06",
+    "speakerId": "speaker-23",
+    "sessionRating": 5,
+    "speakerRating": 3,
+    "comment": "Best talk of the day.",
+    "submittedAt": "2026-11-12T12:31:00Z"
+  },
+  {
+    "id": "review-016",
+    "sessionId": "session-03",
+    "speakerId": "speaker-01",
+    "sessionRating": 5,
+    "speakerRating": 5,
+    "comment": null,
+    "submittedAt": "2026-11-12T12:36:00Z"
+  },
+  {
+    "id": "review-017",
+    "sessionId": "session-03",
+    "speakerId": "speaker-01",
+    "sessionRating": 3,
+    "speakerRating": 5,
+    "comment": "Some useful ideas.",
+    "submittedAt": "2026-11-12T12:47:00Z"
+  },
+  {
+    "id": "review-018",
+    "sessionId": "session-03",
+    "speakerId": "speaker-01",
+    "sessionRating": 4,
+    "speakerRating": 5,
+    "comment": "Great examples.",
+    "submittedAt": "2026-11-12T12:47:00Z"
+  },
+  {
+    "id": "review-019",
+    "sessionId": "session-08",
+    "speakerId": "speaker-03",
+    "sessionRating": 4,
+    "speakerRating": 5,
+    "comment": null,
+    "submittedAt": "2026-11-12T12:51:00Z"
+  },
+  {
+    "id": "review-020",
+    "sessionId": "session-04",
+    "speakerId": "speaker-29",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": "Good content, but it went too fast.",
+    "submittedAt": "2026-11-12T12:53:00Z"
+  },
+  {
+    "id": "review-021",
+    "sessionId": "session-06",
+    "speakerId": "speaker-24",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-12T12:56:00Z"
+  },
+  {
+    "id": "review-022",
+    "sessionId": "session-03",
+    "speakerId": "speaker-01",
+    "sessionRating": 5,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-12T13:12:00Z"
+  },
+  {
+    "id": "review-023",
+    "sessionId": "session-06",
+    "speakerId": "speaker-24",
+    "sessionRating": 3,
+    "speakerRating": 3,
+    "comment": null,
+    "submittedAt": "2026-11-12T13:21:00Z"
+  },
+  {
+    "id": "review-024",
+    "sessionId": "session-08",
+    "speakerId": "speaker-03",
+    "sessionRating": 4,
+    "speakerRating": 2,
+    "comment": "Great examples.",
+    "submittedAt": "2026-11-12T13:22:00Z"
+  },
+  {
+    "id": "review-025",
+    "sessionId": "session-03",
+    "speakerId": "speaker-01",
+    "sessionRating": 4,
+    "speakerRating": 5,
+    "comment": "Clear and practical.",
+    "submittedAt": "2026-11-12T13:24:00Z"
+  },
+  {
+    "id": "review-026",
+    "sessionId": "session-01",
+    "speakerId": "speaker-17",
+    "sessionRating": 4,
+    "speakerRating": 3,
+    "comment": "Great examples.",
+    "submittedAt": "2026-11-12T13:27:00Z"
+  },
+  {
+    "id": "review-027",
+    "sessionId": "session-03",
+    "speakerId": "speaker-03",
+    "sessionRating": 4,
+    "speakerRating": 5,
+    "comment": "I will try this at work next week.",
+    "submittedAt": "2026-11-12T13:39:00Z"
+  },
+  {
+    "id": "review-028",
+    "sessionId": "session-01",
+    "speakerId": "speaker-17",
+    "sessionRating": 5,
+    "speakerRating": 3,
+    "comment": "Brilliant demo.",
+    "submittedAt": "2026-11-12T13:40:00Z"
+  },
+  {
+    "id": "review-029",
+    "sessionId": "session-02",
+    "speakerId": "speaker-18",
+    "sessionRating": 4,
+    "speakerRating": 3,
+    "comment": "Great examples.",
+    "submittedAt": "2026-11-12T13:45:00Z"
+  },
+  {
+    "id": "review-030",
+    "sessionId": "session-03",
+    "speakerId": "speaker-03",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": "Great examples.",
+    "submittedAt": "2026-11-12T14:01:00Z"
+  },
+  {
+    "id": "review-031",
+    "sessionId": "session-01",
+    "speakerId": "speaker-17",
+    "sessionRating": 3,
+    "speakerRating": 2,
+    "comment": "Some useful ideas.",
+    "submittedAt": "2026-11-12T14:04:00Z"
+  },
+  {
+    "id": "review-032",
+    "sessionId": "session-01",
+    "speakerId": "speaker-17",
+    "sessionRating": 4,
+    "speakerRating": 3,
+    "comment": "Great examples.",
+    "submittedAt": "2026-11-12T14:09:00Z"
+  },
+  {
+    "id": "review-033",
+    "sessionId": "session-10",
+    "speakerId": "speaker-16",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-12T14:18:00Z"
+  },
+  {
+    "id": "review-034",
+    "sessionId": "session-08",
+    "speakerId": "speaker-03",
+    "sessionRating": 5,
+    "speakerRating": 4,
+    "comment": "Brilliant demo.",
+    "submittedAt": "2026-11-12T14:29:00Z"
+  },
+  {
+    "id": "review-035",
+    "sessionId": "session-10",
+    "speakerId": "speaker-16",
+    "sessionRating": 5,
+    "speakerRating": 5,
+    "comment": "Best talk of the day.",
+    "submittedAt": "2026-11-12T14:38:00Z"
+  },
+  {
+    "id": "review-036",
+    "sessionId": "session-07",
+    "speakerId": "speaker-27",
+    "sessionRating": 3,
+    "speakerRating": 3,
+    "comment": "Solid overview.",
+    "submittedAt": "2026-11-12T14:43:00Z"
+  },
+  {
+    "id": "review-037",
+    "sessionId": "session-09",
+    "speakerId": "speaker-19",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": "Clear and practical.",
+    "submittedAt": "2026-11-12T14:51:00Z"
+  },
+  {
+    "id": "review-038",
+    "sessionId": "session-09",
+    "speakerId": "speaker-20",
+    "sessionRating": 5,
+    "speakerRating": 3,
+    "comment": null,
+    "submittedAt": "2026-11-12T14:52:00Z"
+  },
+  {
+    "id": "review-039",
+    "sessionId": "session-09",
+    "speakerId": "speaker-19",
+    "sessionRating": 5,
+    "speakerRating": 4,
+    "comment": "Exactly what I came here to learn.",
+    "submittedAt": "2026-11-12T14:53:00Z"
+  },
+  {
+    "id": "review-040",
+    "sessionId": "session-09",
+    "speakerId": "speaker-19",
+    "sessionRating": 5,
+    "speakerRating": 5,
+    "comment": "Exactly what I came here to learn.",
+    "submittedAt": "2026-11-12T14:54:00Z"
+  },
+  {
+    "id": "review-041",
+    "sessionId": "session-07",
+    "speakerId": "speaker-27",
+    "sessionRating": 2,
+    "speakerRating": 4,
+    "comment": "Ran out of time before the good part.",
+    "submittedAt": "2026-11-12T14:56:00Z"
+  },
+  {
+    "id": "review-042",
+    "sessionId": "session-10",
+    "speakerId": "speaker-16",
+    "sessionRating": 5,
+    "speakerRating": 4,
+    "comment": "Brilliant demo.",
+    "submittedAt": "2026-11-12T15:01:00Z"
+  },
+  {
+    "id": "review-043",
+    "sessionId": "session-05",
+    "speakerId": "speaker-09",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": "Some useful ideas.",
+    "submittedAt": "2026-11-12T15:03:00Z"
+  },
+  {
+    "id": "review-044",
+    "sessionId": "session-04",
+    "speakerId": "speaker-29",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": "I will try this at work next week.",
+    "submittedAt": "2026-11-12T15:05:00Z"
+  },
+  {
+    "id": "review-045",
+    "sessionId": "session-06",
+    "speakerId": "speaker-23",
+    "sessionRating": 4,
+    "speakerRating": 5,
+    "comment": "I will try this at work next week.",
+    "submittedAt": "2026-11-12T15:05:00Z"
+  },
+  {
+    "id": "review-046",
+    "sessionId": "session-09",
+    "speakerId": "speaker-19",
+    "sessionRating": 3,
+    "speakerRating": 2,
+    "comment": "Solid overview.",
+    "submittedAt": "2026-11-12T15:05:00Z"
+  },
+  {
+    "id": "review-047",
+    "sessionId": "session-02",
+    "speakerId": "speaker-18",
+    "sessionRating": 5,
+    "speakerRating": 3,
+    "comment": "Exactly what I came here to learn.",
+    "submittedAt": "2026-11-12T15:06:00Z"
+  },
+  {
+    "id": "review-048",
+    "sessionId": "session-05",
+    "speakerId": "speaker-08",
+    "sessionRating": 5,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-12T15:06:00Z"
+  },
+  {
+    "id": "review-049",
+    "sessionId": "session-01",
+    "speakerId": "speaker-17",
+    "sessionRating": 4,
+    "speakerRating": 3,
+    "comment": "Clear and practical.",
+    "submittedAt": "2026-11-12T15:08:00Z"
+  },
+  {
+    "id": "review-050",
+    "sessionId": "session-01",
+    "speakerId": "speaker-17",
+    "sessionRating": 3,
+    "speakerRating": 3,
+    "comment": "Solid overview.",
+    "submittedAt": "2026-11-12T15:12:00Z"
+  },
+  {
+    "id": "review-051",
+    "sessionId": "session-06",
+    "speakerId": "speaker-24",
+    "sessionRating": 2,
+    "speakerRating": 4,
+    "comment": "Ran out of time before the good part.",
+    "submittedAt": "2026-11-12T15:15:00Z"
+  },
+  {
+    "id": "review-052",
+    "sessionId": "session-13",
+    "speakerId": "speaker-01",
+    "sessionRating": 2,
+    "speakerRating": 4,
+    "comment": "The examples did not match my use case.",
+    "submittedAt": "2026-11-12T15:20:00Z"
+  },
+  {
+    "id": "review-053",
+    "sessionId": "session-04",
+    "speakerId": "speaker-29",
+    "sessionRating": 3,
+    "speakerRating": 3,
+    "comment": "Solid overview.",
+    "submittedAt": "2026-11-12T15:22:00Z"
+  },
+  {
+    "id": "review-054",
+    "sessionId": "session-07",
+    "speakerId": "speaker-27",
+    "sessionRating": 5,
+    "speakerRating": 5,
+    "comment": "Best talk of the day.",
+    "submittedAt": "2026-11-12T15:22:00Z"
+  },
+  {
+    "id": "review-055",
+    "sessionId": "session-09",
+    "speakerId": "speaker-19",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": "Some useful ideas.",
+    "submittedAt": "2026-11-12T15:34:00Z"
+  },
+  {
+    "id": "review-056",
+    "sessionId": "session-01",
+    "speakerId": "speaker-17",
+    "sessionRating": 4,
+    "speakerRating": 3,
+    "comment": "Clear and practical.",
+    "submittedAt": "2026-11-12T15:37:00Z"
+  },
+  {
+    "id": "review-057",
+    "sessionId": "session-14",
+    "speakerId": "speaker-11",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": "Great examples.",
+    "submittedAt": "2026-11-12T15:38:00Z"
+  },
+  {
+    "id": "review-058",
+    "sessionId": "session-09",
+    "speakerId": "speaker-19",
+    "sessionRating": 5,
+    "speakerRating": 4,
+    "comment": "Best talk of the day.",
+    "submittedAt": "2026-11-12T15:39:00Z"
+  },
+  {
+    "id": "review-059",
+    "sessionId": "session-01",
+    "speakerId": "speaker-17",
+    "sessionRating": 5,
+    "speakerRating": 4,
+    "comment": "Brilliant demo.",
+    "submittedAt": "2026-11-12T15:45:00Z"
+  },
+  {
+    "id": "review-060",
+    "sessionId": "session-13",
+    "speakerId": "speaker-01",
+    "sessionRating": 2,
+    "speakerRating": 4,
+    "comment": "The examples did not match my use case.",
+    "submittedAt": "2026-11-12T15:48:00Z"
+  },
+  {
+    "id": "review-061",
+    "sessionId": "session-02",
+    "speakerId": "speaker-18",
+    "sessionRating": 5,
+    "speakerRating": 5,
+    "comment": null,
+    "submittedAt": "2026-11-12T15:49:00Z"
+  },
+  {
+    "id": "review-062",
+    "sessionId": "session-01",
+    "speakerId": "speaker-17",
+    "sessionRating": 5,
+    "speakerRating": 4,
+    "comment": "Brilliant demo.",
+    "submittedAt": "2026-11-12T15:51:00Z"
+  },
+  {
+    "id": "review-063",
+    "sessionId": "session-15",
+    "speakerId": "speaker-22",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": "I will try this at work next week.",
+    "submittedAt": "2026-11-12T16:02:00Z"
+  },
+  {
+    "id": "review-064",
+    "sessionId": "session-04",
+    "speakerId": "speaker-29",
+    "sessionRating": 4,
+    "speakerRating": 5,
+    "comment": "Great examples.",
+    "submittedAt": "2026-11-12T16:03:00Z"
+  },
+  {
+    "id": "review-065",
+    "sessionId": "session-03",
+    "speakerId": "speaker-01",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": "Clear and practical.",
+    "submittedAt": "2026-11-12T16:09:00Z"
+  },
+  {
+    "id": "review-066",
+    "sessionId": "session-15",
+    "speakerId": "speaker-22",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": "Some useful ideas.",
+    "submittedAt": "2026-11-12T16:12:00Z"
+  },
+  {
+    "id": "review-067",
+    "sessionId": "session-06",
+    "speakerId": "speaker-23",
+    "sessionRating": 5,
+    "speakerRating": 5,
+    "comment": "Best talk of the day.",
+    "submittedAt": "2026-11-12T16:25:00Z"
+  },
+  {
+    "id": "review-068",
+    "sessionId": "session-14",
+    "speakerId": "speaker-08",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": "I will try this at work next week.",
+    "submittedAt": "2026-11-12T16:27:00Z"
+  },
+  {
+    "id": "review-069",
+    "sessionId": "session-05",
+    "speakerId": "speaker-09",
+    "sessionRating": 4,
+    "speakerRating": 3,
+    "comment": "Great examples.",
+    "submittedAt": "2026-11-12T16:42:00Z"
+  },
+  {
+    "id": "review-070",
+    "sessionId": "session-03",
+    "speakerId": "speaker-01",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-12T16:43:00Z"
+  },
+  {
+    "id": "review-071",
+    "sessionId": "session-14",
+    "speakerId": "speaker-11",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": "Clear and practical.",
+    "submittedAt": "2026-11-12T16:45:00Z"
+  },
+  {
+    "id": "review-072",
+    "sessionId": "session-10",
+    "speakerId": "speaker-16",
+    "sessionRating": 4,
+    "speakerRating": 3,
+    "comment": "Great examples.",
+    "submittedAt": "2026-11-12T16:49:00Z"
+  },
+  {
+    "id": "review-073",
+    "sessionId": "session-11",
+    "speakerId": "speaker-24",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": "I will try this at work next week.",
+    "submittedAt": "2026-11-12T16:51:00Z"
+  },
+  {
+    "id": "review-074",
+    "sessionId": "session-03",
+    "speakerId": "speaker-01",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": "Great examples.",
+    "submittedAt": "2026-11-12T16:54:00Z"
+  },
+  {
+    "id": "review-075",
+    "sessionId": "session-19",
+    "speakerId": "speaker-13",
+    "sessionRating": 4,
+    "speakerRating": 5,
+    "comment": "I will try this at work next week.",
+    "submittedAt": "2026-11-12T16:56:00Z"
+  },
+  {
+    "id": "review-076",
+    "sessionId": "session-17",
+    "speakerId": "speaker-21",
+    "sessionRating": 5,
+    "speakerRating": 3,
+    "comment": "Exactly what I came here to learn.",
+    "submittedAt": "2026-11-12T16:57:00Z"
+  },
+  {
+    "id": "review-077",
+    "sessionId": "session-14",
+    "speakerId": "speaker-11",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-12T16:58:00Z"
+  },
+  {
+    "id": "review-078",
+    "sessionId": "session-11",
+    "speakerId": "speaker-20",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": "Good content, but it went too fast.",
+    "submittedAt": "2026-11-12T16:59:00Z"
+  },
+  {
+    "id": "review-079",
+    "sessionId": "session-14",
+    "speakerId": "speaker-11",
+    "sessionRating": 4,
+    "speakerRating": 5,
+    "comment": "Great examples.",
+    "submittedAt": "2026-11-12T17:01:00Z"
+  },
+  {
+    "id": "review-080",
+    "sessionId": "session-04",
+    "speakerId": "speaker-29",
+    "sessionRating": 2,
+    "speakerRating": 3,
+    "comment": "Ran out of time before the good part.",
+    "submittedAt": "2026-11-12T17:05:00Z"
+  },
+  {
+    "id": "review-081",
+    "sessionId": "session-15",
+    "speakerId": "speaker-22",
+    "sessionRating": 3,
+    "speakerRating": 3,
+    "comment": null,
+    "submittedAt": "2026-11-12T17:06:00Z"
+  },
+  {
+    "id": "review-082",
+    "sessionId": "session-09",
+    "speakerId": "speaker-19",
+    "sessionRating": 4,
+    "speakerRating": 5,
+    "comment": null,
+    "submittedAt": "2026-11-12T17:07:00Z"
+  },
+  {
+    "id": "review-083",
+    "sessionId": "session-10",
+    "speakerId": "speaker-16",
+    "sessionRating": 5,
+    "speakerRating": 3,
+    "comment": "Exactly what I came here to learn.",
+    "submittedAt": "2026-11-12T17:08:00Z"
+  },
+  {
+    "id": "review-084",
+    "sessionId": "session-10",
+    "speakerId": "speaker-16",
+    "sessionRating": 2,
+    "speakerRating": 5,
+    "comment": "The examples did not match my use case.",
+    "submittedAt": "2026-11-12T17:09:00Z"
+  },
+  {
+    "id": "review-085",
+    "sessionId": "session-09",
+    "speakerId": "speaker-19",
+    "sessionRating": 5,
+    "speakerRating": 5,
+    "comment": "Brilliant demo.",
+    "submittedAt": "2026-11-12T17:10:00Z"
+  },
+  {
+    "id": "review-086",
+    "sessionId": "session-06",
+    "speakerId": "speaker-24",
+    "sessionRating": 2,
+    "speakerRating": 4,
+    "comment": "The examples did not match my use case.",
+    "submittedAt": "2026-11-12T17:13:00Z"
+  },
+  {
+    "id": "review-087",
+    "sessionId": "session-18",
+    "speakerId": "speaker-25",
+    "sessionRating": 5,
+    "speakerRating": 4,
+    "comment": "Brilliant demo.",
+    "submittedAt": "2026-11-12T17:15:00Z"
+  },
+  {
+    "id": "review-088",
+    "sessionId": "session-03",
+    "speakerId": "speaker-03",
+    "sessionRating": 3,
+    "speakerRating": 3,
+    "comment": "Good content, but it went too fast.",
+    "submittedAt": "2026-11-12T17:16:00Z"
+  },
+  {
+    "id": "review-089",
+    "sessionId": "session-11",
+    "speakerId": "speaker-20",
+    "sessionRating": 4,
+    "speakerRating": 3,
+    "comment": null,
+    "submittedAt": "2026-11-12T17:16:00Z"
+  },
+  {
+    "id": "review-090",
+    "sessionId": "session-03",
+    "speakerId": "speaker-03",
+    "sessionRating": 3,
+    "speakerRating": 5,
+    "comment": "Some useful ideas.",
+    "submittedAt": "2026-11-12T17:17:00Z"
+  },
+  {
+    "id": "review-091",
+    "sessionId": "session-07",
+    "speakerId": "speaker-27",
+    "sessionRating": 4,
+    "speakerRating": 3,
+    "comment": "Great examples.",
+    "submittedAt": "2026-11-12T17:18:00Z"
+  },
+  {
+    "id": "review-092",
+    "sessionId": "session-15",
+    "speakerId": "speaker-22",
+    "sessionRating": 3,
+    "speakerRating": 3,
+    "comment": "Some useful ideas.",
+    "submittedAt": "2026-11-12T17:22:00Z"
+  },
+  {
+    "id": "review-093",
+    "sessionId": "session-03",
+    "speakerId": "speaker-03",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": "I will try this at work next week.",
+    "submittedAt": "2026-11-12T17:24:00Z"
+  },
+  {
+    "id": "review-094",
+    "sessionId": "session-06",
+    "speakerId": "speaker-24",
+    "sessionRating": 4,
+    "speakerRating": 5,
+    "comment": "I will try this at work next week.",
+    "submittedAt": "2026-11-12T17:35:00Z"
+  },
+  {
+    "id": "review-095",
+    "sessionId": "session-18",
+    "speakerId": "speaker-28",
+    "sessionRating": 5,
+    "speakerRating": 5,
+    "comment": null,
+    "submittedAt": "2026-11-12T17:35:00Z"
+  },
+  {
+    "id": "review-096",
+    "sessionId": "session-02",
+    "speakerId": "speaker-18",
+    "sessionRating": 4,
+    "speakerRating": 3,
+    "comment": "I will try this at work next week.",
+    "submittedAt": "2026-11-12T17:37:00Z"
+  },
+  {
+    "id": "review-097",
+    "sessionId": "session-19",
+    "speakerId": "speaker-13",
+    "sessionRating": 2,
+    "speakerRating": 5,
+    "comment": "The examples did not match my use case.",
+    "submittedAt": "2026-11-12T17:40:00Z"
+  },
+  {
+    "id": "review-098",
+    "sessionId": "session-12",
+    "speakerId": "speaker-08",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": "I will try this at work next week.",
+    "submittedAt": "2026-11-12T17:46:00Z"
+  },
+  {
+    "id": "review-099",
+    "sessionId": "session-17",
+    "speakerId": "speaker-21",
+    "sessionRating": 4,
+    "speakerRating": 5,
+    "comment": null,
+    "submittedAt": "2026-11-12T17:55:00Z"
+  },
+  {
+    "id": "review-100",
+    "sessionId": "session-04",
+    "speakerId": "speaker-29",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": "I will try this at work next week.",
+    "submittedAt": "2026-11-12T17:56:00Z"
+  },
+  {
+    "id": "review-101",
+    "sessionId": "session-17",
+    "speakerId": "speaker-20",
+    "sessionRating": 3,
+    "speakerRating": 3,
+    "comment": "Good content, but it went too fast.",
+    "submittedAt": "2026-11-12T17:57:00Z"
+  },
+  {
+    "id": "review-102",
+    "sessionId": "session-03",
+    "speakerId": "speaker-01",
+    "sessionRating": 5,
+    "speakerRating": 4,
+    "comment": "Exactly what I came here to learn.",
+    "submittedAt": "2026-11-12T17:59:00Z"
+  },
+  {
+    "id": "review-103",
+    "sessionId": "session-18",
+    "speakerId": "speaker-28",
+    "sessionRating": 5,
+    "speakerRating": 4,
+    "comment": "Brilliant demo.",
+    "submittedAt": "2026-11-12T18:00:00Z"
+  },
+  {
+    "id": "review-104",
+    "sessionId": "session-14",
+    "speakerId": "speaker-08",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": "Clear and practical.",
+    "submittedAt": "2026-11-12T18:09:00Z"
+  },
+  {
+    "id": "review-105",
+    "sessionId": "session-10",
+    "speakerId": "speaker-16",
+    "sessionRating": 4,
+    "speakerRating": 3,
+    "comment": "Clear and practical.",
+    "submittedAt": "2026-11-12T18:19:00Z"
+  },
+  {
+    "id": "review-106",
+    "sessionId": "session-02",
+    "speakerId": "speaker-18",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-12T18:27:00Z"
+  },
+  {
+    "id": "review-107",
+    "sessionId": "session-18",
+    "speakerId": "speaker-28",
+    "sessionRating": 5,
+    "speakerRating": 3,
+    "comment": "Best talk of the day.",
+    "submittedAt": "2026-11-12T18:32:00Z"
+  },
+  {
+    "id": "review-108",
+    "sessionId": "session-01",
+    "speakerId": "speaker-17",
+    "sessionRating": 4,
+    "speakerRating": 3,
+    "comment": null,
+    "submittedAt": "2026-11-12T18:33:00Z"
+  },
+  {
+    "id": "review-109",
+    "sessionId": "session-09",
+    "speakerId": "speaker-20",
+    "sessionRating": 5,
+    "speakerRating": 5,
+    "comment": "Best talk of the day.",
+    "submittedAt": "2026-11-12T18:38:00Z"
+  },
+  {
+    "id": "review-110",
+    "sessionId": "session-09",
+    "speakerId": "speaker-20",
+    "sessionRating": 5,
+    "speakerRating": 5,
+    "comment": null,
+    "submittedAt": "2026-11-12T18:50:00Z"
+  },
+  {
+    "id": "review-111",
+    "sessionId": "session-17",
+    "speakerId": "speaker-21",
+    "sessionRating": 4,
+    "speakerRating": 3,
+    "comment": "Great examples.",
+    "submittedAt": "2026-11-12T18:58:00Z"
+  },
+  {
+    "id": "review-112",
+    "sessionId": "session-20",
+    "speakerId": "speaker-12",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": "Great examples.",
+    "submittedAt": "2026-11-12T18:59:00Z"
+  },
+  {
+    "id": "review-113",
+    "sessionId": "session-04",
+    "speakerId": "speaker-29",
+    "sessionRating": 4,
+    "speakerRating": 2,
+    "comment": "Clear and practical.",
+    "submittedAt": "2026-11-12T19:01:00Z"
+  },
+  {
+    "id": "review-114",
+    "sessionId": "session-19",
+    "speakerId": "speaker-15",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-12T19:02:00Z"
+  },
+  {
+    "id": "review-115",
+    "sessionId": "session-03",
+    "speakerId": "speaker-03",
+    "sessionRating": 4,
+    "speakerRating": 5,
+    "comment": "Clear and practical.",
+    "submittedAt": "2026-11-12T19:12:00Z"
+  },
+  {
+    "id": "review-116",
+    "sessionId": "session-04",
+    "speakerId": "speaker-29",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-12T19:13:00Z"
+  },
+  {
+    "id": "review-117",
+    "sessionId": "session-07",
+    "speakerId": "speaker-27",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-12T19:14:00Z"
+  },
+  {
+    "id": "review-118",
+    "sessionId": "session-01",
+    "speakerId": "speaker-17",
+    "sessionRating": 3,
+    "speakerRating": 3,
+    "comment": "Some useful ideas.",
+    "submittedAt": "2026-11-12T19:16:00Z"
+  },
+  {
+    "id": "review-119",
+    "sessionId": "session-17",
+    "speakerId": "speaker-21",
+    "sessionRating": 5,
+    "speakerRating": 3,
+    "comment": null,
+    "submittedAt": "2026-11-12T19:17:00Z"
+  },
+  {
+    "id": "review-120",
+    "sessionId": "session-07",
+    "speakerId": "speaker-27",
+    "sessionRating": 4,
+    "speakerRating": 5,
+    "comment": "Clear and practical.",
+    "submittedAt": "2026-11-12T19:20:00Z"
+  },
+  {
+    "id": "review-121",
+    "sessionId": "session-13",
+    "speakerId": "speaker-06",
+    "sessionRating": 2,
+    "speakerRating": 5,
+    "comment": "Interesting topic, weak delivery.",
+    "submittedAt": "2026-11-12T19:25:00Z"
+  },
+  {
+    "id": "review-122",
+    "sessionId": "session-15",
+    "speakerId": "speaker-22",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": "Clear and practical.",
+    "submittedAt": "2026-11-12T19:29:00Z"
+  },
+  {
+    "id": "review-123",
+    "sessionId": "session-16",
+    "speakerId": "speaker-24",
+    "sessionRating": 5,
+    "speakerRating": 3,
+    "comment": "Best talk of the day.",
+    "submittedAt": "2026-11-12T19:40:00Z"
+  },
+  {
+    "id": "review-124",
+    "sessionId": "session-09",
+    "speakerId": "speaker-20",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": "Clear and practical.",
+    "submittedAt": "2026-11-12T19:43:00Z"
+  },
+  {
+    "id": "review-125",
+    "sessionId": "session-09",
+    "speakerId": "speaker-19",
+    "sessionRating": 5,
+    "speakerRating": 3,
+    "comment": null,
+    "submittedAt": "2026-11-12T19:59:00Z"
+  },
+  {
+    "id": "review-126",
+    "sessionId": "session-17",
+    "speakerId": "speaker-21",
+    "sessionRating": 3,
+    "speakerRating": 3,
+    "comment": "Solid overview.",
+    "submittedAt": "2026-11-12T20:02:00Z"
+  },
+  {
+    "id": "review-127",
+    "sessionId": "session-04",
+    "speakerId": "speaker-29",
+    "sessionRating": 3,
+    "speakerRating": 3,
+    "comment": null,
+    "submittedAt": "2026-11-12T20:09:00Z"
+  },
+  {
+    "id": "review-128",
+    "sessionId": "session-18",
+    "speakerId": "speaker-28",
+    "sessionRating": 5,
+    "speakerRating": 4,
+    "comment": "Exactly what I came here to learn.",
+    "submittedAt": "2026-11-12T20:13:00Z"
+  },
+  {
+    "id": "review-129",
+    "sessionId": "session-10",
+    "speakerId": "speaker-16",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": "Great examples.",
+    "submittedAt": "2026-11-12T20:17:00Z"
+  },
+  {
+    "id": "review-130",
+    "sessionId": "session-13",
+    "speakerId": "speaker-01",
+    "sessionRating": 2,
+    "speakerRating": 2,
+    "comment": "Interesting topic, weak delivery.",
+    "submittedAt": "2026-11-12T20:24:00Z"
+  },
+  {
+    "id": "review-131",
+    "sessionId": "session-17",
+    "speakerId": "speaker-20",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": "Great examples.",
+    "submittedAt": "2026-11-12T20:37:00Z"
+  },
+  {
+    "id": "review-132",
+    "sessionId": "session-18",
+    "speakerId": "speaker-25",
+    "sessionRating": 5,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-12T20:38:00Z"
+  },
+  {
+    "id": "review-133",
+    "sessionId": "session-06",
+    "speakerId": "speaker-24",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": "Clear and practical.",
+    "submittedAt": "2026-11-12T20:42:00Z"
+  },
+  {
+    "id": "review-134",
+    "sessionId": "session-06",
+    "speakerId": "speaker-24",
+    "sessionRating": 4,
+    "speakerRating": 3,
+    "comment": "Great examples.",
+    "submittedAt": "2026-11-12T20:43:00Z"
+  },
+  {
+    "id": "review-135",
+    "sessionId": "session-06",
+    "speakerId": "speaker-24",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": "Some useful ideas.",
+    "submittedAt": "2026-11-12T20:48:00Z"
+  },
+  {
+    "id": "review-136",
+    "sessionId": "session-15",
+    "speakerId": "speaker-22",
+    "sessionRating": 4,
+    "speakerRating": 3,
+    "comment": "Great examples.",
+    "submittedAt": "2026-11-12T20:49:00Z"
+  },
+  {
+    "id": "review-137",
+    "sessionId": "session-20",
+    "speakerId": "speaker-12",
+    "sessionRating": 4,
+    "speakerRating": 5,
+    "comment": null,
+    "submittedAt": "2026-11-12T20:51:00Z"
+  },
+  {
+    "id": "review-138",
+    "sessionId": "session-19",
+    "speakerId": "speaker-15",
+    "sessionRating": 4,
+    "speakerRating": 3,
+    "comment": "I will try this at work next week.",
+    "submittedAt": "2026-11-12T20:55:00Z"
+  },
+  {
+    "id": "review-139",
+    "sessionId": "session-06",
+    "speakerId": "speaker-24",
+    "sessionRating": 2,
+    "speakerRating": 3,
+    "comment": "Interesting topic, weak delivery.",
+    "submittedAt": "2026-11-12T20:56:00Z"
+  },
+  {
+    "id": "review-140",
+    "sessionId": "session-13",
+    "speakerId": "speaker-01",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": "Some useful ideas.",
+    "submittedAt": "2026-11-12T21:00:00Z"
+  },
+  {
+    "id": "review-141",
+    "sessionId": "session-06",
+    "speakerId": "speaker-23",
+    "sessionRating": 4,
+    "speakerRating": 2,
+    "comment": "Great examples.",
+    "submittedAt": "2026-11-12T21:02:00Z"
+  },
+  {
+    "id": "review-142",
+    "sessionId": "session-17",
+    "speakerId": "speaker-20",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": "Great examples.",
+    "submittedAt": "2026-11-12T21:05:00Z"
+  },
+  {
+    "id": "review-143",
+    "sessionId": "session-12",
+    "speakerId": "speaker-12",
+    "sessionRating": 2,
+    "speakerRating": 2,
+    "comment": "Ran out of time before the good part.",
+    "submittedAt": "2026-11-12T21:10:00Z"
+  },
+  {
+    "id": "review-144",
+    "sessionId": "session-13",
+    "speakerId": "speaker-01",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": "Good content, but it went too fast.",
+    "submittedAt": "2026-11-12T21:12:00Z"
+  },
+  {
+    "id": "review-145",
+    "sessionId": "session-15",
+    "speakerId": "speaker-22",
+    "sessionRating": 4,
+    "speakerRating": 3,
+    "comment": null,
+    "submittedAt": "2026-11-12T21:16:00Z"
+  },
+  {
+    "id": "review-146",
+    "sessionId": "session-06",
+    "speakerId": "speaker-24",
+    "sessionRating": 4,
+    "speakerRating": 5,
+    "comment": "I will try this at work next week.",
+    "submittedAt": "2026-11-12T21:17:00Z"
+  },
+  {
+    "id": "review-147",
+    "sessionId": "session-12",
+    "speakerId": "speaker-12",
+    "sessionRating": 3,
+    "speakerRating": 5,
+    "comment": "Some useful ideas.",
+    "submittedAt": "2026-11-12T21:17:00Z"
+  },
+  {
+    "id": "review-148",
+    "sessionId": "session-10",
+    "speakerId": "speaker-16",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": "Clear and practical.",
+    "submittedAt": "2026-11-12T21:20:00Z"
+  },
+  {
+    "id": "review-149",
+    "sessionId": "session-06",
+    "speakerId": "speaker-23",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-12T21:21:00Z"
+  },
+  {
+    "id": "review-150",
+    "sessionId": "session-20",
+    "speakerId": "speaker-12",
+    "sessionRating": 2,
+    "speakerRating": 3,
+    "comment": "Interesting topic, weak delivery.",
+    "submittedAt": "2026-11-12T21:21:00Z"
+  },
+  {
+    "id": "review-151",
+    "sessionId": "session-09",
+    "speakerId": "speaker-20",
+    "sessionRating": 5,
+    "speakerRating": 3,
+    "comment": "Best talk of the day.",
+    "submittedAt": "2026-11-12T21:22:00Z"
+  },
+  {
+    "id": "review-152",
+    "sessionId": "session-09",
+    "speakerId": "speaker-19",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": "Solid overview.",
+    "submittedAt": "2026-11-12T21:25:00Z"
+  },
+  {
+    "id": "review-153",
+    "sessionId": "session-10",
+    "speakerId": "speaker-16",
+    "sessionRating": 5,
+    "speakerRating": 4,
+    "comment": "Brilliant demo.",
+    "submittedAt": "2026-11-12T21:25:00Z"
+  },
+  {
+    "id": "review-154",
+    "sessionId": "session-16",
+    "speakerId": "speaker-24",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-12T21:32:00Z"
+  },
+  {
+    "id": "review-155",
+    "sessionId": "session-18",
+    "speakerId": "speaker-25",
+    "sessionRating": 5,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-12T21:40:00Z"
+  },
+  {
+    "id": "review-156",
+    "sessionId": "session-19",
+    "speakerId": "speaker-15",
+    "sessionRating": 4,
+    "speakerRating": 5,
+    "comment": "Great examples.",
+    "submittedAt": "2026-11-12T21:40:00Z"
+  },
+  {
+    "id": "review-157",
+    "sessionId": "session-20",
+    "speakerId": "speaker-12",
+    "sessionRating": 5,
+    "speakerRating": 4,
+    "comment": "Exactly what I came here to learn.",
+    "submittedAt": "2026-11-12T21:44:00Z"
+  },
+  {
+    "id": "review-158",
+    "sessionId": "session-06",
+    "speakerId": "speaker-23",
+    "sessionRating": 4,
+    "speakerRating": 3,
+    "comment": "I will try this at work next week.",
+    "submittedAt": "2026-11-12T21:48:00Z"
+  },
+  {
+    "id": "review-159",
+    "sessionId": "session-12",
+    "speakerId": "speaker-08",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-12T21:51:00Z"
+  },
+  {
+    "id": "review-160",
+    "sessionId": "session-12",
+    "speakerId": "speaker-12",
+    "sessionRating": 4,
+    "speakerRating": 3,
+    "comment": null,
+    "submittedAt": "2026-11-12T21:51:00Z"
+  },
+  {
+    "id": "review-161",
+    "sessionId": "session-18",
+    "speakerId": "speaker-28",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": "Great examples.",
+    "submittedAt": "2026-11-12T21:59:00Z"
+  },
+  {
+    "id": "review-162",
+    "sessionId": "session-20",
+    "speakerId": "speaker-10",
+    "sessionRating": 4,
+    "speakerRating": 5,
+    "comment": "Great examples.",
+    "submittedAt": "2026-11-12T22:03:00Z"
+  },
+  {
+    "id": "review-163",
+    "sessionId": "session-17",
+    "speakerId": "speaker-21",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": "I will try this at work next week.",
+    "submittedAt": "2026-11-12T22:06:00Z"
+  },
+  {
+    "id": "review-164",
+    "sessionId": "session-20",
+    "speakerId": "speaker-12",
+    "sessionRating": 5,
+    "speakerRating": 3,
+    "comment": "Best talk of the day.",
+    "submittedAt": "2026-11-12T22:08:00Z"
+  },
+  {
+    "id": "review-165",
+    "sessionId": "session-09",
+    "speakerId": "speaker-20",
+    "sessionRating": 5,
+    "speakerRating": 4,
+    "comment": "Brilliant demo.",
+    "submittedAt": "2026-11-12T22:16:00Z"
+  },
+  {
+    "id": "review-166",
+    "sessionId": "session-17",
+    "speakerId": "speaker-21",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": "I will try this at work next week.",
+    "submittedAt": "2026-11-12T22:16:00Z"
+  },
+  {
+    "id": "review-167",
+    "sessionId": "session-13",
+    "speakerId": "speaker-06",
+    "sessionRating": 2,
+    "speakerRating": 2,
+    "comment": "The examples did not match my use case.",
+    "submittedAt": "2026-11-12T22:20:00Z"
+  },
+  {
+    "id": "review-168",
+    "sessionId": "session-09",
+    "speakerId": "speaker-19",
+    "sessionRating": 3,
+    "speakerRating": 5,
+    "comment": "Some useful ideas.",
+    "submittedAt": "2026-11-12T22:24:00Z"
+  },
+  {
+    "id": "review-169",
+    "sessionId": "session-17",
+    "speakerId": "speaker-20",
+    "sessionRating": 4,
+    "speakerRating": 5,
+    "comment": "Great examples.",
+    "submittedAt": "2026-11-12T22:35:00Z"
+  },
+  {
+    "id": "review-170",
+    "sessionId": "session-18",
+    "speakerId": "speaker-28",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-12T22:37:00Z"
+  },
+  {
+    "id": "review-171",
+    "sessionId": "session-15",
+    "speakerId": "speaker-22",
+    "sessionRating": 4,
+    "speakerRating": 5,
+    "comment": "I will try this at work next week.",
+    "submittedAt": "2026-11-12T22:49:00Z"
+  },
+  {
+    "id": "review-172",
+    "sessionId": "session-19",
+    "speakerId": "speaker-15",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-12T23:03:00Z"
+  },
+  {
+    "id": "review-173",
+    "sessionId": "session-11",
+    "speakerId": "speaker-24",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": "Some useful ideas.",
+    "submittedAt": "2026-11-12T23:17:00Z"
+  },
+  {
+    "id": "review-174",
+    "sessionId": "session-14",
+    "speakerId": "speaker-08",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": "Clear and practical.",
+    "submittedAt": "2026-11-12T23:23:00Z"
+  },
+  {
+    "id": "review-175",
+    "sessionId": "session-17",
+    "speakerId": "speaker-20",
+    "sessionRating": 5,
+    "speakerRating": 4,
+    "comment": "Brilliant demo.",
+    "submittedAt": "2026-11-12T23:24:00Z"
+  },
+  {
+    "id": "review-176",
+    "sessionId": "session-13",
+    "speakerId": "speaker-01",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": "Some useful ideas.",
+    "submittedAt": "2026-11-12T23:39:00Z"
+  },
+  {
+    "id": "review-177",
+    "sessionId": "session-19",
+    "speakerId": "speaker-15",
+    "sessionRating": 4,
+    "speakerRating": 5,
+    "comment": "I will try this at work next week.",
+    "submittedAt": "2026-11-12T23:40:00Z"
+  },
+  {
+    "id": "review-178",
+    "sessionId": "session-13",
+    "speakerId": "speaker-01",
+    "sessionRating": 2,
+    "speakerRating": 4,
+    "comment": "Ran out of time before the good part.",
+    "submittedAt": "2026-11-12T23:45:00Z"
+  },
+  {
+    "id": "review-179",
+    "sessionId": "session-17",
+    "speakerId": "speaker-20",
+    "sessionRating": 4,
+    "speakerRating": 2,
+    "comment": null,
+    "submittedAt": "2026-11-12T23:45:00Z"
+  },
+  {
+    "id": "review-180",
+    "sessionId": "session-18",
+    "speakerId": "speaker-25",
+    "sessionRating": 4,
+    "speakerRating": 5,
+    "comment": "I will try this at work next week.",
+    "submittedAt": "2026-11-12T23:48:00Z"
+  },
+  {
+    "id": "review-181",
+    "sessionId": "session-13",
+    "speakerId": "speaker-06",
+    "sessionRating": 3,
+    "speakerRating": 2,
+    "comment": "Some useful ideas.",
+    "submittedAt": "2026-11-12T23:55:00Z"
+  },
+  {
+    "id": "review-182",
+    "sessionId": "session-10",
+    "speakerId": "speaker-16",
+    "sessionRating": 5,
+    "speakerRating": 5,
+    "comment": null,
+    "submittedAt": "2026-11-12T23:57:00Z"
+  },
+  {
+    "id": "review-183",
+    "sessionId": "session-11",
+    "speakerId": "speaker-24",
+    "sessionRating": 2,
+    "speakerRating": 3,
+    "comment": "Ran out of time before the good part.",
+    "submittedAt": "2026-11-12T23:57:00Z"
+  },
+  {
+    "id": "review-184",
+    "sessionId": "session-13",
+    "speakerId": "speaker-06",
+    "sessionRating": 2,
+    "speakerRating": 2,
+    "comment": "Interesting topic, weak delivery.",
+    "submittedAt": "2026-11-13T00:03:00Z"
+  },
+  {
+    "id": "review-185",
+    "sessionId": "session-09",
+    "speakerId": "speaker-20",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-13T00:05:00Z"
+  },
+  {
+    "id": "review-186",
+    "sessionId": "session-16",
+    "speakerId": "speaker-24",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": "Clear and practical.",
+    "submittedAt": "2026-11-13T00:05:00Z"
+  },
+  {
+    "id": "review-187",
+    "sessionId": "session-13",
+    "speakerId": "speaker-06",
+    "sessionRating": 2,
+    "speakerRating": 3,
+    "comment": "Ran out of time before the good part.",
+    "submittedAt": "2026-11-13T00:15:00Z"
+  },
+  {
+    "id": "review-188",
+    "sessionId": "session-13",
+    "speakerId": "speaker-06",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-13T00:24:00Z"
+  },
+  {
+    "id": "review-189",
+    "sessionId": "session-13",
+    "speakerId": "speaker-01",
+    "sessionRating": 2,
+    "speakerRating": 3,
+    "comment": "Interesting topic, weak delivery.",
+    "submittedAt": "2026-11-13T00:32:00Z"
+  },
+  {
+    "id": "review-190",
+    "sessionId": "session-20",
+    "speakerId": "speaker-10",
+    "sessionRating": 4,
+    "speakerRating": 5,
+    "comment": "Clear and practical.",
+    "submittedAt": "2026-11-13T00:42:00Z"
+  },
+  {
+    "id": "review-191",
+    "sessionId": "session-17",
+    "speakerId": "speaker-21",
+    "sessionRating": 5,
+    "speakerRating": 4,
+    "comment": "Brilliant demo.",
+    "submittedAt": "2026-11-13T00:44:00Z"
+  },
+  {
+    "id": "review-192",
+    "sessionId": "session-14",
+    "speakerId": "speaker-08",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": "I will try this at work next week.",
+    "submittedAt": "2026-11-13T00:45:00Z"
+  },
+  {
+    "id": "review-193",
+    "sessionId": "session-13",
+    "speakerId": "speaker-06",
+    "sessionRating": 3,
+    "speakerRating": 2,
+    "comment": "Some useful ideas.",
+    "submittedAt": "2026-11-13T00:49:00Z"
+  },
+  {
+    "id": "review-194",
+    "sessionId": "session-14",
+    "speakerId": "speaker-08",
+    "sessionRating": 3,
+    "speakerRating": 5,
+    "comment": null,
+    "submittedAt": "2026-11-13T01:08:00Z"
+  },
+  {
+    "id": "review-195",
+    "sessionId": "session-14",
+    "speakerId": "speaker-11",
+    "sessionRating": 4,
+    "speakerRating": 5,
+    "comment": "I will try this at work next week.",
+    "submittedAt": "2026-11-13T01:09:00Z"
+  },
+  {
+    "id": "review-196",
+    "sessionId": "session-18",
+    "speakerId": "speaker-25",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": "Great examples.",
+    "submittedAt": "2026-11-13T01:44:00Z"
+  },
+  {
+    "id": "review-197",
+    "sessionId": "session-18",
+    "speakerId": "speaker-25",
+    "sessionRating": 5,
+    "speakerRating": 5,
+    "comment": null,
+    "submittedAt": "2026-11-13T02:36:00Z"
+  },
+  {
+    "id": "review-198",
+    "sessionId": "session-21",
+    "speakerId": "speaker-26",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": "Great examples.",
+    "submittedAt": "2026-11-13T09:54:00Z"
+  },
+  {
+    "id": "review-199",
+    "sessionId": "session-21",
+    "speakerId": "speaker-26",
+    "sessionRating": 4,
+    "speakerRating": 5,
+    "comment": "Clear and practical.",
+    "submittedAt": "2026-11-13T10:00:00Z"
+  },
+  {
+    "id": "review-200",
+    "sessionId": "session-21",
+    "speakerId": "speaker-26",
+    "sessionRating": 3,
+    "speakerRating": 3,
+    "comment": "Solid overview.",
+    "submittedAt": "2026-11-13T10:06:00Z"
+  },
+  {
+    "id": "review-201",
+    "sessionId": "session-21",
+    "speakerId": "speaker-26",
+    "sessionRating": 2,
+    "speakerRating": 4,
+    "comment": "The examples did not match my use case.",
+    "submittedAt": "2026-11-13T10:26:00Z"
+  },
+  {
+    "id": "review-202",
+    "sessionId": "session-21",
+    "speakerId": "speaker-26",
+    "sessionRating": 4,
+    "speakerRating": 5,
+    "comment": "Great examples.",
+    "submittedAt": "2026-11-13T10:26:00Z"
+  },
+  {
+    "id": "review-203",
+    "sessionId": "session-21",
+    "speakerId": "speaker-26",
+    "sessionRating": 5,
+    "speakerRating": 5,
+    "comment": "Best talk of the day.",
+    "submittedAt": "2026-11-13T10:32:00Z"
+  },
+  {
+    "id": "review-204",
+    "sessionId": "session-21",
+    "speakerId": "speaker-26",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": "I will try this at work next week.",
+    "submittedAt": "2026-11-13T10:39:00Z"
+  },
+  {
+    "id": "review-205",
+    "sessionId": "session-21",
+    "speakerId": "speaker-26",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-13T10:43:00Z"
+  },
+  {
+    "id": "review-206",
+    "sessionId": "session-22",
+    "speakerId": "speaker-05",
+    "sessionRating": 5,
+    "speakerRating": 5,
+    "comment": null,
+    "submittedAt": "2026-11-13T10:56:00Z"
+  },
+  {
+    "id": "review-207",
+    "sessionId": "session-21",
+    "speakerId": "speaker-26",
+    "sessionRating": 4,
+    "speakerRating": 5,
+    "comment": "Clear and practical.",
+    "submittedAt": "2026-11-13T11:12:00Z"
+  },
+  {
+    "id": "review-208",
+    "sessionId": "session-23",
+    "speakerId": "speaker-08",
+    "sessionRating": 5,
+    "speakerRating": 3,
+    "comment": null,
+    "submittedAt": "2026-11-13T11:12:00Z"
+  },
+  {
+    "id": "review-209",
+    "sessionId": "session-24",
+    "speakerId": "speaker-15",
+    "sessionRating": 5,
+    "speakerRating": 5,
+    "comment": "Brilliant demo.",
+    "submittedAt": "2026-11-13T11:12:00Z"
+  },
+  {
+    "id": "review-210",
+    "sessionId": "session-21",
+    "speakerId": "speaker-26",
+    "sessionRating": 3,
+    "speakerRating": 5,
+    "comment": null,
+    "submittedAt": "2026-11-13T11:22:00Z"
+  },
+  {
+    "id": "review-211",
+    "sessionId": "session-22",
+    "speakerId": "speaker-05",
+    "sessionRating": 5,
+    "speakerRating": 3,
+    "comment": null,
+    "submittedAt": "2026-11-13T11:35:00Z"
+  },
+  {
+    "id": "review-212",
+    "sessionId": "session-22",
+    "speakerId": "speaker-05",
+    "sessionRating": 4,
+    "speakerRating": 5,
+    "comment": null,
+    "submittedAt": "2026-11-13T11:58:00Z"
+  },
+  {
+    "id": "review-213",
+    "sessionId": "session-24",
+    "speakerId": "speaker-17",
+    "sessionRating": 5,
+    "speakerRating": 5,
+    "comment": "Exactly what I came here to learn.",
+    "submittedAt": "2026-11-13T12:01:00Z"
+  },
+  {
+    "id": "review-214",
+    "sessionId": "session-23",
+    "speakerId": "speaker-10",
+    "sessionRating": 4,
+    "speakerRating": 5,
+    "comment": "Clear and practical.",
+    "submittedAt": "2026-11-13T12:20:00Z"
+  },
+  {
+    "id": "review-215",
+    "sessionId": "session-26",
+    "speakerId": "speaker-18",
+    "sessionRating": 4,
+    "speakerRating": 3,
+    "comment": "I will try this at work next week.",
+    "submittedAt": "2026-11-13T12:29:00Z"
+  },
+  {
+    "id": "review-216",
+    "sessionId": "session-23",
+    "speakerId": "speaker-10",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": "I will try this at work next week.",
+    "submittedAt": "2026-11-13T12:49:00Z"
+  },
+  {
+    "id": "review-217",
+    "sessionId": "session-23",
+    "speakerId": "speaker-10",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": "I will try this at work next week.",
+    "submittedAt": "2026-11-13T12:50:00Z"
+  },
+  {
+    "id": "review-218",
+    "sessionId": "session-25",
+    "speakerId": "speaker-30",
+    "sessionRating": 3,
+    "speakerRating": 2,
+    "comment": "Solid overview.",
+    "submittedAt": "2026-11-13T13:00:00Z"
+  },
+  {
+    "id": "review-219",
+    "sessionId": "session-23",
+    "speakerId": "speaker-10",
+    "sessionRating": 3,
+    "speakerRating": 3,
+    "comment": "Good content, but it went too fast.",
+    "submittedAt": "2026-11-13T13:03:00Z"
+  },
+  {
+    "id": "review-220",
+    "sessionId": "session-23",
+    "speakerId": "speaker-08",
+    "sessionRating": 5,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-13T13:04:00Z"
+  },
+  {
+    "id": "review-221",
+    "sessionId": "session-24",
+    "speakerId": "speaker-15",
+    "sessionRating": 5,
+    "speakerRating": 4,
+    "comment": "Brilliant demo.",
+    "submittedAt": "2026-11-13T13:07:00Z"
+  },
+  {
+    "id": "review-222",
+    "sessionId": "session-23",
+    "speakerId": "speaker-08",
+    "sessionRating": 4,
+    "speakerRating": 3,
+    "comment": null,
+    "submittedAt": "2026-11-13T13:10:00Z"
+  },
+  {
+    "id": "review-223",
+    "sessionId": "session-23",
+    "speakerId": "speaker-08",
+    "sessionRating": 4,
+    "speakerRating": 3,
+    "comment": "Clear and practical.",
+    "submittedAt": "2026-11-13T13:13:00Z"
+  },
+  {
+    "id": "review-224",
+    "sessionId": "session-28",
+    "speakerId": "speaker-13",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": "Great examples.",
+    "submittedAt": "2026-11-13T13:16:00Z"
+  },
+  {
+    "id": "review-225",
+    "sessionId": "session-24",
+    "speakerId": "speaker-15",
+    "sessionRating": 5,
+    "speakerRating": 4,
+    "comment": "Exactly what I came here to learn.",
+    "submittedAt": "2026-11-13T13:29:00Z"
+  },
+  {
+    "id": "review-226",
+    "sessionId": "session-23",
+    "speakerId": "speaker-10",
+    "sessionRating": 5,
+    "speakerRating": 3,
+    "comment": "Best talk of the day.",
+    "submittedAt": "2026-11-13T13:31:00Z"
+  },
+  {
+    "id": "review-227",
+    "sessionId": "session-23",
+    "speakerId": "speaker-10",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": "I will try this at work next week.",
+    "submittedAt": "2026-11-13T13:37:00Z"
+  },
+  {
+    "id": "review-228",
+    "sessionId": "session-24",
+    "speakerId": "speaker-17",
+    "sessionRating": 5,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-13T13:40:00Z"
+  },
+  {
+    "id": "review-229",
+    "sessionId": "session-23",
+    "speakerId": "speaker-10",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": "Good content, but it went too fast.",
+    "submittedAt": "2026-11-13T13:41:00Z"
+  },
+  {
+    "id": "review-230",
+    "sessionId": "session-27",
+    "speakerId": "speaker-07",
+    "sessionRating": 5,
+    "speakerRating": 5,
+    "comment": "Brilliant demo.",
+    "submittedAt": "2026-11-13T13:57:00Z"
+  },
+  {
+    "id": "review-231",
+    "sessionId": "session-23",
+    "speakerId": "speaker-10",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": "Some useful ideas.",
+    "submittedAt": "2026-11-13T14:01:00Z"
+  },
+  {
+    "id": "review-232",
+    "sessionId": "session-26",
+    "speakerId": "speaker-18",
+    "sessionRating": 4,
+    "speakerRating": 5,
+    "comment": "Clear and practical.",
+    "submittedAt": "2026-11-13T14:12:00Z"
+  },
+  {
+    "id": "review-233",
+    "sessionId": "session-21",
+    "speakerId": "speaker-26",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": "Clear and practical.",
+    "submittedAt": "2026-11-13T14:19:00Z"
+  },
+  {
+    "id": "review-234",
+    "sessionId": "session-26",
+    "speakerId": "speaker-18",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-13T14:25:00Z"
+  },
+  {
+    "id": "review-235",
+    "sessionId": "session-32",
+    "speakerId": "speaker-04",
+    "sessionRating": 3,
+    "speakerRating": 3,
+    "comment": "Good content, but it went too fast.",
+    "submittedAt": "2026-11-13T14:28:00Z"
+  },
+  {
+    "id": "review-236",
+    "sessionId": "session-24",
+    "speakerId": "speaker-15",
+    "sessionRating": 4,
+    "speakerRating": 3,
+    "comment": "Clear and practical.",
+    "submittedAt": "2026-11-13T14:29:00Z"
+  },
+  {
+    "id": "review-237",
+    "sessionId": "session-27",
+    "speakerId": "speaker-07",
+    "sessionRating": 3,
+    "speakerRating": 3,
+    "comment": null,
+    "submittedAt": "2026-11-13T14:30:00Z"
+  },
+  {
+    "id": "review-238",
+    "sessionId": "session-23",
+    "speakerId": "speaker-10",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-13T14:42:00Z"
+  },
+  {
+    "id": "review-239",
+    "sessionId": "session-26",
+    "speakerId": "speaker-18",
+    "sessionRating": 3,
+    "speakerRating": 5,
+    "comment": "Good content, but it went too fast.",
+    "submittedAt": "2026-11-13T14:42:00Z"
+  },
+  {
+    "id": "review-240",
+    "sessionId": "session-28",
+    "speakerId": "speaker-17",
+    "sessionRating": 2,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-13T14:42:00Z"
+  },
+  {
+    "id": "review-241",
+    "sessionId": "session-29",
+    "speakerId": "speaker-23",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-13T14:52:00Z"
+  },
+  {
+    "id": "review-242",
+    "sessionId": "session-28",
+    "speakerId": "speaker-17",
+    "sessionRating": 5,
+    "speakerRating": 4,
+    "comment": "Exactly what I came here to learn.",
+    "submittedAt": "2026-11-13T14:58:00Z"
+  },
+  {
+    "id": "review-243",
+    "sessionId": "session-32",
+    "speakerId": "speaker-04",
+    "sessionRating": 3,
+    "speakerRating": 3,
+    "comment": null,
+    "submittedAt": "2026-11-13T15:03:00Z"
+  },
+  {
+    "id": "review-244",
+    "sessionId": "session-29",
+    "speakerId": "speaker-23",
+    "sessionRating": 2,
+    "speakerRating": 5,
+    "comment": "Ran out of time before the good part.",
+    "submittedAt": "2026-11-13T15:04:00Z"
+  },
+  {
+    "id": "review-245",
+    "sessionId": "session-26",
+    "speakerId": "speaker-18",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": "Good content, but it went too fast.",
+    "submittedAt": "2026-11-13T15:07:00Z"
+  },
+  {
+    "id": "review-246",
+    "sessionId": "session-30",
+    "speakerId": "speaker-01",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": "I will try this at work next week.",
+    "submittedAt": "2026-11-13T15:17:00Z"
+  },
+  {
+    "id": "review-247",
+    "sessionId": "session-32",
+    "speakerId": "speaker-04",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-13T15:26:00Z"
+  },
+  {
+    "id": "review-248",
+    "sessionId": "session-29",
+    "speakerId": "speaker-23",
+    "sessionRating": 2,
+    "speakerRating": 5,
+    "comment": "Interesting topic, weak delivery.",
+    "submittedAt": "2026-11-13T15:29:00Z"
+  },
+  {
+    "id": "review-249",
+    "sessionId": "session-26",
+    "speakerId": "speaker-18",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": "Good content, but it went too fast.",
+    "submittedAt": "2026-11-13T15:30:00Z"
+  },
+  {
+    "id": "review-250",
+    "sessionId": "session-33",
+    "speakerId": "speaker-09",
+    "sessionRating": 5,
+    "speakerRating": 5,
+    "comment": "Brilliant demo.",
+    "submittedAt": "2026-11-13T15:30:00Z"
+  },
+  {
+    "id": "review-251",
+    "sessionId": "session-24",
+    "speakerId": "speaker-15",
+    "sessionRating": 5,
+    "speakerRating": 2,
+    "comment": "Best talk of the day.",
+    "submittedAt": "2026-11-13T15:42:00Z"
+  },
+  {
+    "id": "review-252",
+    "sessionId": "session-34",
+    "speakerId": "speaker-08",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": "Some useful ideas.",
+    "submittedAt": "2026-11-13T15:47:00Z"
+  },
+  {
+    "id": "review-253",
+    "sessionId": "session-23",
+    "speakerId": "speaker-10",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": "Clear and practical.",
+    "submittedAt": "2026-11-13T15:48:00Z"
+  },
+  {
+    "id": "review-254",
+    "sessionId": "session-23",
+    "speakerId": "speaker-08",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-13T15:49:00Z"
+  },
+  {
+    "id": "review-255",
+    "sessionId": "session-29",
+    "speakerId": "speaker-23",
+    "sessionRating": 3,
+    "speakerRating": 3,
+    "comment": "Some useful ideas.",
+    "submittedAt": "2026-11-13T15:56:00Z"
+  },
+  {
+    "id": "review-256",
+    "sessionId": "session-25",
+    "speakerId": "speaker-30",
+    "sessionRating": 3,
+    "speakerRating": 3,
+    "comment": null,
+    "submittedAt": "2026-11-13T15:59:00Z"
+  },
+  {
+    "id": "review-257",
+    "sessionId": "session-33",
+    "speakerId": "speaker-09",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": "Some useful ideas.",
+    "submittedAt": "2026-11-13T16:12:00Z"
+  },
+  {
+    "id": "review-258",
+    "sessionId": "session-36",
+    "speakerId": "speaker-29",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": "Solid overview.",
+    "submittedAt": "2026-11-13T16:17:00Z"
+  },
+  {
+    "id": "review-259",
+    "sessionId": "session-29",
+    "speakerId": "speaker-23",
+    "sessionRating": 1,
+    "speakerRating": 3,
+    "comment": "The audio was poor and the slides were unreadable.",
+    "submittedAt": "2026-11-13T16:18:00Z"
+  },
+  {
+    "id": "review-260",
+    "sessionId": "session-35",
+    "speakerId": "speaker-28",
+    "sessionRating": 5,
+    "speakerRating": 2,
+    "comment": null,
+    "submittedAt": "2026-11-13T16:32:00Z"
+  },
+  {
+    "id": "review-261",
+    "sessionId": "session-30",
+    "speakerId": "speaker-02",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-13T16:34:00Z"
+  },
+  {
+    "id": "review-262",
+    "sessionId": "session-21",
+    "speakerId": "speaker-26",
+    "sessionRating": 5,
+    "speakerRating": 3,
+    "comment": null,
+    "submittedAt": "2026-11-13T16:36:00Z"
+  },
+  {
+    "id": "review-263",
+    "sessionId": "session-30",
+    "speakerId": "speaker-02",
+    "sessionRating": 5,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-13T16:38:00Z"
+  },
+  {
+    "id": "review-264",
+    "sessionId": "session-21",
+    "speakerId": "speaker-26",
+    "sessionRating": 5,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-13T16:40:00Z"
+  },
+  {
+    "id": "review-265",
+    "sessionId": "session-27",
+    "speakerId": "speaker-07",
+    "sessionRating": 4,
+    "speakerRating": 3,
+    "comment": null,
+    "submittedAt": "2026-11-13T16:45:00Z"
+  },
+  {
+    "id": "review-266",
+    "sessionId": "session-27",
+    "speakerId": "speaker-07",
+    "sessionRating": 4,
+    "speakerRating": 5,
+    "comment": "Great examples.",
+    "submittedAt": "2026-11-13T16:55:00Z"
+  },
+  {
+    "id": "review-267",
+    "sessionId": "session-24",
+    "speakerId": "speaker-15",
+    "sessionRating": 5,
+    "speakerRating": 5,
+    "comment": "Exactly what I came here to learn.",
+    "submittedAt": "2026-11-13T16:57:00Z"
+  },
+  {
+    "id": "review-268",
+    "sessionId": "session-27",
+    "speakerId": "speaker-07",
+    "sessionRating": 5,
+    "speakerRating": 3,
+    "comment": "Exactly what I came here to learn.",
+    "submittedAt": "2026-11-13T16:58:00Z"
+  },
+  {
+    "id": "review-269",
+    "sessionId": "session-30",
+    "speakerId": "speaker-01",
+    "sessionRating": 5,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-13T17:05:00Z"
+  },
+  {
+    "id": "review-270",
+    "sessionId": "session-21",
+    "speakerId": "speaker-26",
+    "sessionRating": 4,
+    "speakerRating": 2,
+    "comment": "Great examples.",
+    "submittedAt": "2026-11-13T17:08:00Z"
+  },
+  {
+    "id": "review-271",
+    "sessionId": "session-26",
+    "speakerId": "speaker-18",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-13T17:14:00Z"
+  },
+  {
+    "id": "review-272",
+    "sessionId": "session-38",
+    "speakerId": "speaker-27",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-13T17:16:00Z"
+  },
+  {
+    "id": "review-273",
+    "sessionId": "session-34",
+    "speakerId": "speaker-08",
+    "sessionRating": 4,
+    "speakerRating": 5,
+    "comment": "Clear and practical.",
+    "submittedAt": "2026-11-13T17:18:00Z"
+  },
+  {
+    "id": "review-274",
+    "sessionId": "session-37",
+    "speakerId": "speaker-19",
+    "sessionRating": 5,
+    "speakerRating": 4,
+    "comment": "Brilliant demo.",
+    "submittedAt": "2026-11-13T17:24:00Z"
+  },
+  {
+    "id": "review-275",
+    "sessionId": "session-23",
+    "speakerId": "speaker-10",
+    "sessionRating": 5,
+    "speakerRating": 4,
+    "comment": "Brilliant demo.",
+    "submittedAt": "2026-11-13T17:29:00Z"
+  },
+  {
+    "id": "review-276",
+    "sessionId": "session-39",
+    "speakerId": "speaker-03",
+    "sessionRating": 5,
+    "speakerRating": 3,
+    "comment": "Exactly what I came here to learn.",
+    "submittedAt": "2026-11-13T17:35:00Z"
+  },
+  {
+    "id": "review-277",
+    "sessionId": "session-24",
+    "speakerId": "speaker-15",
+    "sessionRating": 5,
+    "speakerRating": 2,
+    "comment": null,
+    "submittedAt": "2026-11-13T17:39:00Z"
+  },
+  {
+    "id": "review-278",
+    "sessionId": "session-24",
+    "speakerId": "speaker-17",
+    "sessionRating": 5,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-13T17:43:00Z"
+  },
+  {
+    "id": "review-279",
+    "sessionId": "session-22",
+    "speakerId": "speaker-05",
+    "sessionRating": 5,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-13T17:49:00Z"
+  },
+  {
+    "id": "review-280",
+    "sessionId": "session-35",
+    "speakerId": "speaker-28",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": "I will try this at work next week.",
+    "submittedAt": "2026-11-13T17:50:00Z"
+  },
+  {
+    "id": "review-281",
+    "sessionId": "session-32",
+    "speakerId": "speaker-04",
+    "sessionRating": 3,
+    "speakerRating": 3,
+    "comment": "Some useful ideas.",
+    "submittedAt": "2026-11-13T18:10:00Z"
+  },
+  {
+    "id": "review-282",
+    "sessionId": "session-35",
+    "speakerId": "speaker-28",
+    "sessionRating": 4,
+    "speakerRating": 3,
+    "comment": null,
+    "submittedAt": "2026-11-13T18:10:00Z"
+  },
+  {
+    "id": "review-283",
+    "sessionId": "session-26",
+    "speakerId": "speaker-18",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": "Some useful ideas.",
+    "submittedAt": "2026-11-13T18:12:00Z"
+  },
+  {
+    "id": "review-284",
+    "sessionId": "session-23",
+    "speakerId": "speaker-10",
+    "sessionRating": 2,
+    "speakerRating": 3,
+    "comment": null,
+    "submittedAt": "2026-11-13T18:14:00Z"
+  },
+  {
+    "id": "review-285",
+    "sessionId": "session-22",
+    "speakerId": "speaker-05",
+    "sessionRating": 5,
+    "speakerRating": 4,
+    "comment": "Best talk of the day.",
+    "submittedAt": "2026-11-13T18:17:00Z"
+  },
+  {
+    "id": "review-286",
+    "sessionId": "session-21",
+    "speakerId": "speaker-26",
+    "sessionRating": 5,
+    "speakerRating": 4,
+    "comment": "Exactly what I came here to learn.",
+    "submittedAt": "2026-11-13T18:22:00Z"
+  },
+  {
+    "id": "review-287",
+    "sessionId": "session-37",
+    "speakerId": "speaker-19",
+    "sessionRating": 2,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-13T18:22:00Z"
+  },
+  {
+    "id": "review-288",
+    "sessionId": "session-26",
+    "speakerId": "speaker-18",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": "Some useful ideas.",
+    "submittedAt": "2026-11-13T18:32:00Z"
+  },
+  {
+    "id": "review-289",
+    "sessionId": "session-21",
+    "speakerId": "speaker-26",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-13T18:37:00Z"
+  },
+  {
+    "id": "review-290",
+    "sessionId": "session-33",
+    "speakerId": "speaker-09",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": "Clear and practical.",
+    "submittedAt": "2026-11-13T18:41:00Z"
+  },
+  {
+    "id": "review-291",
+    "sessionId": "session-35",
+    "speakerId": "speaker-28",
+    "sessionRating": 4,
+    "speakerRating": 3,
+    "comment": null,
+    "submittedAt": "2026-11-13T18:48:00Z"
+  },
+  {
+    "id": "review-292",
+    "sessionId": "session-35",
+    "speakerId": "speaker-28",
+    "sessionRating": 4,
+    "speakerRating": 2,
+    "comment": "I will try this at work next week.",
+    "submittedAt": "2026-11-13T18:53:00Z"
+  },
+  {
+    "id": "review-293",
+    "sessionId": "session-31",
+    "speakerId": "speaker-14",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": "Some useful ideas.",
+    "submittedAt": "2026-11-13T18:57:00Z"
+  },
+  {
+    "id": "review-294",
+    "sessionId": "session-37",
+    "speakerId": "speaker-19",
+    "sessionRating": 3,
+    "speakerRating": 3,
+    "comment": "Some useful ideas.",
+    "submittedAt": "2026-11-13T18:57:00Z"
+  },
+  {
+    "id": "review-295",
+    "sessionId": "session-24",
+    "speakerId": "speaker-15",
+    "sessionRating": 3,
+    "speakerRating": 5,
+    "comment": null,
+    "submittedAt": "2026-11-13T19:03:00Z"
+  },
+  {
+    "id": "review-296",
+    "sessionId": "session-38",
+    "speakerId": "speaker-27",
+    "sessionRating": 4,
+    "speakerRating": 5,
+    "comment": "Clear and practical.",
+    "submittedAt": "2026-11-13T19:06:00Z"
+  },
+  {
+    "id": "review-297",
+    "sessionId": "session-29",
+    "speakerId": "speaker-23",
+    "sessionRating": 3,
+    "speakerRating": 3,
+    "comment": "Solid overview.",
+    "submittedAt": "2026-11-13T19:08:00Z"
+  },
+  {
+    "id": "review-298",
+    "sessionId": "session-26",
+    "speakerId": "speaker-18",
+    "sessionRating": 4,
+    "speakerRating": 2,
+    "comment": "I will try this at work next week.",
+    "submittedAt": "2026-11-13T19:12:00Z"
+  },
+  {
+    "id": "review-299",
+    "sessionId": "session-22",
+    "speakerId": "speaker-05",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-13T19:18:00Z"
+  },
+  {
+    "id": "review-300",
+    "sessionId": "session-30",
+    "speakerId": "speaker-02",
+    "sessionRating": 5,
+    "speakerRating": 5,
+    "comment": "Brilliant demo.",
+    "submittedAt": "2026-11-13T19:23:00Z"
+  },
+  {
+    "id": "review-301",
+    "sessionId": "session-27",
+    "speakerId": "speaker-07",
+    "sessionRating": 5,
+    "speakerRating": 5,
+    "comment": "Brilliant demo.",
+    "submittedAt": "2026-11-13T19:31:00Z"
+  },
+  {
+    "id": "review-302",
+    "sessionId": "session-33",
+    "speakerId": "speaker-09",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": "Good content, but it went too fast.",
+    "submittedAt": "2026-11-13T19:36:00Z"
+  },
+  {
+    "id": "review-303",
+    "sessionId": "session-23",
+    "speakerId": "speaker-08",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": "Some useful ideas.",
+    "submittedAt": "2026-11-13T19:37:00Z"
+  },
+  {
+    "id": "review-304",
+    "sessionId": "session-26",
+    "speakerId": "speaker-18",
+    "sessionRating": 3,
+    "speakerRating": 5,
+    "comment": "Solid overview.",
+    "submittedAt": "2026-11-13T19:37:00Z"
+  },
+  {
+    "id": "review-305",
+    "sessionId": "session-39",
+    "speakerId": "speaker-06",
+    "sessionRating": 4,
+    "speakerRating": 3,
+    "comment": "I will try this at work next week.",
+    "submittedAt": "2026-11-13T19:51:00Z"
+  },
+  {
+    "id": "review-306",
+    "sessionId": "session-25",
+    "speakerId": "speaker-30",
+    "sessionRating": 3,
+    "speakerRating": 5,
+    "comment": "Some useful ideas.",
+    "submittedAt": "2026-11-13T19:52:00Z"
+  },
+  {
+    "id": "review-307",
+    "sessionId": "session-26",
+    "speakerId": "speaker-18",
+    "sessionRating": 2,
+    "speakerRating": 5,
+    "comment": "Ran out of time before the good part.",
+    "submittedAt": "2026-11-13T19:57:00Z"
+  },
+  {
+    "id": "review-308",
+    "sessionId": "session-26",
+    "speakerId": "speaker-18",
+    "sessionRating": 4,
+    "speakerRating": 2,
+    "comment": "I will try this at work next week.",
+    "submittedAt": "2026-11-13T20:00:00Z"
+  },
+  {
+    "id": "review-309",
+    "sessionId": "session-29",
+    "speakerId": "speaker-23",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-13T20:02:00Z"
+  },
+  {
+    "id": "review-310",
+    "sessionId": "session-37",
+    "speakerId": "speaker-19",
+    "sessionRating": 3,
+    "speakerRating": 3,
+    "comment": "Some useful ideas.",
+    "submittedAt": "2026-11-13T20:02:00Z"
+  },
+  {
+    "id": "review-311",
+    "sessionId": "session-39",
+    "speakerId": "speaker-03",
+    "sessionRating": 5,
+    "speakerRating": 3,
+    "comment": "Exactly what I came here to learn.",
+    "submittedAt": "2026-11-13T20:02:00Z"
+  },
+  {
+    "id": "review-312",
+    "sessionId": "session-33",
+    "speakerId": "speaker-09",
+    "sessionRating": 5,
+    "speakerRating": 4,
+    "comment": "Brilliant demo.",
+    "submittedAt": "2026-11-13T20:03:00Z"
+  },
+  {
+    "id": "review-313",
+    "sessionId": "session-34",
+    "speakerId": "speaker-08",
+    "sessionRating": 5,
+    "speakerRating": 3,
+    "comment": "Best talk of the day.",
+    "submittedAt": "2026-11-13T20:04:00Z"
+  },
+  {
+    "id": "review-314",
+    "sessionId": "session-31",
+    "speakerId": "speaker-14",
+    "sessionRating": 3,
+    "speakerRating": 3,
+    "comment": "Solid overview.",
+    "submittedAt": "2026-11-13T20:09:00Z"
+  },
+  {
+    "id": "review-315",
+    "sessionId": "session-30",
+    "speakerId": "speaker-02",
+    "sessionRating": 4,
+    "speakerRating": 5,
+    "comment": null,
+    "submittedAt": "2026-11-13T20:20:00Z"
+  },
+  {
+    "id": "review-316",
+    "sessionId": "session-32",
+    "speakerId": "speaker-04",
+    "sessionRating": 4,
+    "speakerRating": 2,
+    "comment": null,
+    "submittedAt": "2026-11-13T20:26:00Z"
+  },
+  {
+    "id": "review-317",
+    "sessionId": "session-33",
+    "speakerId": "speaker-09",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-13T20:28:00Z"
+  },
+  {
+    "id": "review-318",
+    "sessionId": "session-39",
+    "speakerId": "speaker-06",
+    "sessionRating": 2,
+    "speakerRating": 4,
+    "comment": "Interesting topic, weak delivery.",
+    "submittedAt": "2026-11-13T20:30:00Z"
+  },
+  {
+    "id": "review-319",
+    "sessionId": "session-26",
+    "speakerId": "speaker-18",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": "Solid overview.",
+    "submittedAt": "2026-11-13T20:31:00Z"
+  },
+  {
+    "id": "review-320",
+    "sessionId": "session-26",
+    "speakerId": "speaker-18",
+    "sessionRating": 3,
+    "speakerRating": 3,
+    "comment": "Solid overview.",
+    "submittedAt": "2026-11-13T20:33:00Z"
+  },
+  {
+    "id": "review-321",
+    "sessionId": "session-35",
+    "speakerId": "speaker-28",
+    "sessionRating": 3,
+    "speakerRating": 5,
+    "comment": null,
+    "submittedAt": "2026-11-13T20:33:00Z"
+  },
+  {
+    "id": "review-322",
+    "sessionId": "session-38",
+    "speakerId": "speaker-27",
+    "sessionRating": 3,
+    "speakerRating": 5,
+    "comment": null,
+    "submittedAt": "2026-11-13T20:36:00Z"
+  },
+  {
+    "id": "review-323",
+    "sessionId": "session-29",
+    "speakerId": "speaker-23",
+    "sessionRating": 3,
+    "speakerRating": 3,
+    "comment": "Good content, but it went too fast.",
+    "submittedAt": "2026-11-13T20:37:00Z"
+  },
+  {
+    "id": "review-324",
+    "sessionId": "session-29",
+    "speakerId": "speaker-23",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": "Some useful ideas.",
+    "submittedAt": "2026-11-13T20:38:00Z"
+  },
+  {
+    "id": "review-325",
+    "sessionId": "session-38",
+    "speakerId": "speaker-27",
+    "sessionRating": 4,
+    "speakerRating": 5,
+    "comment": "I will try this at work next week.",
+    "submittedAt": "2026-11-13T20:38:00Z"
+  },
+  {
+    "id": "review-326",
+    "sessionId": "session-29",
+    "speakerId": "speaker-23",
+    "sessionRating": 2,
+    "speakerRating": 3,
+    "comment": "The examples did not match my use case.",
+    "submittedAt": "2026-11-13T20:39:00Z"
+  },
+  {
+    "id": "review-327",
+    "sessionId": "session-30",
+    "speakerId": "speaker-02",
+    "sessionRating": 5,
+    "speakerRating": 4,
+    "comment": "Exactly what I came here to learn.",
+    "submittedAt": "2026-11-13T20:44:00Z"
+  },
+  {
+    "id": "review-328",
+    "sessionId": "session-37",
+    "speakerId": "speaker-19",
+    "sessionRating": 3,
+    "speakerRating": 2,
+    "comment": "Good content, but it went too fast.",
+    "submittedAt": "2026-11-13T20:49:00Z"
+  },
+  {
+    "id": "review-329",
+    "sessionId": "session-27",
+    "speakerId": "speaker-07",
+    "sessionRating": 3,
+    "speakerRating": 5,
+    "comment": "Good content, but it went too fast.",
+    "submittedAt": "2026-11-13T20:50:00Z"
+  },
+  {
+    "id": "review-330",
+    "sessionId": "session-29",
+    "speakerId": "speaker-23",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-13T20:51:00Z"
+  },
+  {
+    "id": "review-331",
+    "sessionId": "session-37",
+    "speakerId": "speaker-19",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": "Good content, but it went too fast.",
+    "submittedAt": "2026-11-13T20:51:00Z"
+  },
+  {
+    "id": "review-332",
+    "sessionId": "session-39",
+    "speakerId": "speaker-06",
+    "sessionRating": 2,
+    "speakerRating": 3,
+    "comment": "Ran out of time before the good part.",
+    "submittedAt": "2026-11-13T20:53:00Z"
+  },
+  {
+    "id": "review-333",
+    "sessionId": "session-26",
+    "speakerId": "speaker-18",
+    "sessionRating": 2,
+    "speakerRating": 3,
+    "comment": "Ran out of time before the good part.",
+    "submittedAt": "2026-11-13T20:58:00Z"
+  },
+  {
+    "id": "review-334",
+    "sessionId": "session-35",
+    "speakerId": "speaker-28",
+    "sessionRating": 3,
+    "speakerRating": 3,
+    "comment": null,
+    "submittedAt": "2026-11-13T20:58:00Z"
+  },
+  {
+    "id": "review-335",
+    "sessionId": "session-33",
+    "speakerId": "speaker-09",
+    "sessionRating": 4,
+    "speakerRating": 2,
+    "comment": "I will try this at work next week.",
+    "submittedAt": "2026-11-13T21:15:00Z"
+  },
+  {
+    "id": "review-336",
+    "sessionId": "session-31",
+    "speakerId": "speaker-14",
+    "sessionRating": 2,
+    "speakerRating": 4,
+    "comment": "Interesting topic, weak delivery.",
+    "submittedAt": "2026-11-13T21:17:00Z"
+  },
+  {
+    "id": "review-337",
+    "sessionId": "session-38",
+    "speakerId": "speaker-27",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-13T21:27:00Z"
+  },
+  {
+    "id": "review-338",
+    "sessionId": "session-29",
+    "speakerId": "speaker-23",
+    "sessionRating": 4,
+    "speakerRating": 2,
+    "comment": "Clear and practical.",
+    "submittedAt": "2026-11-13T21:28:00Z"
+  },
+  {
+    "id": "review-339",
+    "sessionId": "session-34",
+    "speakerId": "speaker-08",
+    "sessionRating": 4,
+    "speakerRating": 5,
+    "comment": "I will try this at work next week.",
+    "submittedAt": "2026-11-13T21:36:00Z"
+  },
+  {
+    "id": "review-340",
+    "sessionId": "session-38",
+    "speakerId": "speaker-27",
+    "sessionRating": 4,
+    "speakerRating": 5,
+    "comment": "Clear and practical.",
+    "submittedAt": "2026-11-13T21:43:00Z"
+  },
+  {
+    "id": "review-341",
+    "sessionId": "session-26",
+    "speakerId": "speaker-18",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": "Some useful ideas.",
+    "submittedAt": "2026-11-13T21:46:00Z"
+  },
+  {
+    "id": "review-342",
+    "sessionId": "session-36",
+    "speakerId": "speaker-29",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": "I will try this at work next week.",
+    "submittedAt": "2026-11-13T21:54:00Z"
+  },
+  {
+    "id": "review-343",
+    "sessionId": "session-39",
+    "speakerId": "speaker-06",
+    "sessionRating": 5,
+    "speakerRating": 2,
+    "comment": null,
+    "submittedAt": "2026-11-13T21:58:00Z"
+  },
+  {
+    "id": "review-344",
+    "sessionId": "session-37",
+    "speakerId": "speaker-19",
+    "sessionRating": 2,
+    "speakerRating": 5,
+    "comment": "The examples did not match my use case.",
+    "submittedAt": "2026-11-13T22:05:00Z"
+  },
+  {
+    "id": "review-345",
+    "sessionId": "session-34",
+    "speakerId": "speaker-08",
+    "sessionRating": 3,
+    "speakerRating": 3,
+    "comment": "Good content, but it went too fast.",
+    "submittedAt": "2026-11-13T22:10:00Z"
+  },
+  {
+    "id": "review-346",
+    "sessionId": "session-29",
+    "speakerId": "speaker-23",
+    "sessionRating": 2,
+    "speakerRating": 3,
+    "comment": "The examples did not match my use case.",
+    "submittedAt": "2026-11-13T22:12:00Z"
+  },
+  {
+    "id": "review-347",
+    "sessionId": "session-31",
+    "speakerId": "speaker-14",
+    "sessionRating": 3,
+    "speakerRating": 3,
+    "comment": "Solid overview.",
+    "submittedAt": "2026-11-13T22:14:00Z"
+  },
+  {
+    "id": "review-348",
+    "sessionId": "session-37",
+    "speakerId": "speaker-19",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": "Solid overview.",
+    "submittedAt": "2026-11-13T22:23:00Z"
+  },
+  {
+    "id": "review-349",
+    "sessionId": "session-38",
+    "speakerId": "speaker-27",
+    "sessionRating": 4,
+    "speakerRating": 5,
+    "comment": "Great examples.",
+    "submittedAt": "2026-11-13T22:33:00Z"
+  },
+  {
+    "id": "review-350",
+    "sessionId": "session-37",
+    "speakerId": "speaker-19",
+    "sessionRating": 3,
+    "speakerRating": 5,
+    "comment": null,
+    "submittedAt": "2026-11-13T22:35:00Z"
+  },
+  {
+    "id": "review-351",
+    "sessionId": "session-33",
+    "speakerId": "speaker-09",
+    "sessionRating": 4,
+    "speakerRating": 5,
+    "comment": "Great examples.",
+    "submittedAt": "2026-11-13T22:36:00Z"
+  },
+  {
+    "id": "review-352",
+    "sessionId": "session-38",
+    "speakerId": "speaker-27",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": "Good content, but it went too fast.",
+    "submittedAt": "2026-11-13T22:42:00Z"
+  },
+  {
+    "id": "review-353",
+    "sessionId": "session-37",
+    "speakerId": "speaker-19",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": "Good content, but it went too fast.",
+    "submittedAt": "2026-11-13T22:45:00Z"
+  },
+  {
+    "id": "review-354",
+    "sessionId": "session-33",
+    "speakerId": "speaker-09",
+    "sessionRating": 5,
+    "speakerRating": 3,
+    "comment": "Brilliant demo.",
+    "submittedAt": "2026-11-13T22:51:00Z"
+  },
+  {
+    "id": "review-355",
+    "sessionId": "session-34",
+    "speakerId": "speaker-08",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": "Solid overview.",
+    "submittedAt": "2026-11-13T22:55:00Z"
+  },
+  {
+    "id": "review-356",
+    "sessionId": "session-37",
+    "speakerId": "speaker-19",
+    "sessionRating": 4,
+    "speakerRating": 2,
+    "comment": "Clear and practical.",
+    "submittedAt": "2026-11-13T22:56:00Z"
+  },
+  {
+    "id": "review-357",
+    "sessionId": "session-30",
+    "speakerId": "speaker-01",
+    "sessionRating": 4,
+    "speakerRating": 5,
+    "comment": "I will try this at work next week.",
+    "submittedAt": "2026-11-13T22:57:00Z"
+  },
+  {
+    "id": "review-358",
+    "sessionId": "session-37",
+    "speakerId": "speaker-19",
+    "sessionRating": 3,
+    "speakerRating": 3,
+    "comment": "Some useful ideas.",
+    "submittedAt": "2026-11-13T23:00:00Z"
+  },
+  {
+    "id": "review-359",
+    "sessionId": "session-33",
+    "speakerId": "speaker-09",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": "I will try this at work next week.",
+    "submittedAt": "2026-11-13T23:06:00Z"
+  },
+  {
+    "id": "review-360",
+    "sessionId": "session-31",
+    "speakerId": "speaker-14",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-13T23:10:00Z"
+  },
+  {
+    "id": "review-361",
+    "sessionId": "session-30",
+    "speakerId": "speaker-02",
+    "sessionRating": 5,
+    "speakerRating": 4,
+    "comment": "Brilliant demo.",
+    "submittedAt": "2026-11-13T23:14:00Z"
+  },
+  {
+    "id": "review-362",
+    "sessionId": "session-34",
+    "speakerId": "speaker-08",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": "Solid overview.",
+    "submittedAt": "2026-11-13T23:15:00Z"
+  },
+  {
+    "id": "review-363",
+    "sessionId": "session-31",
+    "speakerId": "speaker-14",
+    "sessionRating": 2,
+    "speakerRating": 4,
+    "comment": "Ran out of time before the good part.",
+    "submittedAt": "2026-11-13T23:30:00Z"
+  },
+  {
+    "id": "review-364",
+    "sessionId": "session-37",
+    "speakerId": "speaker-19",
+    "sessionRating": 4,
+    "speakerRating": 5,
+    "comment": "I will try this at work next week.",
+    "submittedAt": "2026-11-13T23:34:00Z"
+  },
+  {
+    "id": "review-365",
+    "sessionId": "session-37",
+    "speakerId": "speaker-19",
+    "sessionRating": 3,
+    "speakerRating": 3,
+    "comment": null,
+    "submittedAt": "2026-11-13T23:36:00Z"
+  },
+  {
+    "id": "review-366",
+    "sessionId": "session-34",
+    "speakerId": "speaker-08",
+    "sessionRating": 3,
+    "speakerRating": 3,
+    "comment": "Some useful ideas.",
+    "submittedAt": "2026-11-13T23:40:00Z"
+  },
+  {
+    "id": "review-367",
+    "sessionId": "session-33",
+    "speakerId": "speaker-09",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": "Solid overview.",
+    "submittedAt": "2026-11-13T23:42:00Z"
+  },
+  {
+    "id": "review-368",
+    "sessionId": "session-37",
+    "speakerId": "speaker-19",
+    "sessionRating": 2,
+    "speakerRating": 4,
+    "comment": "Ran out of time before the good part.",
+    "submittedAt": "2026-11-13T23:43:00Z"
+  },
+  {
+    "id": "review-369",
+    "sessionId": "session-38",
+    "speakerId": "speaker-27",
+    "sessionRating": 3,
+    "speakerRating": 3,
+    "comment": "Good content, but it went too fast.",
+    "submittedAt": "2026-11-13T23:43:00Z"
+  },
+  {
+    "id": "review-370",
+    "sessionId": "session-30",
+    "speakerId": "speaker-01",
+    "sessionRating": 5,
+    "speakerRating": 5,
+    "comment": null,
+    "submittedAt": "2026-11-13T23:56:00Z"
+  },
+  {
+    "id": "review-371",
+    "sessionId": "session-30",
+    "speakerId": "speaker-01",
+    "sessionRating": 4,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-14T00:02:00Z"
+  },
+  {
+    "id": "review-372",
+    "sessionId": "session-29",
+    "speakerId": "speaker-23",
+    "sessionRating": 2,
+    "speakerRating": 4,
+    "comment": "Interesting topic, weak delivery.",
+    "submittedAt": "2026-11-14T00:03:00Z"
+  },
+  {
+    "id": "review-373",
+    "sessionId": "session-39",
+    "speakerId": "speaker-03",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-14T00:09:00Z"
+  },
+  {
+    "id": "review-374",
+    "sessionId": "session-33",
+    "speakerId": "speaker-09",
+    "sessionRating": 5,
+    "speakerRating": 4,
+    "comment": null,
+    "submittedAt": "2026-11-14T00:10:00Z"
+  },
+  {
+    "id": "review-375",
+    "sessionId": "session-33",
+    "speakerId": "speaker-09",
+    "sessionRating": 5,
+    "speakerRating": 4,
+    "comment": "Exactly what I came here to learn.",
+    "submittedAt": "2026-11-14T00:18:00Z"
+  },
+  {
+    "id": "review-376",
+    "sessionId": "session-34",
+    "speakerId": "speaker-08",
+    "sessionRating": 4,
+    "speakerRating": 3,
+    "comment": "Great examples.",
+    "submittedAt": "2026-11-14T00:20:00Z"
+  },
+  {
+    "id": "review-377",
+    "sessionId": "session-39",
+    "speakerId": "speaker-03",
+    "sessionRating": 4,
+    "speakerRating": 3,
+    "comment": "Great examples.",
+    "submittedAt": "2026-11-14T00:37:00Z"
+  },
+  {
+    "id": "review-378",
+    "sessionId": "session-33",
+    "speakerId": "speaker-09",
+    "sessionRating": 5,
+    "speakerRating": 5,
+    "comment": "Best talk of the day.",
+    "submittedAt": "2026-11-14T00:43:00Z"
+  },
+  {
+    "id": "review-379",
+    "sessionId": "session-37",
+    "speakerId": "speaker-19",
+    "sessionRating": 3,
+    "speakerRating": 3,
+    "comment": "Solid overview.",
+    "submittedAt": "2026-11-14T01:41:00Z"
+  },
+  {
+    "id": "review-380",
+    "sessionId": "session-37",
+    "speakerId": "speaker-19",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": "Solid overview.",
+    "submittedAt": "2026-11-14T01:56:00Z"
+  },
+  {
+    "id": "review-381",
+    "sessionId": "session-38",
+    "speakerId": "speaker-27",
+    "sessionRating": 3,
+    "speakerRating": 4,
+    "comment": "Solid overview.",
+    "submittedAt": "2026-11-14T01:57:00Z"
+  },
+  {
+    "id": "review-382",
+    "sessionId": "session-37",
+    "speakerId": "speaker-19",
+    "sessionRating": 1,
+    "speakerRating": 2,
+    "comment": "Not what the abstract promised.",
+    "submittedAt": "2026-11-14T02:00:00Z"
+  },
+  {
+    "id": "review-383",
+    "sessionId": "session-37",
+    "speakerId": "speaker-19",
+    "sessionRating": 4,
+    "speakerRating": 3,
+    "comment": "I will try this at work next week.",
+    "submittedAt": "2026-11-14T02:14:00Z"
+  }
+]

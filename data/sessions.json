@@ -1,0 +1,541 @@
+[
+  {
+    "id": "session-01",
+    "title": "Inner Source for APIs",
+    "abstract": "Letting any team contribute to a shared graph without losing control.",
+    "track": "DEVELOPER_EXPERIENCE",
+    "level": "ADVANCED",
+    "startsAt": "2026-11-12T09:00:00Z",
+    "endsAt": "2026-11-12T09:45:00Z",
+    "speakerIds": [
+      "speaker-17"
+    ],
+    "roomId": "room-01"
+  },
+  {
+    "id": "session-02",
+    "title": "Error Messages Are UX",
+    "abstract": "Designing errors that help both humans and AI agents recover.",
+    "track": "DEVELOPER_EXPERIENCE",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-12T09:00:00Z",
+    "endsAt": "2026-11-12T09:45:00Z",
+    "speakerIds": [
+      "speaker-14",
+      "speaker-18"
+    ],
+    "roomId": "room-04"
+  },
+  {
+    "id": "session-03",
+    "title": "Designing Schemas for Change",
+    "abstract": "Patterns for evolving a schema without breaking clients.",
+    "track": "ARCHITECTURE",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-12T10:00:00Z",
+    "endsAt": "2026-11-12T10:45:00Z",
+    "speakerIds": [
+      "speaker-01",
+      "speaker-03"
+    ],
+    "roomId": "room-01"
+  },
+  {
+    "id": "session-04",
+    "title": "Streaming Data into GraphQL",
+    "abstract": "Serving fresh data from Kafka through subscriptions and deferred fields.",
+    "track": "DATA",
+    "level": "ADVANCED",
+    "startsAt": "2026-11-12T10:00:00Z",
+    "endsAt": "2026-11-12T10:45:00Z",
+    "speakerIds": [
+      "speaker-29"
+    ],
+    "roomId": "room-02"
+  },
+  {
+    "id": "session-05",
+    "title": "Small Models, Big Wins",
+    "abstract": "Where smaller language models beat larger ones on cost and speed.",
+    "track": "AI",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-12T10:00:00Z",
+    "endsAt": "2026-11-12T10:45:00Z",
+    "speakerIds": [
+      "speaker-08",
+      "speaker-09"
+    ],
+    "roomId": "room-05"
+  },
+  {
+    "id": "session-06",
+    "title": "Performance Budgets for APIs",
+    "abstract": "Setting and enforcing latency budgets per field and per service.",
+    "track": "PLATFORM",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-12T11:15:00Z",
+    "endsAt": "2026-11-12T12:00:00Z",
+    "speakerIds": [
+      "speaker-23",
+      "speaker-24"
+    ],
+    "roomId": "room-01"
+  },
+  {
+    "id": "session-07",
+    "title": "Governing Shared Data",
+    "abstract": "Ownership, lineage, and policy for data that many teams read.",
+    "track": "DATA",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-12T11:15:00Z",
+    "endsAt": "2026-11-12T12:00:00Z",
+    "speakerIds": [
+      "speaker-27"
+    ],
+    "roomId": "room-03"
+  },
+  {
+    "id": "session-08",
+    "title": "Query Plans Under the Microscope",
+    "abstract": "Reading router query plans to find slow joins and fix them.",
+    "track": "ARCHITECTURE",
+    "level": "ADVANCED",
+    "startsAt": "2026-11-12T11:15:00Z",
+    "endsAt": "2026-11-12T12:00:00Z",
+    "speakerIds": [
+      "speaker-01",
+      "speaker-03"
+    ],
+    "roomId": "room-06"
+  },
+  {
+    "id": "session-09",
+    "title": "Gateways Compared",
+    "abstract": "API gateways, service meshes, and graph routers, and where each one fits.",
+    "track": "PLATFORM",
+    "level": "BEGINNER",
+    "startsAt": "2026-11-12T13:30:00Z",
+    "endsAt": "2026-11-12T14:15:00Z",
+    "speakerIds": [
+      "speaker-19",
+      "speaker-20"
+    ],
+    "roomId": "room-01"
+  },
+  {
+    "id": "session-10",
+    "title": "Docs That Developers Actually Read",
+    "abstract": "Writing API documentation that answers real questions.",
+    "track": "DEVELOPER_EXPERIENCE",
+    "level": "BEGINNER",
+    "startsAt": "2026-11-12T13:30:00Z",
+    "endsAt": "2026-11-12T14:15:00Z",
+    "speakerIds": [
+      "speaker-16"
+    ],
+    "roomId": "room-02"
+  },
+  {
+    "id": "session-11",
+    "title": "Zero-Trust APIs",
+    "abstract": "Authentication and authorization patterns for a federated API.",
+    "track": "PLATFORM",
+    "level": "ADVANCED",
+    "startsAt": "2026-11-12T13:30:00Z",
+    "endsAt": "2026-11-12T14:15:00Z",
+    "speakerIds": [
+      "speaker-20",
+      "speaker-24"
+    ],
+    "roomId": "room-04"
+  },
+  {
+    "id": "session-12",
+    "title": "Guardrails for Enterprise Agents",
+    "abstract": "Access control, auditing, and rate limits for agents that touch real systems.",
+    "track": "AI",
+    "level": "ADVANCED",
+    "startsAt": "2026-11-12T13:30:00Z",
+    "endsAt": "2026-11-12T14:15:00Z",
+    "speakerIds": [
+      "speaker-08",
+      "speaker-12"
+    ],
+    "roomId": "room-05"
+  },
+  {
+    "id": "session-13",
+    "title": "Migrating a Monolith to a Supergraph",
+    "abstract": "Lessons from moving a ten-year-old REST monolith behind a federated graph one field at a time.",
+    "track": "ARCHITECTURE",
+    "level": "ADVANCED",
+    "startsAt": "2026-11-12T14:30:00Z",
+    "endsAt": "2026-11-12T15:15:00Z",
+    "speakerIds": [
+      "speaker-01",
+      "speaker-06"
+    ],
+    "roomId": "room-01"
+  },
+  {
+    "id": "session-14",
+    "title": "Building Tools for the Model Context Protocol",
+    "abstract": "Turning existing GraphQL operations into MCP tools that an agent can call.",
+    "track": "AI",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-12T14:30:00Z",
+    "endsAt": "2026-11-12T15:15:00Z",
+    "speakerIds": [
+      "speaker-08",
+      "speaker-11"
+    ],
+    "roomId": "room-02"
+  },
+  {
+    "id": "session-15",
+    "title": "Kubernetes for API Teams",
+    "abstract": "The minimum Kubernetes knowledge an API team needs.",
+    "track": "PLATFORM",
+    "level": "BEGINNER",
+    "startsAt": "2026-11-12T14:30:00Z",
+    "endsAt": "2026-11-12T15:15:00Z",
+    "speakerIds": [
+      "speaker-22"
+    ],
+    "roomId": "room-03"
+  },
+  {
+    "id": "session-16",
+    "title": "Incident Review: The Day the Graph Went Down",
+    "abstract": "A candid review of a real outage and the changes that followed.",
+    "track": "PLATFORM",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-12T14:30:00Z",
+    "endsAt": "2026-11-12T15:15:00Z",
+    "speakerIds": [
+      "speaker-24"
+    ],
+    "roomId": "room-06"
+  },
+  {
+    "id": "session-17",
+    "title": "Observability for Distributed Graphs",
+    "abstract": "Tracing one request across the router and every subgraph it touches.",
+    "track": "PLATFORM",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-12T16:00:00Z",
+    "endsAt": "2026-11-12T16:45:00Z",
+    "speakerIds": [
+      "speaker-20",
+      "speaker-21"
+    ],
+    "roomId": "room-01"
+  },
+  {
+    "id": "session-18",
+    "title": "Modeling Data for a Graph",
+    "abstract": "Turning tables and documents into types and relationships.",
+    "track": "DATA",
+    "level": "BEGINNER",
+    "startsAt": "2026-11-12T16:00:00Z",
+    "endsAt": "2026-11-12T16:45:00Z",
+    "speakerIds": [
+      "speaker-25",
+      "speaker-28"
+    ],
+    "roomId": "room-02"
+  },
+  {
+    "id": "session-19",
+    "title": "Your Portal Is a Product",
+    "abstract": "Running an internal developer portal with product management habits.",
+    "track": "DEVELOPER_EXPERIENCE",
+    "level": "BEGINNER",
+    "startsAt": "2026-11-12T16:00:00Z",
+    "endsAt": "2026-11-12T16:45:00Z",
+    "speakerIds": [
+      "speaker-13",
+      "speaker-15"
+    ],
+    "roomId": "room-03"
+  },
+  {
+    "id": "session-20",
+    "title": "Evaluating Agents in Production",
+    "abstract": "Measuring agent accuracy, cost, and latency once real users arrive.",
+    "track": "AI",
+    "level": "ADVANCED",
+    "startsAt": "2026-11-12T16:00:00Z",
+    "endsAt": "2026-11-12T16:45:00Z",
+    "speakerIds": [
+      "speaker-10",
+      "speaker-12"
+    ],
+    "roomId": "room-04"
+  },
+  {
+    "id": "session-21",
+    "title": "Open Data for Public Good",
+    "abstract": "How a non-profit publishes open datasets through a public graph.",
+    "track": "DATA",
+    "level": "BEGINNER",
+    "startsAt": "2026-11-13T09:00:00Z",
+    "endsAt": "2026-11-13T09:45:00Z",
+    "speakerIds": [
+      "speaker-26"
+    ],
+    "roomId": "room-01"
+  },
+  {
+    "id": "session-22",
+    "title": "Event-Driven Meets Graph",
+    "abstract": "Combining event streams and a federated graph without duplicating data.",
+    "track": "ARCHITECTURE",
+    "level": "ADVANCED",
+    "startsAt": "2026-11-13T09:00:00Z",
+    "endsAt": "2026-11-13T09:45:00Z",
+    "speakerIds": [
+      "speaker-05"
+    ],
+    "roomId": "room-04"
+  },
+  {
+    "id": "session-23",
+    "title": "Retrieval Without the Hype",
+    "abstract": "A practical guide to retrieval-augmented generation over company data.",
+    "track": "AI",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-13T10:00:00Z",
+    "endsAt": "2026-11-13T10:45:00Z",
+    "speakerIds": [
+      "speaker-08",
+      "speaker-10"
+    ],
+    "roomId": "room-01"
+  },
+  {
+    "id": "session-24",
+    "title": "The First Hour of Onboarding",
+    "abstract": "Measuring and shortening the time it takes a new developer to make a first API call.",
+    "track": "DEVELOPER_EXPERIENCE",
+    "level": "BEGINNER",
+    "startsAt": "2026-11-13T10:00:00Z",
+    "endsAt": "2026-11-13T10:45:00Z",
+    "speakerIds": [
+      "speaker-15",
+      "speaker-17"
+    ],
+    "roomId": "room-02"
+  },
+  {
+    "id": "session-25",
+    "title": "The Cost of a Join",
+    "abstract": "Batching, data loaders, and the N+1 problem in federated systems.",
+    "track": "DATA",
+    "level": "ADVANCED",
+    "startsAt": "2026-11-13T10:00:00Z",
+    "endsAt": "2026-11-13T10:45:00Z",
+    "speakerIds": [
+      "speaker-30"
+    ],
+    "roomId": "room-05"
+  },
+  {
+    "id": "session-26",
+    "title": "Mocking the Whole Graph",
+    "abstract": "Building realistic local environments for a federated API.",
+    "track": "DEVELOPER_EXPERIENCE",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-13T11:15:00Z",
+    "endsAt": "2026-11-13T12:00:00Z",
+    "speakerIds": [
+      "speaker-18"
+    ],
+    "roomId": "room-01"
+  },
+  {
+    "id": "session-27",
+    "title": "Agents Need Good APIs",
+    "abstract": "Why the quality of an API decides how well an AI agent can use it.",
+    "track": "AI",
+    "level": "BEGINNER",
+    "startsAt": "2026-11-13T11:15:00Z",
+    "endsAt": "2026-11-13T12:00:00Z",
+    "speakerIds": [
+      "speaker-07"
+    ],
+    "roomId": "room-03"
+  },
+  {
+    "id": "session-28",
+    "title": "Generated Clients Done Right",
+    "abstract": "Using code generation to give every team a typed client.",
+    "track": "DEVELOPER_EXPERIENCE",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-13T11:15:00Z",
+    "endsAt": "2026-11-13T12:00:00Z",
+    "speakerIds": [
+      "speaker-13",
+      "speaker-17"
+    ],
+    "roomId": "room-06"
+  },
+  {
+    "id": "session-29",
+    "title": "Running the Router at Scale",
+    "abstract": "Capacity planning, autoscaling, and tuning for a high-traffic router.",
+    "track": "PLATFORM",
+    "level": "ADVANCED",
+    "startsAt": "2026-11-13T13:30:00Z",
+    "endsAt": "2026-11-13T14:15:00Z",
+    "speakerIds": [
+      "speaker-23"
+    ],
+    "roomId": "room-01"
+  },
+  {
+    "id": "session-30",
+    "title": "Entities Explained",
+    "abstract": "A walk through keys, reference resolvers, and how the router joins data across services.",
+    "track": "ARCHITECTURE",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-13T13:30:00Z",
+    "endsAt": "2026-11-13T14:15:00Z",
+    "speakerIds": [
+      "speaker-01",
+      "speaker-02"
+    ],
+    "roomId": "room-02"
+  },
+  {
+    "id": "session-31",
+    "title": "Contract Testing for Subgraphs",
+    "abstract": "Catching breaking schema changes in CI before they reach the router.",
+    "track": "DEVELOPER_EXPERIENCE",
+    "level": "ADVANCED",
+    "startsAt": "2026-11-13T13:30:00Z",
+    "endsAt": "2026-11-13T14:15:00Z",
+    "speakerIds": [
+      "speaker-14"
+    ],
+    "roomId": "room-04"
+  },
+  {
+    "id": "session-32",
+    "title": "REST and GraphQL Side by Side",
+    "abstract": "When to keep a REST API, when to add a graph, and how to run both.",
+    "track": "ARCHITECTURE",
+    "level": "BEGINNER",
+    "startsAt": "2026-11-13T13:30:00Z",
+    "endsAt": "2026-11-13T14:15:00Z",
+    "speakerIds": [
+      "speaker-04"
+    ],
+    "roomId": "room-05"
+  },
+  {
+    "id": "session-33",
+    "title": "From Chatbot to Coworker",
+    "abstract": "Case studies of agents that complete multi-step tasks across several APIs.",
+    "track": "AI",
+    "level": "BEGINNER",
+    "startsAt": "2026-11-13T14:30:00Z",
+    "endsAt": "2026-11-13T15:15:00Z",
+    "speakerIds": [
+      "speaker-09"
+    ],
+    "roomId": "room-01"
+  },
+  {
+    "id": "session-34",
+    "title": "Prompting Is Interface Design",
+    "abstract": "Treating prompts, tool descriptions, and schema descriptions as user interface.",
+    "track": "AI",
+    "level": "BEGINNER",
+    "startsAt": "2026-11-13T14:30:00Z",
+    "endsAt": "2026-11-13T15:15:00Z",
+    "speakerIds": [
+      "speaker-08"
+    ],
+    "roomId": "room-02"
+  },
+  {
+    "id": "session-35",
+    "title": "Analytics on the Graph",
+    "abstract": "Using operation metrics to learn how clients really use your data.",
+    "track": "DATA",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-13T14:30:00Z",
+    "endsAt": "2026-11-13T15:15:00Z",
+    "speakerIds": [
+      "speaker-28"
+    ],
+    "roomId": "room-03"
+  },
+  {
+    "id": "session-36",
+    "title": "Search as a Subgraph",
+    "abstract": "Exposing a search engine through the graph with relevance intact.",
+    "track": "DATA",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-13T14:30:00Z",
+    "endsAt": "2026-11-13T15:15:00Z",
+    "speakerIds": [
+      "speaker-29"
+    ],
+    "roomId": "room-06"
+  },
+  {
+    "id": "session-37",
+    "title": "Caching Across Subgraphs",
+    "abstract": "Entity caching, cache hints, and what to never cache.",
+    "track": "PLATFORM",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-13T16:00:00Z",
+    "endsAt": "2026-11-13T16:45:00Z",
+    "speakerIds": [
+      "speaker-19"
+    ],
+    "roomId": "room-01"
+  },
+  {
+    "id": "session-38",
+    "title": "Data Contracts in Practice",
+    "abstract": "Agreeing on data shape between producers and consumers, and keeping the agreement.",
+    "track": "DATA",
+    "level": "ADVANCED",
+    "startsAt": "2026-11-13T16:00:00Z",
+    "endsAt": "2026-11-13T16:45:00Z",
+    "speakerIds": [
+      "speaker-27"
+    ],
+    "roomId": "room-02"
+  },
+  {
+    "id": "session-39",
+    "title": "The Bounded Context Is Your Subgraph",
+    "abstract": "Using domain-driven design to decide where one subgraph ends and the next begins.",
+    "track": "ARCHITECTURE",
+    "level": "BEGINNER",
+    "startsAt": "2026-11-13T16:00:00Z",
+    "endsAt": "2026-11-13T16:45:00Z",
+    "speakerIds": [
+      "speaker-03",
+      "speaker-06"
+    ],
+    "roomId": "room-03"
+  },
+  {
+    "id": "session-40",
+    "title": "One Graph, Many Teams",
+    "abstract": "How independent teams publish subgraphs that compose into a single API.",
+    "track": "ARCHITECTURE",
+    "level": "BEGINNER",
+    "startsAt": "2026-11-13T16:00:00Z",
+    "endsAt": "2026-11-13T16:45:00Z",
+    "speakerIds": [
+      "speaker-01"
+    ],
+    "roomId": "room-04"
+  }
+]

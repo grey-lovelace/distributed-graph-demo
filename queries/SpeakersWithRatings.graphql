@@ -1,0 +1,10 @@
+# Lists every speaker with their rating, so a client can filter by company type.
+query SpeakersWithRatings {
+  speakers {
+    name
+    company
+    companyType
+    topics
+    averageRating
+  }
+}

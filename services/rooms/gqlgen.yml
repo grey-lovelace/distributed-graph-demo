@@ -1,0 +1,22 @@
+# gqlgen reads this file when you run: go tool gqlgen generate
+schema:
+  - graph/schema.graphqls
+
+exec:
+  filename: graph/generated.go
+  package: graph
+
+# Federation version 2 makes gqlgen generate the _service and _entities fields for Federation 2.
+federation:
+  filename: graph/federation.go
+  package: graph
+  version: 2
+
+model:
+  filename: graph/model/models_gen.go
+  package: model
+
+resolver:
+  layout: follow-schema
+  dir: graph
+  package: graph

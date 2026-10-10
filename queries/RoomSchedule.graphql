@@ -1,0 +1,14 @@
+# Lists every room from largest to smallest, with the sessions that take place in it.
+query RoomSchedule {
+  rooms {
+    name
+    floor
+    capacity
+    hasStreaming
+    sessions {
+      title
+      startsAt
+      averageRating
+    }
+  }
+}
