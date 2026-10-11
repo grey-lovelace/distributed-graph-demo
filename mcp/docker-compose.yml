@@ -1,0 +1,107 @@
+# The MCP servers that give AI agents access to the conference platform.
+# Start the main stack first, then run this from the repository root:
+#
+#   docker compose -f mcp/docker-compose.yml up -d
+#
+# This is a separate Compose project. It joins the main stack's network, so it can reach
+# the router, the four services, and Hive by their service names.
+name: conference-mcp
+
+# The settings that the four REST MCP servers share.
+# evilfreelancer/openapi-to-mcp reads one OpenAPI spec and creates one MCP tool per endpoint.
+# The tool name comes from the URL path, and the tool description comes from the endpoint summary.
+x-rest-mcp: &rest-mcp
+  image: evilfreelancer/openapi-to-mcp:0.1.7
+  # The image is only published for amd64. On Apple Silicon, Docker runs it with emulation.
+  platform: linux/amd64
+  # The server reads the OpenAPI spec when it starts. If the service is not up yet, it exits,
+  # and Docker restarts it.
+  restart: on-failure
+
+services:
+  # ---------------------------------------------------------------------------
+  # GraphQL: one MCP server for the whole graph, through the Apollo Router.
+  # ---------------------------------------------------------------------------
+
+  # Downloads the current public schema from Hive, then exits.
+  # The Apollo MCP Server needs a schema file to build tool inputs and to run introspection.
+  graphql-schema:
+    image: curlimages/curl:8.16.0
+    # The curl image runs as a non-root user by default, which cannot write to the new volume.
+    user: root
+    entrypoint: ["sh", "-c"]
+    command:
+      - >-
+        . /hive-tokens/hive.env &&
+        curl --fail --silent --show-error
+        --header "X-Hive-CDN-Key: $$HIVE_CDN_KEY"
+        --output /schema/schema.graphql
+        "$$HIVE_CDN_ENDPOINT/sdl" &&
+        echo "Downloaded the schema from Hive."
+    volumes:
+      - hive-tokens:/hive-tokens:ro
+      - graphql-schema:/schema
+
+  graphql-mcp:
+    image: ghcr.io/apollographql/apollo-mcp-server:v1.20.0
+    command: ["/config/graphql.yaml"]
+    ports:
+      - "5100:8000"
+    volumes:
+      - ./graphql.yaml:/config/graphql.yaml:ro
+      - graphql-schema:/schema:ro
+    depends_on:
+      graphql-schema:
+        condition: service_completed_successfully
+
+  # ---------------------------------------------------------------------------
+  # REST: one MCP server for each service, built from that service's OpenAPI spec.
+  # ---------------------------------------------------------------------------
+
+  rest-mcp-speakers:
+    <<: *rest-mcp
+    environment:
+      MCP_SERVER_NAME: speakers-rest
+      MCP_OPENAPI_SPEC: http://speakers:4001/openapi.json
+      MCP_API_BASE_URL: http://speakers:4001
+    ports:
+      - "5101:3100"
+
+  rest-mcp-sessions:
+    <<: *rest-mcp
+    environment:
+      MCP_SERVER_NAME: sessions-rest
+      MCP_OPENAPI_SPEC: http://sessions:4002/openapi.json
+      MCP_API_BASE_URL: http://sessions:4002
+    ports:
+      - "5102:3100"
+
+  rest-mcp-rooms:
+    <<: *rest-mcp
+    environment:
+      MCP_SERVER_NAME: rooms-rest
+      MCP_OPENAPI_SPEC: http://rooms:4003/openapi.json
+      MCP_API_BASE_URL: http://rooms:4003
+    ports:
+      - "5103:3100"
+
+  rest-mcp-feedback:
+    <<: *rest-mcp
+    environment:
+      MCP_SERVER_NAME: feedback-rest
+      MCP_OPENAPI_SPEC: http://feedback:4004/openapi.json
+      MCP_API_BASE_URL: http://feedback:4004
+    ports:
+      - "5104:3100"
+
+networks:
+  default:
+    name: conference-platform
+    external: true
+
+volumes:
+  # The main stack owns this volume. hive-setup writes the Hive tokens to it.
+  hive-tokens:
+    name: conference-platform-hive-tokens
+    external: true
+  graphql-schema:

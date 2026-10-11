@@ -49,12 +49,12 @@ class SpeakerRatingSummary(BaseModel):
     reviewCount: int = Field(description="The number of reviews that rate the speaker.")
 
 
-@router.get("/reviews", summary="List reviews sorted by submission time. Both filters are optional, and they combine with AND.")
+@router.get("/reviews", operation_id="listReviews", summary="List reviews sorted by submission time. Both filters are optional, and they combine with AND.")
 def list_reviews(sessionId: str | None = None, speakerId: str | None = None) -> list[Review]:
     return data.find_reviews(session_id=sessionId, speaker_id=speakerId)
 
 
-@router.get("/sessions/{id}/rating-summary", summary="Get the average rating and review count for one session.")
+@router.get("/sessions/{id}/rating-summary", operation_id="getSessionRatingSummary", summary="Get the average rating and review count for one session.")
 def get_session_rating_summary(id: str) -> SessionRatingSummary:
     return SessionRatingSummary(
         sessionId=id,
@@ -63,7 +63,7 @@ def get_session_rating_summary(id: str) -> SessionRatingSummary:
     )
 
 
-@router.get("/speakers/{id}/rating-summary", summary="Get the average rating and review count for one speaker.")
+@router.get("/speakers/{id}/rating-summary", operation_id="getSpeakerRatingSummary", summary="Get the average rating and review count for one speaker.")
 def get_speaker_rating_summary(id: str) -> SpeakerRatingSummary:
     return SpeakerRatingSummary(
         speakerId=id,

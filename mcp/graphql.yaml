@@ -1,0 +1,38 @@
+# Configuration for the Apollo MCP Server.
+# It exposes the conference graph to AI agents as MCP tools.
+
+# The MCP server sends every GraphQL operation to the Apollo Router.
+endpoint: http://router:4000/
+
+transport:
+  type: streamable_http
+  address: 0.0.0.0
+  port: 8000
+  host_validation:
+    # Other containers on the Docker network call this server by its service name.
+    allowed_hosts:
+      - graphql-mcp
+
+# The schema comes from Hive. The graphql-schema container downloads it before this server starts.
+schema:
+  source: local
+  path: /schema/schema.graphql
+
+# There are no predefined operations. The agent explores the schema with these tools
+# and writes its own queries:
+#   introspect  returns a type from the schema, with its fields and their descriptions
+#   search      finds types that match search terms
+#   validate    checks a query against the schema without running it
+#   execute     runs a query through the router
+introspection:
+  introspect:
+    enabled: true
+  search:
+    enabled: true
+  validate:
+    enabled: true
+  execute:
+    enabled: true
+
+health_check:
+  enabled: true

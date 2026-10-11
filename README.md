@@ -347,6 +347,17 @@ If you change a resolver as well as the schema, rebuild the service first:
 - **Insights** shows the operations that clients sent through the router, with their latency and the fields they use.
   The router sends these usage reports to Hive about every 5 seconds, so run a few queries first.
 
+## MCP servers for AI agents
+
+The [`mcp/`](mcp) folder holds MCP servers that give an AI agent access to the same data,
+either through the graph or through the REST APIs. Start the main stack first, then run:
+
+```sh
+docker compose -f mcp/docker-compose.yml up -d
+```
+
+See [`mcp/README.md`](mcp/README.md) for the servers, their URLs and their tools.
+
 ## Ports and URLs
 
 | Service | GraphQL | REST | OpenAPI spec | Swagger UI |

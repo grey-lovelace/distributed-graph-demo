@@ -156,19 +156,12 @@ services:
       hive-setup:
         condition: service_completed_successfully
 
-  # ---------------------------------------------------------------------------
-  # Placeholder for the Apollo MCP Server. It is not built yet.
-  # It will expose the operations in ./queries as MCP tools for AI agents.
-  # ---------------------------------------------------------------------------
-
-  # mcp-server:
-  #   image: ghcr.io/apollographql/apollo-mcp-server:<version>
-  #   ports:
-  #     - "8000:8000"
-  #   volumes:
-  #     - ./queries:/queries:ro
-  #   depends_on:
-  #     - router
+# Fixed names let the separate MCP stack in mcp/docker-compose.yml join this network
+# and read the Hive tokens.
+networks:
+  default:
+    name: conference-platform
 
 volumes:
   hive-tokens:
+    name: conference-platform-hive-tokens
