@@ -537,5 +537,1074 @@
       "speaker-01"
     ],
     "roomId": "room-04"
+  },
+  {
+    "id": "session-41",
+    "title": "Practical Data Governance",
+    "abstract": "Hands-on techniques for data governance that you can use next week.",
+    "track": "DATA",
+    "level": "BEGINNER",
+    "startsAt": "2026-11-12T10:00:00Z",
+    "endsAt": "2026-11-12T10:45:00Z",
+    "speakerIds": [
+      "speaker-83",
+      "speaker-88"
+    ],
+    "roomId": "room-08"
+  },
+  {
+    "id": "session-42",
+    "title": "Lessons Learned from Model Context Protocol",
+    "abstract": "An honest look at what worked and what did not with Model Context Protocol.",
+    "track": "AI",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-13T14:30:00Z",
+    "endsAt": "2026-11-13T15:15:00Z",
+    "speakerIds": [
+      "speaker-51"
+    ],
+    "roomId": "room-18"
+  },
+  {
+    "id": "session-43",
+    "title": "Deep Dive: Data Governance",
+    "abstract": "An in-depth tour of how data governance works under the hood.",
+    "track": "DATA",
+    "level": "ADVANCED",
+    "startsAt": "2026-11-13T09:00:00Z",
+    "endsAt": "2026-11-13T09:45:00Z",
+    "speakerIds": [
+      "speaker-90"
+    ],
+    "roomId": "room-07"
+  },
+  {
+    "id": "session-44",
+    "title": "Lessons Learned from LLM Evaluation",
+    "abstract": "An honest look at what worked and what did not with LLM evaluation.",
+    "track": "AI",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-12T16:00:00Z",
+    "endsAt": "2026-11-12T16:45:00Z",
+    "speakerIds": [
+      "speaker-47"
+    ],
+    "roomId": "room-15"
+  },
+  {
+    "id": "session-45",
+    "title": "Security: What We Got Wrong",
+    "abstract": "Three mistakes a team made with security, and how it fixed them.",
+    "track": "PLATFORM",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-12T16:00:00Z",
+    "endsAt": "2026-11-12T16:45:00Z",
+    "speakerIds": [
+      "speaker-75"
+    ],
+    "roomId": "room-16"
+  },
+  {
+    "id": "session-46",
+    "title": "Practical Retrieval-Augmented Generation",
+    "abstract": "Hands-on techniques for retrieval-augmented generation that you can use next week.",
+    "track": "AI",
+    "level": "BEGINNER",
+    "startsAt": "2026-11-13T16:00:00Z",
+    "endsAt": "2026-11-13T16:45:00Z",
+    "speakerIds": [
+      "speaker-53"
+    ],
+    "roomId": "room-12"
+  },
+  {
+    "id": "session-47",
+    "title": "Domain-Driven Design in Production",
+    "abstract": "What changes when domain-driven design moves from a prototype to production traffic.",
+    "track": "ARCHITECTURE",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-12T16:00:00Z",
+    "endsAt": "2026-11-12T16:45:00Z",
+    "speakerIds": [
+      "speaker-32"
+    ],
+    "roomId": "room-13"
+  },
+  {
+    "id": "session-48",
+    "title": "Lessons Learned from Developer Portals",
+    "abstract": "An honest look at what worked and what did not with developer portals.",
+    "track": "DEVELOPER_EXPERIENCE",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-13T16:00:00Z",
+    "endsAt": "2026-11-13T16:45:00Z",
+    "speakerIds": [
+      "speaker-66"
+    ],
+    "roomId": "room-15"
+  },
+  {
+    "id": "session-49",
+    "title": "Event-Driven Systems in Production",
+    "abstract": "What changes when event-driven systems moves from a prototype to production traffic.",
+    "track": "ARCHITECTURE",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-13T13:30:00Z",
+    "endsAt": "2026-11-13T14:15:00Z",
+    "speakerIds": [
+      "speaker-39"
+    ],
+    "roomId": "room-15"
+  },
+  {
+    "id": "session-50",
+    "title": "Practical Onboarding",
+    "abstract": "Hands-on techniques for onboarding that you can use next week.",
+    "track": "DEVELOPER_EXPERIENCE",
+    "level": "BEGINNER",
+    "startsAt": "2026-11-13T11:15:00Z",
+    "endsAt": "2026-11-13T12:00:00Z",
+    "speakerIds": [
+      "speaker-63"
+    ],
+    "roomId": "room-13"
+  },
+  {
+    "id": "session-51",
+    "title": "Lessons Learned from AI Agents",
+    "abstract": "An honest look at what worked and what did not with AI agents.",
+    "track": "AI",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-12T14:30:00Z",
+    "endsAt": "2026-11-12T15:15:00Z",
+    "speakerIds": [
+      "speaker-48"
+    ],
+    "roomId": "room-09"
+  },
+  {
+    "id": "session-52",
+    "title": "Lessons Learned from Prompt Engineering",
+    "abstract": "An honest look at what worked and what did not with prompt engineering.",
+    "track": "AI",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-12T09:00:00Z",
+    "endsAt": "2026-11-12T09:45:00Z",
+    "speakerIds": [
+      "speaker-44",
+      "speaker-52"
+    ],
+    "roomId": "room-07"
+  },
+  {
+    "id": "session-53",
+    "title": "Developer Portals at Scale",
+    "abstract": "Patterns and pitfalls for developer portals across many teams and services.",
+    "track": "DEVELOPER_EXPERIENCE",
+    "level": "ADVANCED",
+    "startsAt": "2026-11-12T16:00:00Z",
+    "endsAt": "2026-11-12T16:45:00Z",
+    "speakerIds": [
+      "speaker-56"
+    ],
+    "roomId": "room-07"
+  },
+  {
+    "id": "session-54",
+    "title": "API Design in Production",
+    "abstract": "What changes when API design moves from a prototype to production traffic.",
+    "track": "ARCHITECTURE",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-12T14:30:00Z",
+    "endsAt": "2026-11-12T15:15:00Z",
+    "speakerIds": [
+      "speaker-42"
+    ],
+    "roomId": "room-14"
+  },
+  {
+    "id": "session-55",
+    "title": "Practical Data Modeling",
+    "abstract": "Hands-on techniques for data modeling that you can use next week.",
+    "track": "DATA",
+    "level": "BEGINNER",
+    "startsAt": "2026-11-12T09:00:00Z",
+    "endsAt": "2026-11-12T09:45:00Z",
+    "speakerIds": [
+      "speaker-89"
+    ],
+    "roomId": "room-09"
+  },
+  {
+    "id": "session-56",
+    "title": "Practical Streaming",
+    "abstract": "Hands-on techniques for streaming that you can use next week.",
+    "track": "DATA",
+    "level": "BEGINNER",
+    "startsAt": "2026-11-13T10:00:00Z",
+    "endsAt": "2026-11-13T10:45:00Z",
+    "speakerIds": [
+      "speaker-85",
+      "speaker-88"
+    ],
+    "roomId": "room-14"
+  },
+  {
+    "id": "session-57",
+    "title": "Microservices: What We Got Wrong",
+    "abstract": "Three mistakes a team made with microservices, and how it fixed them.",
+    "track": "ARCHITECTURE",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-12T14:30:00Z",
+    "endsAt": "2026-11-12T15:15:00Z",
+    "speakerIds": [
+      "speaker-31",
+      "speaker-37"
+    ],
+    "roomId": "room-08"
+  },
+  {
+    "id": "session-58",
+    "title": "A Beginner's Guide to Data Modeling",
+    "abstract": "The core ideas of data modeling, explained from first principles.",
+    "track": "DATA",
+    "level": "BEGINNER",
+    "startsAt": "2026-11-12T13:30:00Z",
+    "endsAt": "2026-11-12T14:15:00Z",
+    "speakerIds": [
+      "speaker-86"
+    ],
+    "roomId": "room-10"
+  },
+  {
+    "id": "session-59",
+    "title": "Developer Portals: What We Got Wrong",
+    "abstract": "Three mistakes a team made with developer portals, and how it fixed them.",
+    "track": "DEVELOPER_EXPERIENCE",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-12T10:00:00Z",
+    "endsAt": "2026-11-12T10:45:00Z",
+    "speakerIds": [
+      "speaker-56",
+      "speaker-57"
+    ],
+    "roomId": "room-15"
+  },
+  {
+    "id": "session-60",
+    "title": "Lessons Learned from Event-Driven Systems",
+    "abstract": "An honest look at what worked and what did not with event-driven systems.",
+    "track": "ARCHITECTURE",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-12T14:30:00Z",
+    "endsAt": "2026-11-12T15:15:00Z",
+    "speakerIds": [
+      "speaker-38"
+    ],
+    "roomId": "room-17"
+  },
+  {
+    "id": "session-61",
+    "title": "API Gateways in Production",
+    "abstract": "What changes when API gateways moves from a prototype to production traffic.",
+    "track": "PLATFORM",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-12T13:30:00Z",
+    "endsAt": "2026-11-12T14:15:00Z",
+    "speakerIds": [
+      "speaker-73"
+    ],
+    "roomId": "room-15"
+  },
+  {
+    "id": "session-62",
+    "title": "Lessons Learned from Security",
+    "abstract": "An honest look at what worked and what did not with security.",
+    "track": "PLATFORM",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-12T11:15:00Z",
+    "endsAt": "2026-11-12T12:00:00Z",
+    "speakerIds": [
+      "speaker-74"
+    ],
+    "roomId": "room-16"
+  },
+  {
+    "id": "session-63",
+    "title": "The Future of Data Governance",
+    "abstract": "Where data governance is heading in the next few years, and how to prepare.",
+    "track": "DATA",
+    "level": "BEGINNER",
+    "startsAt": "2026-11-13T10:00:00Z",
+    "endsAt": "2026-11-13T10:45:00Z",
+    "speakerIds": [
+      "speaker-87"
+    ],
+    "roomId": "room-07"
+  },
+  {
+    "id": "session-64",
+    "title": "Deep Dive: Streaming",
+    "abstract": "An in-depth tour of how streaming works under the hood.",
+    "track": "DATA",
+    "level": "ADVANCED",
+    "startsAt": "2026-11-13T10:00:00Z",
+    "endsAt": "2026-11-13T10:45:00Z",
+    "speakerIds": [
+      "speaker-84"
+    ],
+    "roomId": "room-11"
+  },
+  {
+    "id": "session-65",
+    "title": "Lessons Learned from Data Modeling",
+    "abstract": "An honest look at what worked and what did not with data modeling.",
+    "track": "DATA",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-12T11:15:00Z",
+    "endsAt": "2026-11-12T12:00:00Z",
+    "speakerIds": [
+      "speaker-79"
+    ],
+    "roomId": "room-12"
+  },
+  {
+    "id": "session-66",
+    "title": "A Beginner's Guide to Domain-Driven Design",
+    "abstract": "The core ideas of domain-driven design, explained from first principles.",
+    "track": "ARCHITECTURE",
+    "level": "BEGINNER",
+    "startsAt": "2026-11-12T09:00:00Z",
+    "endsAt": "2026-11-12T09:45:00Z",
+    "speakerIds": [
+      "speaker-35",
+      "speaker-40"
+    ],
+    "roomId": "room-08"
+  },
+  {
+    "id": "session-67",
+    "title": "Code Generation in Production",
+    "abstract": "What changes when code generation moves from a prototype to production traffic.",
+    "track": "DEVELOPER_EXPERIENCE",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-12T13:30:00Z",
+    "endsAt": "2026-11-12T14:15:00Z",
+    "speakerIds": [
+      "speaker-64"
+    ],
+    "roomId": "room-14"
+  },
+  {
+    "id": "session-68",
+    "title": "Practical Kubernetes",
+    "abstract": "Hands-on techniques for Kubernetes that you can use next week.",
+    "track": "PLATFORM",
+    "level": "BEGINNER",
+    "startsAt": "2026-11-12T09:00:00Z",
+    "endsAt": "2026-11-12T09:45:00Z",
+    "speakerIds": [
+      "speaker-67",
+      "speaker-70"
+    ],
+    "roomId": "room-14"
+  },
+  {
+    "id": "session-69",
+    "title": "API Documentation: What We Got Wrong",
+    "abstract": "Three mistakes a team made with API documentation, and how it fixed them.",
+    "track": "DEVELOPER_EXPERIENCE",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-13T11:15:00Z",
+    "endsAt": "2026-11-13T12:00:00Z",
+    "speakerIds": [
+      "speaker-57",
+      "speaker-58"
+    ],
+    "roomId": "room-09"
+  },
+  {
+    "id": "session-70",
+    "title": "Practical Search",
+    "abstract": "Hands-on techniques for search that you can use next week.",
+    "track": "DATA",
+    "level": "BEGINNER",
+    "startsAt": "2026-11-12T16:00:00Z",
+    "endsAt": "2026-11-12T16:45:00Z",
+    "speakerIds": [
+      "speaker-82",
+      "speaker-86"
+    ],
+    "roomId": "room-14"
+  },
+  {
+    "id": "session-71",
+    "title": "Search in Production",
+    "abstract": "What changes when search moves from a prototype to production traffic.",
+    "track": "DATA",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-13T09:00:00Z",
+    "endsAt": "2026-11-13T09:45:00Z",
+    "speakerIds": [
+      "speaker-80"
+    ],
+    "roomId": "room-14"
+  },
+  {
+    "id": "session-72",
+    "title": "The Future of Model Context Protocol",
+    "abstract": "Where Model Context Protocol is heading in the next few years, and how to prepare.",
+    "track": "AI",
+    "level": "BEGINNER",
+    "startsAt": "2026-11-12T11:15:00Z",
+    "endsAt": "2026-11-12T12:00:00Z",
+    "speakerIds": [
+      "speaker-43",
+      "speaker-48"
+    ],
+    "roomId": "room-07"
+  },
+  {
+    "id": "session-73",
+    "title": "The Future of Retrieval-Augmented Generation",
+    "abstract": "Where retrieval-augmented generation is heading in the next few years, and how to prepare.",
+    "track": "AI",
+    "level": "BEGINNER",
+    "startsAt": "2026-11-12T10:00:00Z",
+    "endsAt": "2026-11-12T10:45:00Z",
+    "speakerIds": [
+      "speaker-50"
+    ],
+    "roomId": "room-10"
+  },
+  {
+    "id": "session-74",
+    "title": "Data Governance at Scale",
+    "abstract": "Patterns and pitfalls for data governance across many teams and services.",
+    "track": "DATA",
+    "level": "ADVANCED",
+    "startsAt": "2026-11-13T10:00:00Z",
+    "endsAt": "2026-11-13T10:45:00Z",
+    "speakerIds": [
+      "speaker-85"
+    ],
+    "roomId": "room-09"
+  },
+  {
+    "id": "session-75",
+    "title": "Deep Dive: Domain-Driven Design",
+    "abstract": "An in-depth tour of how domain-driven design works under the hood.",
+    "track": "ARCHITECTURE",
+    "level": "ADVANCED",
+    "startsAt": "2026-11-12T10:00:00Z",
+    "endsAt": "2026-11-12T10:45:00Z",
+    "speakerIds": [
+      "speaker-34"
+    ],
+    "roomId": "room-13"
+  },
+  {
+    "id": "session-76",
+    "title": "Retrieval-Augmented Generation: What We Got Wrong",
+    "abstract": "Three mistakes a team made with retrieval-augmented generation, and how it fixed them.",
+    "track": "AI",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-13T13:30:00Z",
+    "endsAt": "2026-11-13T14:15:00Z",
+    "speakerIds": [
+      "speaker-48",
+      "speaker-54"
+    ],
+    "roomId": "room-11"
+  },
+  {
+    "id": "session-77",
+    "title": "Practical Performance",
+    "abstract": "Hands-on techniques for performance that you can use next week.",
+    "track": "PLATFORM",
+    "level": "BEGINNER",
+    "startsAt": "2026-11-12T13:30:00Z",
+    "endsAt": "2026-11-12T14:15:00Z",
+    "speakerIds": [
+      "speaker-67",
+      "speaker-77"
+    ],
+    "roomId": "room-09"
+  },
+  {
+    "id": "session-78",
+    "title": "Practical Testing",
+    "abstract": "Hands-on techniques for testing that you can use next week.",
+    "track": "DEVELOPER_EXPERIENCE",
+    "level": "BEGINNER",
+    "startsAt": "2026-11-12T14:30:00Z",
+    "endsAt": "2026-11-12T15:15:00Z",
+    "speakerIds": [
+      "speaker-55"
+    ],
+    "roomId": "room-15"
+  },
+  {
+    "id": "session-79",
+    "title": "The Future of Event-Driven Systems",
+    "abstract": "Where event-driven systems is heading in the next few years, and how to prepare.",
+    "track": "ARCHITECTURE",
+    "level": "BEGINNER",
+    "startsAt": "2026-11-12T11:15:00Z",
+    "endsAt": "2026-11-12T12:00:00Z",
+    "speakerIds": [
+      "speaker-35",
+      "speaker-40"
+    ],
+    "roomId": "room-11"
+  },
+  {
+    "id": "session-80",
+    "title": "The Future of Observability",
+    "abstract": "Where observability is heading in the next few years, and how to prepare.",
+    "track": "PLATFORM",
+    "level": "BEGINNER",
+    "startsAt": "2026-11-12T09:00:00Z",
+    "endsAt": "2026-11-12T09:45:00Z",
+    "speakerIds": [
+      "speaker-71"
+    ],
+    "roomId": "room-17"
+  },
+  {
+    "id": "session-81",
+    "title": "Practical Domain-Driven Design",
+    "abstract": "Hands-on techniques for domain-driven design that you can use next week.",
+    "track": "ARCHITECTURE",
+    "level": "BEGINNER",
+    "startsAt": "2026-11-12T09:00:00Z",
+    "endsAt": "2026-11-12T09:45:00Z",
+    "speakerIds": [
+      "speaker-33"
+    ],
+    "roomId": "room-11"
+  },
+  {
+    "id": "session-82",
+    "title": "Lessons Learned from Code Generation",
+    "abstract": "An honest look at what worked and what did not with code generation.",
+    "track": "DEVELOPER_EXPERIENCE",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-12T16:00:00Z",
+    "endsAt": "2026-11-12T16:45:00Z",
+    "speakerIds": [
+      "speaker-59"
+    ],
+    "roomId": "room-11"
+  },
+  {
+    "id": "session-83",
+    "title": "Data Modeling: What We Got Wrong",
+    "abstract": "Three mistakes a team made with data modeling, and how it fixed them.",
+    "track": "DATA",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-13T14:30:00Z",
+    "endsAt": "2026-11-13T15:15:00Z",
+    "speakerIds": [
+      "speaker-81",
+      "speaker-84"
+    ],
+    "roomId": "room-12"
+  },
+  {
+    "id": "session-84",
+    "title": "Domain-Driven Design at Scale",
+    "abstract": "Patterns and pitfalls for domain-driven design across many teams and services.",
+    "track": "ARCHITECTURE",
+    "level": "ADVANCED",
+    "startsAt": "2026-11-13T16:00:00Z",
+    "endsAt": "2026-11-13T16:45:00Z",
+    "speakerIds": [
+      "speaker-37"
+    ],
+    "roomId": "room-11"
+  },
+  {
+    "id": "session-85",
+    "title": "Testing: What We Got Wrong",
+    "abstract": "Three mistakes a team made with testing, and how it fixed them.",
+    "track": "DEVELOPER_EXPERIENCE",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-13T11:15:00Z",
+    "endsAt": "2026-11-13T12:00:00Z",
+    "speakerIds": [
+      "speaker-59",
+      "speaker-65"
+    ],
+    "roomId": "room-16"
+  },
+  {
+    "id": "session-86",
+    "title": "Deep Dive: Security",
+    "abstract": "An in-depth tour of how security works under the hood.",
+    "track": "PLATFORM",
+    "level": "ADVANCED",
+    "startsAt": "2026-11-12T14:30:00Z",
+    "endsAt": "2026-11-12T15:15:00Z",
+    "speakerIds": [
+      "speaker-69"
+    ],
+    "roomId": "room-13"
+  },
+  {
+    "id": "session-87",
+    "title": "A Beginner's Guide to AI Agents",
+    "abstract": "The core ideas of AI agents, explained from first principles.",
+    "track": "AI",
+    "level": "BEGINNER",
+    "startsAt": "2026-11-13T13:30:00Z",
+    "endsAt": "2026-11-13T14:15:00Z",
+    "speakerIds": [
+      "speaker-52"
+    ],
+    "roomId": "room-07"
+  },
+  {
+    "id": "session-88",
+    "title": "Testing in Production",
+    "abstract": "What changes when testing moves from a prototype to production traffic.",
+    "track": "DEVELOPER_EXPERIENCE",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-13T16:00:00Z",
+    "endsAt": "2026-11-13T16:45:00Z",
+    "speakerIds": [
+      "speaker-58",
+      "speaker-62"
+    ],
+    "roomId": "room-17"
+  },
+  {
+    "id": "session-89",
+    "title": "Lessons Learned from Onboarding",
+    "abstract": "An honest look at what worked and what did not with onboarding.",
+    "track": "DEVELOPER_EXPERIENCE",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-13T10:00:00Z",
+    "endsAt": "2026-11-13T10:45:00Z",
+    "speakerIds": [
+      "speaker-59",
+      "speaker-60"
+    ],
+    "roomId": "room-17"
+  },
+  {
+    "id": "session-90",
+    "title": "Lessons Learned from API Design",
+    "abstract": "An honest look at what worked and what did not with API design.",
+    "track": "ARCHITECTURE",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-12T13:30:00Z",
+    "endsAt": "2026-11-12T14:15:00Z",
+    "speakerIds": [
+      "speaker-36"
+    ],
+    "roomId": "room-07"
+  },
+  {
+    "id": "session-91",
+    "title": "Microservices at Scale",
+    "abstract": "Patterns and pitfalls for microservices across many teams and services.",
+    "track": "ARCHITECTURE",
+    "level": "ADVANCED",
+    "startsAt": "2026-11-13T11:15:00Z",
+    "endsAt": "2026-11-13T12:00:00Z",
+    "speakerIds": [
+      "speaker-41"
+    ],
+    "roomId": "room-14"
+  },
+  {
+    "id": "session-92",
+    "title": "Kubernetes at Scale",
+    "abstract": "Patterns and pitfalls for Kubernetes across many teams and services.",
+    "track": "PLATFORM",
+    "level": "ADVANCED",
+    "startsAt": "2026-11-12T16:00:00Z",
+    "endsAt": "2026-11-12T16:45:00Z",
+    "speakerIds": [
+      "speaker-78"
+    ],
+    "roomId": "room-18"
+  },
+  {
+    "id": "session-93",
+    "title": "Lessons Learned from Domain-Driven Design",
+    "abstract": "An honest look at what worked and what did not with domain-driven design.",
+    "track": "ARCHITECTURE",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-12T10:00:00Z",
+    "endsAt": "2026-11-12T10:45:00Z",
+    "speakerIds": [
+      "speaker-32"
+    ],
+    "roomId": "room-12"
+  },
+  {
+    "id": "session-94",
+    "title": "Lessons Learned from Kubernetes",
+    "abstract": "An honest look at what worked and what did not with Kubernetes.",
+    "track": "PLATFORM",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-12T13:30:00Z",
+    "endsAt": "2026-11-12T14:15:00Z",
+    "speakerIds": [
+      "speaker-72"
+    ],
+    "roomId": "room-12"
+  },
+  {
+    "id": "session-95",
+    "title": "Retrieval-Augmented Generation at Scale",
+    "abstract": "Patterns and pitfalls for retrieval-augmented generation across many teams and services.",
+    "track": "AI",
+    "level": "ADVANCED",
+    "startsAt": "2026-11-12T13:30:00Z",
+    "endsAt": "2026-11-12T14:15:00Z",
+    "speakerIds": [
+      "speaker-46",
+      "speaker-53"
+    ],
+    "roomId": "room-17"
+  },
+  {
+    "id": "session-96",
+    "title": "A Beginner's Guide to Code Generation",
+    "abstract": "The core ideas of code generation, explained from first principles.",
+    "track": "DEVELOPER_EXPERIENCE",
+    "level": "BEGINNER",
+    "startsAt": "2026-11-13T10:00:00Z",
+    "endsAt": "2026-11-13T10:45:00Z",
+    "speakerIds": [
+      "speaker-60",
+      "speaker-61"
+    ],
+    "roomId": "room-12"
+  },
+  {
+    "id": "session-97",
+    "title": "Practical Observability",
+    "abstract": "Hands-on techniques for observability that you can use next week.",
+    "track": "PLATFORM",
+    "level": "BEGINNER",
+    "startsAt": "2026-11-12T14:30:00Z",
+    "endsAt": "2026-11-12T15:15:00Z",
+    "speakerIds": [
+      "speaker-72",
+      "speaker-76"
+    ],
+    "roomId": "room-16"
+  },
+  {
+    "id": "session-98",
+    "title": "Practical Event-Driven Systems",
+    "abstract": "Hands-on techniques for event-driven systems that you can use next week.",
+    "track": "ARCHITECTURE",
+    "level": "BEGINNER",
+    "startsAt": "2026-11-13T14:30:00Z",
+    "endsAt": "2026-11-13T15:15:00Z",
+    "speakerIds": [
+      "speaker-39"
+    ],
+    "roomId": "room-09"
+  },
+  {
+    "id": "session-99",
+    "title": "Practical GraphQL Federation",
+    "abstract": "Hands-on techniques for GraphQL Federation that you can use next week.",
+    "track": "ARCHITECTURE",
+    "level": "BEGINNER",
+    "startsAt": "2026-11-13T13:30:00Z",
+    "endsAt": "2026-11-13T14:15:00Z",
+    "speakerIds": [
+      "speaker-36",
+      "speaker-42"
+    ],
+    "roomId": "room-17"
+  },
+  {
+    "id": "session-100",
+    "title": "Deep Dive: Caching",
+    "abstract": "An in-depth tour of how caching works under the hood.",
+    "track": "DATA",
+    "level": "ADVANCED",
+    "startsAt": "2026-11-12T14:30:00Z",
+    "endsAt": "2026-11-12T15:15:00Z",
+    "speakerIds": [
+      "speaker-82",
+      "speaker-83"
+    ],
+    "roomId": "room-11"
+  },
+  {
+    "id": "session-101",
+    "title": "Data Governance: What We Got Wrong",
+    "abstract": "Three mistakes a team made with data governance, and how it fixed them.",
+    "track": "DATA",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-13T09:00:00Z",
+    "endsAt": "2026-11-13T09:45:00Z",
+    "speakerIds": [
+      "speaker-79",
+      "speaker-90"
+    ],
+    "roomId": "room-12"
+  },
+  {
+    "id": "session-102",
+    "title": "Kubernetes in Production",
+    "abstract": "What changes when Kubernetes moves from a prototype to production traffic.",
+    "track": "PLATFORM",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-12T13:30:00Z",
+    "endsAt": "2026-11-12T14:15:00Z",
+    "speakerIds": [
+      "speaker-67",
+      "speaker-74"
+    ],
+    "roomId": "room-16"
+  },
+  {
+    "id": "session-103",
+    "title": "The Future of LLM Evaluation",
+    "abstract": "Where LLM evaluation is heading in the next few years, and how to prepare.",
+    "track": "AI",
+    "level": "BEGINNER",
+    "startsAt": "2026-11-13T14:30:00Z",
+    "endsAt": "2026-11-13T15:15:00Z",
+    "speakerIds": [
+      "speaker-45",
+      "speaker-49"
+    ],
+    "roomId": "room-08"
+  },
+  {
+    "id": "session-104",
+    "title": "Practical Security",
+    "abstract": "Hands-on techniques for security that you can use next week.",
+    "track": "PLATFORM",
+    "level": "BEGINNER",
+    "startsAt": "2026-11-13T11:15:00Z",
+    "endsAt": "2026-11-13T12:00:00Z",
+    "speakerIds": [
+      "speaker-68"
+    ],
+    "roomId": "room-07"
+  },
+  {
+    "id": "session-105",
+    "title": "Performance: What We Got Wrong",
+    "abstract": "Three mistakes a team made with performance, and how it fixed them.",
+    "track": "PLATFORM",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-13T11:15:00Z",
+    "endsAt": "2026-11-13T12:00:00Z",
+    "speakerIds": [
+      "speaker-75"
+    ],
+    "roomId": "room-08"
+  },
+  {
+    "id": "session-106",
+    "title": "The Future of Search",
+    "abstract": "Where search is heading in the next few years, and how to prepare.",
+    "track": "DATA",
+    "level": "BEGINNER",
+    "startsAt": "2026-11-13T10:00:00Z",
+    "endsAt": "2026-11-13T10:45:00Z",
+    "speakerIds": [
+      "speaker-89"
+    ],
+    "roomId": "room-15"
+  },
+  {
+    "id": "session-107",
+    "title": "Deep Dive: Retrieval-Augmented Generation",
+    "abstract": "An in-depth tour of how retrieval-augmented generation works under the hood.",
+    "track": "AI",
+    "level": "ADVANCED",
+    "startsAt": "2026-11-12T14:30:00Z",
+    "endsAt": "2026-11-12T15:15:00Z",
+    "speakerIds": [
+      "speaker-45",
+      "speaker-50"
+    ],
+    "roomId": "room-07"
+  },
+  {
+    "id": "session-108",
+    "title": "Model Context Protocol in Production",
+    "abstract": "What changes when Model Context Protocol moves from a prototype to production traffic.",
+    "track": "AI",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-12T13:30:00Z",
+    "endsAt": "2026-11-12T14:15:00Z",
+    "speakerIds": [
+      "speaker-51"
+    ],
+    "roomId": "room-13"
+  },
+  {
+    "id": "session-109",
+    "title": "The Future of Kubernetes",
+    "abstract": "Where Kubernetes is heading in the next few years, and how to prepare.",
+    "track": "PLATFORM",
+    "level": "BEGINNER",
+    "startsAt": "2026-11-13T10:00:00Z",
+    "endsAt": "2026-11-13T10:45:00Z",
+    "speakerIds": [
+      "speaker-73"
+    ],
+    "roomId": "room-10"
+  },
+  {
+    "id": "session-110",
+    "title": "Deep Dive: API Gateways",
+    "abstract": "An in-depth tour of how API gateways works under the hood.",
+    "track": "PLATFORM",
+    "level": "ADVANCED",
+    "startsAt": "2026-11-12T10:00:00Z",
+    "endsAt": "2026-11-12T10:45:00Z",
+    "speakerIds": [
+      "speaker-74",
+      "speaker-75"
+    ],
+    "roomId": "room-16"
+  },
+  {
+    "id": "session-111",
+    "title": "Lessons Learned from Retrieval-Augmented Generation",
+    "abstract": "An honest look at what worked and what did not with retrieval-augmented generation.",
+    "track": "AI",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-12T11:15:00Z",
+    "endsAt": "2026-11-12T12:00:00Z",
+    "speakerIds": [
+      "speaker-47"
+    ],
+    "roomId": "room-18"
+  },
+  {
+    "id": "session-112",
+    "title": "Code Generation at Scale",
+    "abstract": "Patterns and pitfalls for code generation across many teams and services.",
+    "track": "DEVELOPER_EXPERIENCE",
+    "level": "ADVANCED",
+    "startsAt": "2026-11-13T09:00:00Z",
+    "endsAt": "2026-11-13T09:45:00Z",
+    "speakerIds": [
+      "speaker-66"
+    ],
+    "roomId": "room-10"
+  },
+  {
+    "id": "session-113",
+    "title": "Lessons Learned from Observability",
+    "abstract": "An honest look at what worked and what did not with observability.",
+    "track": "PLATFORM",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-12T16:00:00Z",
+    "endsAt": "2026-11-12T16:45:00Z",
+    "speakerIds": [
+      "speaker-70"
+    ],
+    "roomId": "room-17"
+  },
+  {
+    "id": "session-114",
+    "title": "Retrieval-Augmented Generation in Production",
+    "abstract": "What changes when retrieval-augmented generation moves from a prototype to production traffic.",
+    "track": "AI",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-12T14:30:00Z",
+    "endsAt": "2026-11-12T15:15:00Z",
+    "speakerIds": [
+      "speaker-53"
+    ],
+    "roomId": "room-10"
+  },
+  {
+    "id": "session-115",
+    "title": "Practical Microservices",
+    "abstract": "Hands-on techniques for microservices that you can use next week.",
+    "track": "ARCHITECTURE",
+    "level": "BEGINNER",
+    "startsAt": "2026-11-13T13:30:00Z",
+    "endsAt": "2026-11-13T14:15:00Z",
+    "speakerIds": [
+      "speaker-31"
+    ],
+    "roomId": "room-16"
+  },
+  {
+    "id": "session-116",
+    "title": "A Beginner's Guide to Model Context Protocol",
+    "abstract": "The core ideas of Model Context Protocol, explained from first principles.",
+    "track": "AI",
+    "level": "BEGINNER",
+    "startsAt": "2026-11-12T09:00:00Z",
+    "endsAt": "2026-11-12T09:45:00Z",
+    "speakerIds": [
+      "speaker-48"
+    ],
+    "roomId": "room-16"
+  },
+  {
+    "id": "session-117",
+    "title": "Deep Dive: Code Generation",
+    "abstract": "An in-depth tour of how code generation works under the hood.",
+    "track": "DEVELOPER_EXPERIENCE",
+    "level": "ADVANCED",
+    "startsAt": "2026-11-13T16:00:00Z",
+    "endsAt": "2026-11-13T16:45:00Z",
+    "speakerIds": [
+      "speaker-59",
+      "speaker-63"
+    ],
+    "roomId": "room-14"
+  },
+  {
+    "id": "session-118",
+    "title": "Onboarding: What We Got Wrong",
+    "abstract": "Three mistakes a team made with onboarding, and how it fixed them.",
+    "track": "DEVELOPER_EXPERIENCE",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-13T09:00:00Z",
+    "endsAt": "2026-11-13T09:45:00Z",
+    "speakerIds": [
+      "speaker-56"
+    ],
+    "roomId": "room-13"
+  },
+  {
+    "id": "session-119",
+    "title": "Lessons Learned from Caching",
+    "abstract": "An honest look at what worked and what did not with caching.",
+    "track": "DATA",
+    "level": "INTERMEDIATE",
+    "startsAt": "2026-11-13T10:00:00Z",
+    "endsAt": "2026-11-13T10:45:00Z",
+    "speakerIds": [
+      "speaker-87",
+      "speaker-88"
+    ],
+    "roomId": "room-18"
+  },
+  {
+    "id": "session-120",
+    "title": "A Beginner's Guide to Testing",
+    "abstract": "The core ideas of testing, explained from first principles.",
+    "track": "DEVELOPER_EXPERIENCE",
+    "level": "BEGINNER",
+    "startsAt": "2026-11-13T09:00:00Z",
+    "endsAt": "2026-11-13T09:45:00Z",
+    "speakerIds": [
+      "speaker-57"
+    ],
+    "roomId": "room-18"
   }
 ]

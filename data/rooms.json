@@ -40,5 +40,89 @@
     "floor": 3,
     "capacity": 40,
     "hasStreaming": false
+  },
+  {
+    "id": "room-07",
+    "name": "Harbour Suite",
+    "floor": 1,
+    "capacity": 360,
+    "hasStreaming": true
+  },
+  {
+    "id": "room-08",
+    "name": "Lighthouse Room",
+    "floor": 1,
+    "capacity": 300,
+    "hasStreaming": true
+  },
+  {
+    "id": "room-09",
+    "name": "Atrium Stage",
+    "floor": 0,
+    "capacity": 520,
+    "hasStreaming": true
+  },
+  {
+    "id": "room-10",
+    "name": "Workshop C",
+    "floor": 2,
+    "capacity": 100,
+    "hasStreaming": false
+  },
+  {
+    "id": "room-11",
+    "name": "Workshop D",
+    "floor": 2,
+    "capacity": 90,
+    "hasStreaming": false
+  },
+  {
+    "id": "room-12",
+    "name": "Workshop E",
+    "floor": 2,
+    "capacity": 70,
+    "hasStreaming": false
+  },
+  {
+    "id": "room-13",
+    "name": "Studio 1",
+    "floor": 3,
+    "capacity": 150,
+    "hasStreaming": true
+  },
+  {
+    "id": "room-14",
+    "name": "Studio 2",
+    "floor": 3,
+    "capacity": 140,
+    "hasStreaming": false
+  },
+  {
+    "id": "room-15",
+    "name": "Courtyard Room",
+    "floor": 0,
+    "capacity": 180,
+    "hasStreaming": true
+  },
+  {
+    "id": "room-16",
+    "name": "Map Room",
+    "floor": 3,
+    "capacity": 50,
+    "hasStreaming": false
+  },
+  {
+    "id": "room-17",
+    "name": "Garden Pavilion",
+    "floor": 0,
+    "capacity": 250,
+    "hasStreaming": true
+  },
+  {
+    "id": "room-18",
+    "name": "Reading Room",
+    "floor": 4,
+    "capacity": 30,
+    "hasStreaming": false
   }
 ]

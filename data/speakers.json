@@ -388,5 +388,785 @@
       "Search",
       "Data modeling"
     ]
+  },
+  {
+    "id": "speaker-31",
+    "name": "Gustavo Fontaine",
+    "title": "Senior Consultant",
+    "company": "Northwind Consulting",
+    "companyType": "CONSULTANCY",
+    "bio": "Gustavo Fontaine is a senior consultant at Northwind Consulting. Gustavo helps clients with GraphQL Federation and Microservices.",
+    "topics": [
+      "GraphQL Federation",
+      "Microservices",
+      "API design"
+    ]
+  },
+  {
+    "id": "speaker-32",
+    "name": "Diego Bergström",
+    "title": "Technical Director",
+    "company": "Granite & Co",
+    "companyType": "CONSULTANCY",
+    "bio": "Diego Bergström is a technical director at Granite & Co. Diego helps clients with API design and Microservices.",
+    "topics": [
+      "API design",
+      "Microservices",
+      "Domain-driven design"
+    ]
+  },
+  {
+    "id": "speaker-33",
+    "name": "Freya Park",
+    "title": "Technical Director",
+    "company": "Keystone Digital",
+    "companyType": "CONSULTANCY",
+    "bio": "Freya Park is a technical director at Keystone Digital. Freya helps clients with API design and Domain-driven design.",
+    "topics": [
+      "API design",
+      "Domain-driven design",
+      "Microservices"
+    ]
+  },
+  {
+    "id": "speaker-34",
+    "name": "Abebe Nowak",
+    "title": "Principal Consultant",
+    "company": "Brightline Partners",
+    "companyType": "CONSULTANCY",
+    "bio": "Abebe Nowak is a principal consultant at Brightline Partners. Abebe helps clients with Domain-driven design and API design.",
+    "topics": [
+      "Domain-driven design",
+      "API design",
+      "Microservices"
+    ]
+  },
+  {
+    "id": "speaker-35",
+    "name": "Pia Jovanovic",
+    "title": "Developer Advocate",
+    "company": "Lumen Labs",
+    "companyType": "PRODUCT",
+    "bio": "Pia Jovanovic is a developer advocate at Lumen Labs. Pia builds products that help teams with API design and Domain-driven design.",
+    "topics": [
+      "API design",
+      "Domain-driven design",
+      "Microservices"
+    ]
+  },
+  {
+    "id": "speaker-36",
+    "name": "Umar Wright",
+    "title": "Developer Advocate",
+    "company": "Tidepool",
+    "companyType": "PRODUCT",
+    "bio": "Umar Wright is a developer advocate at Tidepool. Umar builds products that help teams with Event-driven systems and API design.",
+    "topics": [
+      "Event-driven systems",
+      "API design",
+      "Microservices"
+    ]
+  },
+  {
+    "id": "speaker-37",
+    "name": "Zara Zhou",
+    "title": "Developer Advocate",
+    "company": "Tidepool",
+    "companyType": "PRODUCT",
+    "bio": "Zara Zhou is a developer advocate at Tidepool. Zara builds products that help teams with API design and GraphQL Federation.",
+    "topics": [
+      "API design",
+      "GraphQL Federation",
+      "Domain-driven design"
+    ]
+  },
+  {
+    "id": "speaker-38",
+    "name": "Zoltan Gallagher",
+    "title": "Principal Engineer",
+    "company": "Meridian Bank",
+    "companyType": "ENTERPRISE",
+    "bio": "Zoltan Gallagher is a principal engineer at Meridian Bank. Zoltan helps a large organisation with GraphQL Federation and Domain-driven design.",
+    "topics": [
+      "GraphQL Federation",
+      "Domain-driven design",
+      "Event-driven systems"
+    ]
+  },
+  {
+    "id": "speaker-39",
+    "name": "Omar Andersson",
+    "title": "Head of Engineering",
+    "company": "Meridian Bank",
+    "companyType": "ENTERPRISE",
+    "bio": "Omar Andersson is a head of engineering at Meridian Bank. Omar helps a large organisation with Domain-driven design and API design.",
+    "topics": [
+      "Domain-driven design",
+      "API design",
+      "Event-driven systems"
+    ]
+  },
+  {
+    "id": "speaker-40",
+    "name": "Leila Eriksen",
+    "title": "Platform Lead",
+    "company": "Evergreen Health Systems",
+    "companyType": "ENTERPRISE",
+    "bio": "Leila Eriksen is a platform lead at Evergreen Health Systems. Leila helps a large organisation with Domain-driven design and GraphQL Federation.",
+    "topics": [
+      "Domain-driven design",
+      "GraphQL Federation",
+      "Microservices"
+    ]
+  },
+  {
+    "id": "speaker-41",
+    "name": "Beatriz Farouk",
+    "title": "Volunteer Engineer",
+    "company": "Code for Communities",
+    "companyType": "NONPROFIT",
+    "bio": "Beatriz Farouk is a volunteer engineer at Code for Communities. Beatriz helps a non-profit organisation with GraphQL Federation and API design.",
+    "topics": [
+      "GraphQL Federation",
+      "API design",
+      "Domain-driven design"
+    ]
+  },
+  {
+    "id": "speaker-42",
+    "name": "Chen Oyelaran",
+    "title": "Volunteer Engineer",
+    "company": "Literacy Without Borders",
+    "companyType": "NONPROFIT",
+    "bio": "Chen Oyelaran is a volunteer engineer at Literacy Without Borders. Chen helps a non-profit organisation with API design and Event-driven systems.",
+    "topics": [
+      "API design",
+      "Event-driven systems",
+      "GraphQL Federation"
+    ]
+  },
+  {
+    "id": "speaker-43",
+    "name": "Wei Nakamura",
+    "title": "Technical Director",
+    "company": "Granite & Co",
+    "companyType": "CONSULTANCY",
+    "bio": "Wei Nakamura is a technical director at Granite & Co. Wei helps clients with Retrieval-augmented generation and Model Context Protocol.",
+    "topics": [
+      "Retrieval-augmented generation",
+      "Model Context Protocol",
+      "LLM evaluation"
+    ]
+  },
+  {
+    "id": "speaker-44",
+    "name": "Milan Castillo",
+    "title": "Principal Consultant",
+    "company": "Bluebird Advisory",
+    "companyType": "CONSULTANCY",
+    "bio": "Milan Castillo is a principal consultant at Bluebird Advisory. Milan helps clients with Retrieval-augmented generation and LLM evaluation.",
+    "topics": [
+      "Retrieval-augmented generation",
+      "LLM evaluation",
+      "AI agents"
+    ]
+  },
+  {
+    "id": "speaker-45",
+    "name": "Xavier Haddad",
+    "title": "Technical Director",
+    "company": "Northwind Consulting",
+    "companyType": "CONSULTANCY",
+    "bio": "Xavier Haddad is a technical director at Northwind Consulting. Xavier helps clients with Model Context Protocol and Retrieval-augmented generation.",
+    "topics": [
+      "Model Context Protocol",
+      "Retrieval-augmented generation",
+      "AI agents"
+    ]
+  },
+  {
+    "id": "speaker-46",
+    "name": "Rosa Tanaka",
+    "title": "Principal Consultant",
+    "company": "Keystone Digital",
+    "companyType": "CONSULTANCY",
+    "bio": "Rosa Tanaka is a principal consultant at Keystone Digital. Rosa helps clients with Model Context Protocol and AI agents.",
+    "topics": [
+      "Model Context Protocol",
+      "AI agents",
+      "Retrieval-augmented generation"
+    ]
+  },
+  {
+    "id": "speaker-47",
+    "name": "Sanjay Lopez",
+    "title": "Senior Software Engineer",
+    "company": "Orbitly",
+    "companyType": "PRODUCT",
+    "bio": "Sanjay Lopez is a senior software engineer at Orbitly. Sanjay builds products that help teams with Prompt engineering and Model Context Protocol.",
+    "topics": [
+      "Prompt engineering",
+      "Model Context Protocol",
+      "Retrieval-augmented generation"
+    ]
+  },
+  {
+    "id": "speaker-48",
+    "name": "Nina Okonkwo",
+    "title": "Senior Software Engineer",
+    "company": "Quillstack",
+    "companyType": "PRODUCT",
+    "bio": "Nina Okonkwo is a senior software engineer at Quillstack. Nina builds products that help teams with Prompt engineering and AI agents.",
+    "topics": [
+      "Prompt engineering",
+      "AI agents",
+      "Model Context Protocol"
+    ]
+  },
+  {
+    "id": "speaker-49",
+    "name": "Emeka Chowdhury",
+    "title": "Senior Software Engineer",
+    "company": "Promptwise",
+    "companyType": "PRODUCT",
+    "bio": "Emeka Chowdhury is a senior software engineer at Promptwise. Emeka builds products that help teams with Retrieval-augmented generation and Model Context Protocol.",
+    "topics": [
+      "Retrieval-augmented generation",
+      "Model Context Protocol",
+      "LLM evaluation"
+    ]
+  },
+  {
+    "id": "speaker-50",
+    "name": "Anders Juarez",
+    "title": "Head of Engineering",
+    "company": "Evergreen Health Systems",
+    "companyType": "ENTERPRISE",
+    "bio": "Anders Juarez is a head of engineering at Evergreen Health Systems. Anders helps a large organisation with LLM evaluation and AI agents.",
+    "topics": [
+      "LLM evaluation",
+      "AI agents",
+      "Retrieval-augmented generation"
+    ]
+  },
+  {
+    "id": "speaker-51",
+    "name": "Valentina Ito",
+    "title": "Principal Engineer",
+    "company": "Meridian Bank",
+    "companyType": "ENTERPRISE",
+    "bio": "Valentina Ito is a principal engineer at Meridian Bank. Valentina helps a large organisation with Model Context Protocol and Retrieval-augmented generation.",
+    "topics": [
+      "Model Context Protocol",
+      "Retrieval-augmented generation",
+      "LLM evaluation"
+    ]
+  },
+  {
+    "id": "speaker-52",
+    "name": "Tamsin Becker",
+    "title": "Platform Lead",
+    "company": "Harbor Insurance",
+    "companyType": "ENTERPRISE",
+    "bio": "Tamsin Becker is a platform lead at Harbor Insurance. Tamsin helps a large organisation with AI agents and Model Context Protocol.",
+    "topics": [
+      "AI agents",
+      "Model Context Protocol",
+      "Retrieval-augmented generation"
+    ]
+  },
+  {
+    "id": "speaker-53",
+    "name": "Esther Schmidt",
+    "title": "Data Lead",
+    "company": "Literacy Without Borders",
+    "companyType": "NONPROFIT",
+    "bio": "Esther Schmidt is a data lead at Literacy Without Borders. Esther helps a non-profit organisation with Model Context Protocol and LLM evaluation.",
+    "topics": [
+      "Model Context Protocol",
+      "LLM evaluation",
+      "AI agents"
+    ]
+  },
+  {
+    "id": "speaker-54",
+    "name": "Quentin Ueda",
+    "title": "Volunteer Engineer",
+    "company": "Open Health Alliance",
+    "companyType": "NONPROFIT",
+    "bio": "Quentin Ueda is a volunteer engineer at Open Health Alliance. Quentin helps a non-profit organisation with Prompt engineering and LLM evaluation.",
+    "topics": [
+      "Prompt engineering",
+      "LLM evaluation",
+      "Model Context Protocol"
+    ]
+  },
+  {
+    "id": "speaker-55",
+    "name": "Kofi Ivanova",
+    "title": "Solutions Architect",
+    "company": "Keystone Digital",
+    "companyType": "CONSULTANCY",
+    "bio": "Kofi Ivanova is a solutions architect at Keystone Digital. Kofi helps clients with API documentation and Onboarding.",
+    "topics": [
+      "API documentation",
+      "Onboarding",
+      "Developer portals"
+    ]
+  },
+  {
+    "id": "speaker-56",
+    "name": "Bruno Varga",
+    "title": "Principal Consultant",
+    "company": "Northwind Consulting",
+    "companyType": "CONSULTANCY",
+    "bio": "Bruno Varga is a principal consultant at Northwind Consulting. Bruno helps clients with Developer portals and API documentation.",
+    "topics": [
+      "Developer portals",
+      "API documentation",
+      "Code generation"
+    ]
+  },
+  {
+    "id": "speaker-57",
+    "name": "Gabriel Costa-Silva",
+    "title": "Principal Consultant",
+    "company": "Bluebird Advisory",
+    "companyType": "CONSULTANCY",
+    "bio": "Gabriel Costa-Silva is a principal consultant at Bluebird Advisory. Gabriel helps clients with API documentation and Code generation.",
+    "topics": [
+      "API documentation",
+      "Code generation",
+      "Onboarding"
+    ]
+  },
+  {
+    "id": "speaker-58",
+    "name": "Oskar Abara",
+    "title": "Solutions Architect",
+    "company": "Keystone Digital",
+    "companyType": "CONSULTANCY",
+    "bio": "Oskar Abara is a solutions architect at Keystone Digital. Oskar helps clients with Onboarding and API documentation.",
+    "topics": [
+      "Onboarding",
+      "API documentation",
+      "Testing"
+    ]
+  },
+  {
+    "id": "speaker-59",
+    "name": "Kwame Fischer",
+    "title": "Senior Software Engineer",
+    "company": "Tidepool",
+    "companyType": "PRODUCT",
+    "bio": "Kwame Fischer is a senior software engineer at Tidepool. Kwame builds products that help teams with Testing and Code generation.",
+    "topics": [
+      "Testing",
+      "Code generation",
+      "Developer portals"
+    ]
+  },
+  {
+    "id": "speaker-60",
+    "name": "Ximena Holm",
+    "title": "Developer Advocate",
+    "company": "Promptwise",
+    "companyType": "PRODUCT",
+    "bio": "Ximena Holm is a developer advocate at Promptwise. Ximena builds products that help teams with Testing and Onboarding.",
+    "topics": [
+      "Testing",
+      "Onboarding",
+      "Developer portals"
+    ]
+  },
+  {
+    "id": "speaker-61",
+    "name": "Camille Ekström",
+    "title": "Senior Software Engineer",
+    "company": "Promptwise",
+    "companyType": "PRODUCT",
+    "bio": "Camille Ekström is a senior software engineer at Promptwise. Camille builds products that help teams with Onboarding and API documentation.",
+    "topics": [
+      "Onboarding",
+      "API documentation",
+      "Code generation"
+    ]
+  },
+  {
+    "id": "speaker-62",
+    "name": "Farah Uddin",
+    "title": "Principal Engineer",
+    "company": "Civic Transit Authority",
+    "companyType": "ENTERPRISE",
+    "bio": "Farah Uddin is a principal engineer at Civic Transit Authority. Farah helps a large organisation with Testing and Onboarding.",
+    "topics": [
+      "Testing",
+      "Onboarding",
+      "API documentation"
+    ]
+  },
+  {
+    "id": "speaker-63",
+    "name": "Aiko Kariuki",
+    "title": "Platform Lead",
+    "company": "Evergreen Health Systems",
+    "companyType": "ENTERPRISE",
+    "bio": "Aiko Kariuki is a platform lead at Evergreen Health Systems. Aiko helps a large organisation with Developer portals and Onboarding.",
+    "topics": [
+      "Developer portals",
+      "Onboarding",
+      "Testing"
+    ]
+  },
+  {
+    "id": "speaker-64",
+    "name": "Ursula Hoffmann",
+    "title": "Lead Architect",
+    "company": "Harbor Insurance",
+    "companyType": "ENTERPRISE",
+    "bio": "Ursula Hoffmann is a lead architect at Harbor Insurance. Ursula helps a large organisation with Testing and Developer portals.",
+    "topics": [
+      "Testing",
+      "Developer portals",
+      "Code generation"
+    ]
+  },
+  {
+    "id": "speaker-65",
+    "name": "Hana Lindgren",
+    "title": "Volunteer Engineer",
+    "company": "Code for Communities",
+    "companyType": "NONPROFIT",
+    "bio": "Hana Lindgren is a volunteer engineer at Code for Communities. Hana helps a non-profit organisation with Developer portals and Onboarding.",
+    "topics": [
+      "Developer portals",
+      "Onboarding",
+      "Code generation"
+    ]
+  },
+  {
+    "id": "speaker-66",
+    "name": "Marcus Quinn",
+    "title": "Volunteer Engineer",
+    "company": "Literacy Without Borders",
+    "companyType": "NONPROFIT",
+    "bio": "Marcus Quinn is a volunteer engineer at Literacy Without Borders. Marcus helps a non-profit organisation with Code generation and Testing.",
+    "topics": [
+      "Code generation",
+      "Testing",
+      "API documentation"
+    ]
+  },
+  {
+    "id": "speaker-67",
+    "name": "Helena Jensen",
+    "title": "Solutions Architect",
+    "company": "Northwind Consulting",
+    "companyType": "CONSULTANCY",
+    "bio": "Helena Jensen is a solutions architect at Northwind Consulting. Helena helps clients with API gateways and Performance.",
+    "topics": [
+      "API gateways",
+      "Performance",
+      "Observability"
+    ]
+  },
+  {
+    "id": "speaker-68",
+    "name": "Yara Yilmaz",
+    "title": "Solutions Architect",
+    "company": "Keystone Digital",
+    "companyType": "CONSULTANCY",
+    "bio": "Yara Yilmaz is a solutions architect at Keystone Digital. Yara helps clients with Kubernetes and Observability.",
+    "topics": [
+      "Kubernetes",
+      "Observability",
+      "Performance"
+    ]
+  },
+  {
+    "id": "speaker-69",
+    "name": "Greta Moreau",
+    "title": "Principal Consultant",
+    "company": "Keystone Digital",
+    "companyType": "CONSULTANCY",
+    "bio": "Greta Moreau is a principal consultant at Keystone Digital. Greta helps clients with Security and Kubernetes.",
+    "topics": [
+      "Security",
+      "Kubernetes",
+      "API gateways"
+    ]
+  },
+  {
+    "id": "speaker-70",
+    "name": "Elif Pereira",
+    "title": "Senior Consultant",
+    "company": "Northwind Consulting",
+    "companyType": "CONSULTANCY",
+    "bio": "Elif Pereira is a senior consultant at Northwind Consulting. Elif helps clients with Kubernetes and Security.",
+    "topics": [
+      "Kubernetes",
+      "Security",
+      "API gateways"
+    ]
+  },
+  {
+    "id": "speaker-71",
+    "name": "Isaac Yamamoto",
+    "title": "Senior Software Engineer",
+    "company": "Quillstack",
+    "companyType": "PRODUCT",
+    "bio": "Isaac Yamamoto is a senior software engineer at Quillstack. Isaac builds products that help teams with Observability and Performance.",
+    "topics": [
+      "Observability",
+      "Performance",
+      "API gateways"
+    ]
+  },
+  {
+    "id": "speaker-72",
+    "name": "Hiro Gupta",
+    "title": "Engineering Manager",
+    "company": "Quillstack",
+    "companyType": "PRODUCT",
+    "bio": "Hiro Gupta is a engineering manager at Quillstack. Hiro builds products that help teams with Kubernetes and API gateways.",
+    "topics": [
+      "Kubernetes",
+      "API gateways",
+      "Performance"
+    ]
+  },
+  {
+    "id": "speaker-73",
+    "name": "Dalia Grant-Lewis",
+    "title": "Staff Engineer",
+    "company": "Orbitly",
+    "companyType": "PRODUCT",
+    "bio": "Dalia Grant-Lewis is a staff engineer at Orbitly. Dalia builds products that help teams with Performance and Observability.",
+    "topics": [
+      "Performance",
+      "Observability",
+      "Security"
+    ]
+  },
+  {
+    "id": "speaker-74",
+    "name": "Irene Thorsen",
+    "title": "Principal Engineer",
+    "company": "Civic Transit Authority",
+    "companyType": "ENTERPRISE",
+    "bio": "Irene Thorsen is a principal engineer at Civic Transit Authority. Irene helps a large organisation with Observability and Performance.",
+    "topics": [
+      "Observability",
+      "Performance",
+      "API gateways"
+    ]
+  },
+  {
+    "id": "speaker-75",
+    "name": "Bianca Reyes",
+    "title": "Principal Engineer",
+    "company": "Atlas Logistics",
+    "companyType": "ENTERPRISE",
+    "bio": "Bianca Reyes is a principal engineer at Atlas Logistics. Bianca helps a large organisation with Security and Performance.",
+    "topics": [
+      "Security",
+      "Performance",
+      "API gateways"
+    ]
+  },
+  {
+    "id": "speaker-76",
+    "name": "Rahul Walsh",
+    "title": "Lead Architect",
+    "company": "Harbor Insurance",
+    "companyType": "ENTERPRISE",
+    "bio": "Rahul Walsh is a lead architect at Harbor Insurance. Rahul helps a large organisation with Security and Performance.",
+    "topics": [
+      "Security",
+      "Performance",
+      "API gateways"
+    ]
+  },
+  {
+    "id": "speaker-77",
+    "name": "Yusra Kowalczyk",
+    "title": "Data Lead",
+    "company": "Literacy Without Borders",
+    "companyType": "NONPROFIT",
+    "bio": "Yusra Kowalczyk is a data lead at Literacy Without Borders. Yusra helps a non-profit organisation with Observability and Performance.",
+    "topics": [
+      "Observability",
+      "Performance",
+      "Security"
+    ]
+  },
+  {
+    "id": "speaker-78",
+    "name": "Lucia Adeyinka",
+    "title": "Volunteer Engineer",
+    "company": "Code for Communities",
+    "companyType": "NONPROFIT",
+    "bio": "Lucia Adeyinka is a volunteer engineer at Code for Communities. Lucia helps a non-profit organisation with API gateways and Kubernetes.",
+    "topics": [
+      "API gateways",
+      "Kubernetes",
+      "Security"
+    ]
+  },
+  {
+    "id": "speaker-79",
+    "name": "Ibrahim Dimitrov",
+    "title": "Senior Consultant",
+    "company": "Bluebird Advisory",
+    "companyType": "CONSULTANCY",
+    "bio": "Ibrahim Dimitrov is a senior consultant at Bluebird Advisory. Ibrahim helps clients with Search and Streaming.",
+    "topics": [
+      "Search",
+      "Streaming",
+      "Data modeling"
+    ]
+  },
+  {
+    "id": "speaker-80",
+    "name": "Paula Xu",
+    "title": "Solutions Architect",
+    "company": "Bluebird Advisory",
+    "companyType": "CONSULTANCY",
+    "bio": "Paula Xu is a solutions architect at Bluebird Advisory. Paula helps clients with Search and Data governance.",
+    "topics": [
+      "Search",
+      "Data governance",
+      "Caching"
+    ]
+  },
+  {
+    "id": "speaker-81",
+    "name": "Wanjiru Duarte",
+    "title": "Principal Consultant",
+    "company": "Bluebird Advisory",
+    "companyType": "CONSULTANCY",
+    "bio": "Wanjiru Duarte is a principal consultant at Bluebird Advisory. Wanjiru helps clients with Data governance and Data modeling.",
+    "topics": [
+      "Data governance",
+      "Data modeling",
+      "Streaming"
+    ]
+  },
+  {
+    "id": "speaker-82",
+    "name": "Jade Engel",
+    "title": "Senior Consultant",
+    "company": "Bluebird Advisory",
+    "companyType": "CONSULTANCY",
+    "bio": "Jade Engel is a senior consultant at Bluebird Advisory. Jade helps clients with Data modeling and Data governance.",
+    "topics": [
+      "Data modeling",
+      "Data governance",
+      "Streaming"
+    ]
+  },
+  {
+    "id": "speaker-83",
+    "name": "Victor Rossi",
+    "title": "Staff Engineer",
+    "company": "Quillstack",
+    "companyType": "PRODUCT",
+    "bio": "Victor Rossi is a staff engineer at Quillstack. Victor builds products that help teams with Data modeling and Caching.",
+    "topics": [
+      "Data modeling",
+      "Caching",
+      "Search"
+    ]
+  },
+  {
+    "id": "speaker-84",
+    "name": "Joanna Iqbal",
+    "title": "Developer Advocate",
+    "company": "Lumen Labs",
+    "companyType": "PRODUCT",
+    "bio": "Joanna Iqbal is a developer advocate at Lumen Labs. Joanna builds products that help teams with Caching and Streaming.",
+    "topics": [
+      "Caching",
+      "Streaming",
+      "Data modeling"
+    ]
+  },
+  {
+    "id": "speaker-85",
+    "name": "Femi Sato",
+    "title": "Staff Engineer",
+    "company": "Lumen Labs",
+    "companyType": "PRODUCT",
+    "bio": "Femi Sato is a staff engineer at Lumen Labs. Femi builds products that help teams with Caching and Streaming.",
+    "topics": [
+      "Caching",
+      "Streaming",
+      "Data modeling"
+    ]
+  },
+  {
+    "id": "speaker-86",
+    "name": "Sara Delgado",
+    "title": "Lead Architect",
+    "company": "Harbor Insurance",
+    "companyType": "ENTERPRISE",
+    "bio": "Sara Delgado is a lead architect at Harbor Insurance. Sara helps a large organisation with Search and Caching.",
+    "topics": [
+      "Search",
+      "Caching",
+      "Streaming"
+    ]
+  },
+  {
+    "id": "speaker-87",
+    "name": "Callum Mbeki",
+    "title": "Platform Lead",
+    "company": "Civic Transit Authority",
+    "companyType": "ENTERPRISE",
+    "bio": "Callum Mbeki is a platform lead at Civic Transit Authority. Callum helps a large organisation with Search and Streaming.",
+    "topics": [
+      "Search",
+      "Streaming",
+      "Caching"
+    ]
+  },
+  {
+    "id": "speaker-88",
+    "name": "Theo Brennan",
+    "title": "Principal Engineer",
+    "company": "Civic Transit Authority",
+    "companyType": "ENTERPRISE",
+    "bio": "Theo Brennan is a principal engineer at Civic Transit Authority. Theo helps a large organisation with Data governance and Search.",
+    "topics": [
+      "Data governance",
+      "Search",
+      "Caching"
+    ]
+  },
+  {
+    "id": "speaker-89",
+    "name": "Dmitri Zielinski",
+    "title": "Volunteer Engineer",
+    "company": "Literacy Without Borders",
+    "companyType": "NONPROFIT",
+    "bio": "Dmitri Zielinski is a volunteer engineer at Literacy Without Borders. Dmitri helps a non-profit organisation with Search and Streaming.",
+    "topics": [
+      "Search",
+      "Streaming",
+      "Data governance"
+    ]
+  },
+  {
+    "id": "speaker-90",
+    "name": "Noor Vasquez",
+    "title": "Technology Lead",
+    "company": "Code for Communities",
+    "companyType": "NONPROFIT",
+    "bio": "Noor Vasquez is a technology lead at Code for Communities. Noor helps a non-profit organisation with Caching and Streaming.",
+    "topics": [
+      "Caching",
+      "Streaming",
+      "Data modeling"
+    ]
   }
 ]
