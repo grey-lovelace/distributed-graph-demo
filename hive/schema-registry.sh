@@ -26,7 +26,11 @@ esac
 case "$action" in
   publish)
     # Hive stores the new schema version, composes the supergraph, and serves it to the router.
+    # Without --fail-on-composition-error, Hive would store a schema that does not compose,
+    # mark the version as not composable, and keep serving the last good supergraph.
+    # With the flag, the publish fails instead, and Hive stores nothing.
     hive schema:publish \
+      --fail-on-composition-error \
       --registry.endpoint "$HIVE_REGISTRY_ENDPOINT" \
       --registry.accessToken "$HIVE_TOKEN" \
       --target "$HIVE_TARGET_ID" \

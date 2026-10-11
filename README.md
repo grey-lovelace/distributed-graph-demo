@@ -331,6 +331,11 @@ but it takes a few seconds and creates new tokens.
    Hive composes a new supergraph. The router downloads it within 10 seconds and logs
    `reload complete` without a restart. The new version appears in the **History** tab of the Hive web app.
 
+   If the change does not compose with the other subgraphs, the publish fails and Hive stores nothing.
+   For example, add `name: String!` to the `Room` type in `services/sessions/schema.graphql`.
+   The Rooms subgraph owns `Room.name`, so the publish fails with
+   `Non-shareable field Room.name is resolved from multiple subgraphs`.
+
 If you change a resolver as well as the schema, rebuild the service first:
 `docker compose up --build -d sessions`.
 
@@ -371,16 +376,10 @@ into memory at startup. There is no database.
 `docker-compose.yml` mounts each file into its own service container at `/app/data/<file>.json`.
 A service receives only its own file, so no service can read another service's data.
 
-The script [`data/seed.py`](data/seed.py) writes all four files. It uses a fixed random seed,
-so every run writes identical files. The generated files are committed, so you do not need to run
-the script yourself. To change the data, edit the script and run it from the repository root:
+The IDs line up across the files. Every speaker ID and room ID in `sessions.json` exists in the
+other files, and every session ID and speaker ID in `reviews.json` exists too.
 
-```sh
-python3 data/seed.py
-```
-
-The script uses only the Python standard library. The last session of the conference has no
-reviews, so its `averageRating` is `null`.
+The last session of the conference has no reviews, so its `averageRating` is `null`.
 
 ## Hive and router files
 
