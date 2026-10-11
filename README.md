@@ -11,6 +11,18 @@ The four subgraphs publish their schemas to [Hive](https://the-guild.dev/graphql
 schema registry that runs locally in Docker. Hive composes the schemas into one supergraph.
 The Apollo Router downloads the supergraph from Hive and serves a single graph on port 4000.
 
+## The slides
+
+The slides from the talk are in the [`slides/`](slides) folder. They are an HTML deck built with
+[reveal.js](https://revealjs.com), so the animations work in any modern browser.
+
+- **View them online** at https://grey-lovelace.github.io/distributed-graph-demo/.
+- **Open them locally:** open `slides/index.html` in a browser. Everything the deck needs is in the
+  folder, so it works offline with nothing to install.
+
+While the deck is open, use the arrow keys to move between slides. Press **S** for the speaker notes,
+**Esc** to see every slide at once, and **P** to print the deck or save it as a PDF.
+
 ## What you need
 
 - Docker with Docker Compose 2.20 or later.

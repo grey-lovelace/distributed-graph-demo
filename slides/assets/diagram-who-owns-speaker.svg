@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 800" font-family="Lato, 'Helvetica Neue', Arial, sans-serif">
+<rect width="1600" height="800" fill="#fff"/>
+<rect x="60" y="70" width="440" height="650" rx="16" fill="#E8F2FA" stroke="#1A80C7" stroke-width="4"/>
+<path d="M60 160 V86 a16 16 0 0 1 16 -16 H484 a16 16 0 0 1 16 16 V160 Z" fill="#061A40"/>
+<text x="280.0" y="128" text-anchor="middle" font-size="32" font-weight="700" fill="#fff">Speakers service</text>
+<text x="100" y="240" font-family="Menlo, Consolas, monospace" font-size="34" font-weight="700" fill="#061A40">type Speaker {</text>
+<text x="140" y="300" font-family="Menlo, Consolas, monospace" font-size="32" font-weight="400" fill="#061A40">id</text>
+<text x="140" y="360" font-family="Menlo, Consolas, monospace" font-size="32" font-weight="400" fill="#061A40">name</text>
+<text x="140" y="420" font-family="Menlo, Consolas, monospace" font-size="32" font-weight="400" fill="#061A40">company</text>
+<text x="140" y="480" font-family="Menlo, Consolas, monospace" font-size="32" font-weight="400" fill="#061A40">bio</text>
+<text x="100" y="540" font-family="Menlo, Consolas, monospace" font-size="34" font-weight="700" fill="#061A40">}</text>
+<rect x="580" y="70" width="440" height="650" rx="16" fill="#E8F2FA" stroke="#1A80C7" stroke-width="4"/>
+<path d="M580 160 V86 a16 16 0 0 1 16 -16 H1004 a16 16 0 0 1 16 16 V160 Z" fill="#061A40"/>
+<text x="800.0" y="128" text-anchor="middle" font-size="32" font-weight="700" fill="#fff">Sessions service</text>
+<text x="620" y="240" font-family="Menlo, Consolas, monospace" font-size="34" font-weight="700" fill="#061A40">type Speaker {</text>
+<text x="660" y="300" font-family="Menlo, Consolas, monospace" font-size="32" font-weight="400" fill="#061A40">speakerId</text>
+<text x="660" y="360" font-family="Menlo, Consolas, monospace" font-size="32" font-weight="700" fill="#E53049">speakerName</text>
+<text x="660" y="420" font-family="Menlo, Consolas, monospace" font-size="32" font-weight="700" fill="#E53049">company</text>
+<text x="620" y="480" font-family="Menlo, Consolas, monospace" font-size="34" font-weight="700" fill="#061A40">}</text>
+<rect x="1100" y="70" width="440" height="650" rx="16" fill="#E8F2FA" stroke="#1A80C7" stroke-width="4"/>
+<path d="M1100 160 V86 a16 16 0 0 1 16 -16 H1524 a16 16 0 0 1 16 16 V160 Z" fill="#061A40"/>
+<text x="1320.0" y="128" text-anchor="middle" font-size="32" font-weight="700" fill="#fff">Feedback service</text>
+<text x="1140" y="240" font-family="Menlo, Consolas, monospace" font-size="34" font-weight="700" fill="#061A40">type Speaker {</text>
+<text x="1180" y="300" font-family="Menlo, Consolas, monospace" font-size="32" font-weight="700" fill="#E53049">fullName</text>
+<text x="1180" y="360" font-family="Menlo, Consolas, monospace" font-size="32" font-weight="400" fill="#061A40">averageRating</text>
+<text x="1140" y="420" font-family="Menlo, Consolas, monospace" font-size="34" font-weight="700" fill="#061A40">}</text>
+
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 800" font-family="Lato, 'Helvetica Neue', Arial, sans-serif">
+<rect width="1600" height="800" fill="#fff"/>
+<line x1="380" y1="150" x2="800.0" y2="430" stroke="#1A80C7" stroke-width="5"/>
+<line x1="380" y1="290" x2="800.0" y2="430" stroke="#1A80C7" stroke-width="5"/>
+<line x1="380" y1="430" x2="800.0" y2="430" stroke="#1A80C7" stroke-width="5"/>
+<line x1="380" y1="570" x2="800.0" y2="430" stroke="#1A80C7" stroke-width="5"/>
+<line x1="380" y1="710" x2="800.0" y2="430" stroke="#1A80C7" stroke-width="5"/>
+<line x1="800.0" y1="430" x2="1220" y2="220" stroke="#1A80C7" stroke-width="5"/>
+<line x1="800.0" y1="430" x2="1220" y2="360" stroke="#1A80C7" stroke-width="5"/>
+<line x1="800.0" y1="430" x2="1220" y2="500" stroke="#1A80C7" stroke-width="5"/>
+<line x1="800.0" y1="430" x2="1220" y2="640" stroke="#1A80C7" stroke-width="5"/>
+<text x="220.0" y="60" text-anchor="middle" font-size="28" font-weight="700" letter-spacing="3" fill="#767676">CONSUMERS</text>
+<text x="1380.0" y="60" text-anchor="middle" font-size="28" font-weight="700" letter-spacing="3" fill="#767676">SUBGRAPHS</text>
+<rect x="60" y="102.0" width="320" height="96" rx="14" fill="#fff" stroke="#061A40" stroke-width="4"/>
+<text x="220.0" y="162" text-anchor="middle" font-size="34" font-weight="700" fill="#061A40">Web App</text>
+<rect x="60" y="242.0" width="320" height="96" rx="14" fill="#fff" stroke="#061A40" stroke-width="4"/>
+<text x="220.0" y="302" text-anchor="middle" font-size="34" font-weight="700" fill="#061A40">Mobile App</text>
+<rect x="60" y="382.0" width="320" height="96" rx="14" fill="#fff" stroke="#061A40" stroke-width="4"/>
+<text x="220.0" y="442" text-anchor="middle" font-size="34" font-weight="700" fill="#061A40">Partner API</text>
+<rect x="60" y="522.0" width="320" height="96" rx="14" fill="#fff" stroke="#061A40" stroke-width="4"/>
+<text x="220.0" y="582" text-anchor="middle" font-size="34" font-weight="700" fill="#061A40">Reporting</text>
+<rect x="60" y="662.0" width="320" height="96" rx="14" fill="#fff" stroke="#061A40" stroke-width="4" stroke-dasharray="12 8"/>
+<text x="220.0" y="722" text-anchor="middle" font-size="34" font-weight="700" fill="#061A40">AI Agent</text>
+<rect x="1220" y="172.0" width="320" height="96" rx="14" fill="#E8F2FA" stroke="#1A80C7" stroke-width="4"/>
+<text x="1380.0" y="232" text-anchor="middle" font-size="34" font-weight="700" fill="#061A40">Speakers</text>
+<rect x="1220" y="312.0" width="320" height="96" rx="14" fill="#E8F2FA" stroke="#1A80C7" stroke-width="4"/>
+<text x="1380.0" y="372" text-anchor="middle" font-size="34" font-weight="700" fill="#061A40">Sessions</text>
+<rect x="1220" y="452.0" width="320" height="96" rx="14" fill="#E8F2FA" stroke="#1A80C7" stroke-width="4"/>
+<text x="1380.0" y="512" text-anchor="middle" font-size="34" font-weight="700" fill="#061A40">Rooms</text>
+<rect x="1220" y="592.0" width="320" height="96" rx="14" fill="#E8F2FA" stroke="#1A80C7" stroke-width="4"/>
+<text x="1380.0" y="652" text-anchor="middle" font-size="34" font-weight="700" fill="#061A40">Feedback</text>
+<circle cx="800.0" cy="430" r="130" fill="#061A40"/>
+<text x="800.0" y="434" text-anchor="middle" font-size="44" font-weight="700" fill="#fff">Router</text>
+<text x="800.0" y="484" text-anchor="middle" font-size="34" fill="#fff">one graph</text>
+
+</svg>

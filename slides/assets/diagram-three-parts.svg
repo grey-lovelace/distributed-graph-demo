@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 800" font-family="Lato, 'Helvetica Neue', Arial, sans-serif">
+<rect width="1600" height="800" fill="#fff"/>
+<defs><marker id="solid" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#061A40"/></marker><marker id="dash" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#767676"/></marker></defs>
+<rect x="40" y="370" width="300" height="120" rx="16" fill="#fff" stroke="#061A40" stroke-width="4"/>
+<text x="190.0" y="442.6" text-anchor="middle" font-size="36" font-weight="700" fill="#061A40">Consumer</text>
+<text x="190" y="535" text-anchor="middle" font-size="26" fill="#767676">Web, mobile, AI agents</text>
+<line x1="340" y1="430" x2="636" y2="430" stroke="#061A40" stroke-width="5" marker-end="url(#solid)"/>
+<text x="488" y="412" text-anchor="middle" font-size="26" font-weight="700" fill="#061A40">one query</text>
+<rect x="640" y="60" width="320" height="120" rx="16" fill="#1A80C7" stroke="#1A80C7" stroke-width="4"/>
+<text x="800.0" y="132.6" text-anchor="middle" font-size="36" font-weight="700" fill="#fff">Registry</text>
+<text x="620" y="108" text-anchor="end" font-size="26" fill="#767676">Schema file, GraphOS,</text>
+<text x="620" y="142" text-anchor="end" font-size="26" fill="#767676">Hive, Cosmo</text>
+<line x1="800" y1="180" x2="800" y2="356" stroke="#767676" stroke-width="4" stroke-dasharray="14 10" marker-end="url(#dash)"/>
+<text x="818" y="278" text-anchor="start" font-size="26" font-weight="700" fill="#061A40">composed schema</text>
+<rect x="640" y="360" width="320" height="140" rx="16" fill="#061A40" stroke="#061A40" stroke-width="4"/>
+<text x="800.0" y="444.0" text-anchor="middle" font-size="40" font-weight="700" fill="#fff">Router</text>
+<text x="800" y="545" text-anchor="middle" font-size="26" fill="#767676">Apollo, Hive, Cosmo, Grafbase</text>
+<text x="1390" y="252" text-anchor="middle" font-size="28" font-weight="700" letter-spacing="3" fill="#767676">SUBGRAPHS</text>
+<line x1="960" y1="430" x2="1234" y2="300" stroke="#061A40" stroke-width="4" marker-end="url(#solid)"/>
+<rect x="1240" y="255" width="300" height="90" rx="16" fill="#E8F2FA" stroke="#1A80C7" stroke-width="4"/>
+<text x="1390.0" y="311.2" text-anchor="middle" font-size="32" font-weight="700" fill="#061A40">Speakers</text>
+<line x1="960" y1="430" x2="1234" y2="420" stroke="#061A40" stroke-width="4" marker-end="url(#solid)"/>
+<rect x="1240" y="375" width="300" height="90" rx="16" fill="#E8F2FA" stroke="#1A80C7" stroke-width="4"/>
+<text x="1390.0" y="431.2" text-anchor="middle" font-size="32" font-weight="700" fill="#061A40">Sessions</text>
+<line x1="960" y1="430" x2="1234" y2="540" stroke="#061A40" stroke-width="4" marker-end="url(#solid)"/>
+<rect x="1240" y="495" width="300" height="90" rx="16" fill="#E8F2FA" stroke="#1A80C7" stroke-width="4"/>
+<text x="1390.0" y="551.2" text-anchor="middle" font-size="32" font-weight="700" fill="#061A40">Rooms</text>
+<line x1="960" y1="430" x2="1234" y2="660" stroke="#061A40" stroke-width="4" marker-end="url(#solid)"/>
+<rect x="1240" y="615" width="300" height="90" rx="16" fill="#E8F2FA" stroke="#1A80C7" stroke-width="4"/>
+<text x="1390.0" y="671.2" text-anchor="middle" font-size="32" font-weight="700" fill="#061A40">Feedback</text>
+<text x="1390" y="738" text-anchor="middle" font-size="26" fill="#767676">Any language with</text>
+<text x="1390" y="770" text-anchor="middle" font-size="26" fill="#767676">Federation support</text>
+<line x1="1544" y1="300" x2="1576" y2="300" stroke="#767676" stroke-width="4" stroke-dasharray="8 6"/>
+<line x1="1544" y1="420" x2="1576" y2="420" stroke="#767676" stroke-width="4" stroke-dasharray="8 6"/>
+<line x1="1544" y1="540" x2="1576" y2="540" stroke="#767676" stroke-width="4" stroke-dasharray="8 6"/>
+<line x1="1544" y1="660" x2="1576" y2="660" stroke="#767676" stroke-width="4" stroke-dasharray="8 6"/>
+<path d="M1576 660 V120 H966" fill="none" stroke="#767676" stroke-width="4" stroke-dasharray="14 10" marker-end="url(#dash)"/>
+<text x="1270" y="102" text-anchor="middle" font-size="26" font-weight="700" fill="#061A40">publish schemas</text>
+<line x1="40" y1="690" x2="120" y2="690" stroke="#061A40" stroke-width="5"/>
+<text x="136" y="699" text-anchor="start" font-size="26" fill="#767676">At request time</text>
+<line x1="40" y1="740" x2="120" y2="740" stroke="#767676" stroke-width="4" stroke-dasharray="14 10"/>
+<text x="136" y="749" text-anchor="start" font-size="26" fill="#767676">At deploy time</text>
+
+</svg>

@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Apollo Supergraph: Unifying APIs for AI and the Enterprise</title>
+  <link rel="stylesheet" href="vendor/reveal/reveal.min.css">
+  <link rel="stylesheet" href="vendor/lato.css">
+  <link rel="stylesheet" href="deck.css">
+  <link rel="icon" href="assets/mark.png">
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<!-- SLIDES START: every slide is one <section>. Layouts: references/layouts.md in the skill. -->
+
+  <!-- ===== Opening ===== -->
+
+  <section class="slide-title">
+    <div class="logo"><img src="assets/logo-white.png" alt="Source Allies"></div>
+    <h1>The Apollo Supergraph</h1>
+    <p class="subtitle">Unifying APIs for AI and the&nbsp;Enterprise</p>
+    <p class="meta">Grey Lovelace &middot; Source Allies</p>
+    <div class="rule-light"></div>
+    <div class="dots-right"><i class="d-red"></i><i class="d-green"></i><i class="d-cyan"></i><i class="d-blue big"></i></div>
+    <aside class="notes">This talk covers the problem that a distributed graph solves, how a distributed graph works, a live build of one, and how the graph gives AI agents context. It ends with three examples from Source Allies. The demo code is at github.com/grey-lovelace/distributed-graph-demo.</aside>
+  </section>
+
+  <section class="slide-content">
+    <header class="band"><h2>About Me</h2></header>
+    <div class="body">
+      <div class="speakers one">
+        <div class="speaker">
+          <figure class="avatar"><img src="assets/headshot.png" alt="Grey Lovelace"></figure>
+          <div>
+            <p class="speaker-name">Grey Lovelace</p>
+            <p class="speaker-role">Principal Engineer &amp; Architect, Source&nbsp;Allies</p>
+            <ul>
+              <li>Generative AI solutions and enterprise&nbsp;architecture</li>
+              <li>10+ years in insurance, financial services, and&nbsp;agriculture</li>
+              <li>Practical AI that holds up in&nbsp;production</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <aside class="notes">I'm a Principal Engineer and Architect at Source Allies. I focus on generative AI solutions and enterprise architecture. I have more than ten years of experience building applications in insurance, financial services, and agriculture. I was an early adopter of generative AI, and I work on AI systems that deliver measurable value in production.</aside>
+  </section>
+
+  <section class="slide-content">
+    <header class="band"><h2>About Source Allies</h2></header>
+    <div class="body">
+      <ul>
+        <li>IT Consultancy
+          <ul><li>Insurance, AgriTech, Energy, FinTech. Builders Who Teach. Engineers (Data, AI/ML/LLM, Software, Cloud, DevOps).</li></ul>
+        </li>
+        <li>2 Decades of Dev + Ops.</li>
+        <li>Simplest Architecture / Right solution, right time</li>
+      </ul>
+      <div class="badges">
+        <img src="assets/badges/kubernetes-kcsp.png" alt="Kubernetes Certified Service Provider">
+        <img src="assets/badges/ptc-partner.png" alt="PTC partner">
+        <img class="wide" src="assets/badges/aws-partner-advanced.png" alt="AWS Advanced Tier Services Partner">
+        <img src="assets/badges/aws-solutions-architect-professional.png" alt="AWS Solutions Architect Professional">
+        <img src="assets/badges/aws-devops-engineer-professional.png" alt="AWS DevOps Engineer Professional">
+        <img src="assets/badges/azure-solutions-architect-expert.png" alt="Azure Solutions Architect Expert">
+        <img src="assets/badges/cncf.png" alt="Cloud Native Computing Foundation">
+      </div>
+    </div>
+    <aside class="notes">Source Allies is an IT consultancy that works in insurance, agritech, energy, and fintech. Its engineers cover data, AI and machine learning, software, cloud, and DevOps. They teach client teams as they build.</aside>
+  </section>
+
+  <!-- ===== Act 1: The problem ===== -->
+
+  <section class="slide-statement">
+    <p class="kicker">Part 1</p>
+    <h2 class="headline">The Problem</h2>
+    <div class="dots-left"><i class="d-red"></i><i class="d-green"></i><i class="d-cyan"></i><i class="d-blue"></i></div>
+  </section>
+
+  <section class="slide-content">
+    <header class="band"><h2>How We Got Here</h2></header>
+    <div class="body">
+      <div class="timeline">
+        <div class="t-step"><div class="t-bar"></div><div class="t-stem"></div><div class="t-ring">1</div><p class="t-label">Monolith</p></div>
+        <div class="t-step"><div class="t-bar"></div><div class="t-stem"></div><div class="t-ring">2</div><p class="t-label">Microservices</p></div>
+        <div class="t-step"><div class="t-bar"></div><div class="t-stem"></div><div class="t-ring">3</div><p class="t-label">Modular monolith</p></div>
+        <div class="t-step"><div class="t-bar"></div><div class="t-stem"></div><div class="t-ring">?</div><p class="t-label">???</p></div>
+      </div>
+    </div>
+    <aside class="notes">Systems started as monoliths. Teams split them into microservices to get autonomy. Many organizations are now moving back toward a modular monolith. Microservices and modular monoliths both split the system by domain, and both have the same problem. Domains overlap, and the overlap has no clear owner. Teams build fit-for-purpose APIs for one screen or one consumer instead of building data products.</aside>
+  </section>
+
+  <section class="slide-content">
+    <header class="band"><h2>Three Real Problems</h2></header>
+    <div class="body">
+      <div class="icon-cards">
+        <div class="icon-card">
+          <img class="icon line" src="assets/icons/magnifying-glass.png" alt="">
+          <p class="icon-card-h">Discovery</p>
+          <p class="icon-card-t">Nobody knows what data exists, or where it&nbsp;lives.</p>
+        </div>
+        <div class="icon-card">
+          <img class="icon line" src="assets/icons/puzzle-piece.png" alt="">
+          <p class="icon-card-h">Composition</p>
+          <p class="icon-card-t">Combining domains means custom glue&nbsp;code.</p>
+        </div>
+        <div class="icon-card">
+          <img class="icon line" src="assets/icons/key.png" alt="">
+          <p class="icon-card-h">Ownership</p>
+          <p class="icon-card-t">Overlapping data has no single source of&nbsp;truth.</p>
+        </div>
+      </div>
+    </div>
+    <aside class="notes">Discovery: a team can't use data that it can't find. Composition: every new combination of domains needs new code to combine them. Ownership: when two services hold the same data and neither one is the source of truth, the copies drift apart.</aside>
+  </section>
+
+  <section class="slide-content">
+    <header class="band"><h2>Fit-for-Purpose vs. Data Products</h2></header>
+    <div class="body">
+      <div class="compare">
+        <div class="panel">
+          <h3 class="panel-h">Fit-for-Purpose</h3>
+          <ul><li>Shaped for one consumer</li><li>Copies the data it needs</li><li>Owned by whoever built it</li></ul>
+        </div>
+        <div class="compare-arrow one-way"></div>
+        <div class="panel">
+          <h3 class="panel-h">Data Products</h3>
+          <ul><li>Shaped around the domain</li><li>One authoritative source</li><li>Owned, documented, versioned</li></ul>
+        </div>
+      </div>
+    </div>
+    <aside class="notes">A fit-for-purpose API serves today's screen. A data product serves any consumer that needs that domain, including consumers that don't exist yet. The change is from asking “what does this page need?” to asking “what does this domain know, and who owns it?”</aside>
+  </section>
+
+  <section class="slide-content">
+    <header class="band"><h2>What If We Had This Setup?</h2></header>
+    <div class="body">
+      <p class="list-h">A conference platform, built by four&nbsp;teams:</p>
+      <div class="icon-cards">
+        <div class="icon-card">
+          <img class="icon line" src="assets/icons/people-pair.png" alt="">
+          <p class="icon-card-h">Speakers</p>
+          <p class="icon-card-t">Who is talking, plus their bio and&nbsp;company.</p>
+        </div>
+        <div class="icon-card">
+          <img class="icon line" src="assets/icons/calendar.png" alt="">
+          <p class="icon-card-h">Sessions</p>
+          <p class="icon-card-t">Talks, times, and who gives&nbsp;them.</p>
+        </div>
+        <div class="icon-card">
+          <img class="icon line" src="assets/icons/roadmap-pin.png" alt="">
+          <p class="icon-card-h">Rooms</p>
+          <p class="icon-card-t">Where each talk is, and how many it&nbsp;seats.</p>
+        </div>
+        <div class="icon-card">
+          <img class="icon line" src="assets/icons/speech-bubbles.png" alt="">
+          <p class="icon-card-h">Feedback</p>
+          <p class="icon-card-t">Ratings and comments after each&nbsp;talk.</p>
+        </div>
+      </div>
+    </div>
+    <aside class="notes">The rest of the talk uses one example domain: a conference platform built by four teams. Each team built a service for its own screens. The Speakers team owns speaker profiles. The schedule screen and the feedback screen also show speaker details, so the Sessions and Feedback teams copied the speaker data they needed. The live demo builds this same domain.</aside>
+  </section>
+
+  <section class="slide-content">
+    <header class="band"><h2>Point-to-Point</h2></header>
+    <div class="body">
+      <figure class="figure">
+        <img src="assets/diagram-point-to-point.svg" alt="Five consumers each wired directly to five services, with crossing lines between every pair">
+        <figcaption>Every consumer wires itself to every service it&nbsp;needs.</figcaption>
+      </figure>
+    </div>
+    <aside class="notes">Five consumers and four services can need up to 20 integrations. Each integration has its own contract, authentication, and error handling. Each consumer has to find out which service has the data, and each consumer writes its own code to combine the results. The AI agent has a dashed border because the talk returns to it in Part 4.</aside>
+  </section>
+
+  <section class="slide-content">
+    <header class="band"><h2>Who Owns &ldquo;Speaker&rdquo;?</h2></header>
+    <div class="body">
+      <figure class="figure">
+        <img src="assets/diagram-who-owns-speaker.svg" alt="The Speakers, Sessions and Feedback services each define their own Speaker type, with the name field called name, speakerName and fullName">
+        <figcaption>Three copies of Speaker, and they don't&nbsp;agree.</figcaption>
+      </figure>
+    </div>
+    <aside class="notes">The Speakers service is supposed to own speaker data. The Sessions and Feedback services copied the fields they needed anyway. The copies now use three different names for the speaker's name. When a speaker changes companies, the Sessions service still shows the old company. An owner on paper is not enough if nothing stops the copies. This is the source-of-truth problem.</aside>
+  </section>
+
+  <section class="slide-content">
+    <header class="band"><h2>Your Newest API Consumer</h2></header>
+    <div class="body">
+      <div class="compare">
+        <div class="panel">
+          <h3 class="panel-h">A Developer</h3>
+          <ul><li>Asks a teammate where data lives</li><li>Reads docs and old code</li><li>Learns the quirks over time</li></ul>
+        </div>
+        <div class="panel">
+          <h3 class="panel-h">An AI Agent</h3>
+          <ul><li>Only knows what tools describe</li><li>Has no teammate to ask</li><li>Guesses when context is missing</li></ul>
+        </div>
+      </div>
+      <p class="takeaway">An AI agent hits all the same&nbsp;problems.</p>
+    </div>
+    <aside class="notes">A developer works around discovery, composition, and ownership problems by asking teammates and reading old code. An AI agent can't do that. It only knows what its tools describe, and it guesses when context is missing. Part 4 returns to this point after the graph is built.</aside>
+  </section>
+
+  <!-- ===== Act 2: How a distributed graph works ===== -->
+
+  <section class="slide-statement">
+    <p class="kicker">Part 2</p>
+    <h2 class="headline">One Distributed Graph</h2>
+    <div class="dots-left"><i class="d-red"></i><i class="d-green"></i><i class="d-cyan"></i><i class="d-blue"></i></div>
+  </section>
+
+  <section class="slide-content">
+    <header class="band"><h2>Hub and Spoke</h2></header>
+    <div class="body">
+      <figure class="figure">
+        <img src="assets/diagram-hub-and-spoke.svg" alt="Five consumers connect to one router in the middle, and the router connects to five subgraphs">
+        <figcaption>The router is the hub. Each team owns a&nbsp;spoke.</figcaption>
+      </figure>
+    </div>
+    <aside class="notes">In hub and spoke, every consumer connects to one router, and the router connects to each subgraph. Five consumers and four subgraphs need nine connections instead of up to 20. Each consumer learns one graph. Each team owns its own subgraph.</aside>
+  </section>
+
+  <section class="slide-content">
+    <header class="band"><h2>The Vocabulary</h2></header>
+    <div class="body">
+      <dl class="terms">
+        <dt>Distributed graph</dt><dd>One API composed from many team-owned graphs</dd>
+        <dt>Subgraph</dt><dd>One domain's schema and service, owned by one team</dd>
+        <dt>Entity</dt><dd>A type that several subgraphs contribute fields to</dd>
+        <dt>Router</dt><dd>Plans each query and calls the subgraphs</dd>
+        <dt>Composition</dt><dd>Merges subgraph schemas into one, or fails loudly</dd>
+        <dt>Supergraph</dt><dd>Apollo's name for the composed distributed graph</dd>
+      </dl>
+    </div>
+    <aside class="notes">“Distributed graph” is the general idea. Apollo Federation is the implementation that this talk uses. “Supergraph” is Apollo's name for the composed result. The GraphQL Foundation is standardizing the same idea in the Composite Schemas specification.</aside>
+  </section>
+
+  <section class="slide-content" data-auto-animate>
+    <header class="band"><h2>Entities: One Type, Many Owners</h2></header>
+    <div class="body">
+      <figure class="figure">
+        <img data-id="entity-subgraphs" src="assets/diagram-entity-subgraphs.svg" width="660" alt="The Speakers, Sessions and Feedback subgraphs each declare Speaker with @key on id. Speakers adds name, company and bio, Sessions adds sessions, and Feedback adds avgRating">
+        <figcaption>Each subgraph declares Speaker with the same&nbsp;key.</figcaption>
+      </figure>
+    </div>
+    <aside class="notes">This slide uses the same layout as “Who Owns Speaker?”, but with federation. The Speakers subgraph provides the name, company, and bio. The Sessions subgraph adds only the sessions field. The Feedback subgraph adds only averageRating. Each subgraph declares Speaker with @key on the id field, and the router uses the id to join the pieces. No subgraph copies the name or the company, so the data can't drift apart.</aside>
+  </section>
+
+  <section class="slide-content" data-auto-animate>
+    <header class="band"><h2>Entities: One Type, Many Owners</h2></header>
+    <div class="body">
+      <figure class="figure">
+        <div class="row">
+          <img data-id="entity-subgraphs" src="assets/diagram-entity-subgraphs.svg" width="560" alt="The Speakers, Sessions and Feedback subgraphs each declare Speaker with @key on id">
+          <svg data-auto-animate-delay="0.6" width="120" height="92" viewBox="0 0 120 92" aria-hidden="true"><polygon fill="#085889" points="0,26 74,26 74,0 120,46 74,92 74,66 0,66"/></svg>
+          <img data-auto-animate-delay="0.6" src="assets/diagram-entity-consumer.svg" width="204" alt="The single Speaker type that consumers see, with id, name, company, bio, sessions and avgRating">
+        </div>
+        <figcaption>One Speaker. Each subgraph owns only its own&nbsp;fields.</figcaption>
+      </figure>
+    </div>
+    <aside class="notes">The panel on the right is what consumers see: one Speaker type with every field. A consumer can't tell which subgraph provides which field.</aside>
+  </section>
+
+  <section class="slide-content">
+    <header class="band"><h2>Life of a Query</h2></header>
+    <div class="body">
+      <ol>
+        <li><span class="lab">Ask:</span> the client sends one query to the&nbsp;router</li>
+        <li><span class="lab">Plan:</span> the router splits it by&nbsp;subgraph</li>
+        <li><span class="lab">Fetch:</span> each subgraph resolves its own&nbsp;fields</li>
+        <li><span class="lab">Join:</span> entity keys link the results&nbsp;together</li>
+        <li><span class="lab">Respond:</span> the client gets one merged&nbsp;response</li>
+      </ol>
+    </div>
+    <aside class="notes">The client never knows how many services answered. The router builds a query plan, calls the subgraphs, often in parallel, and merges the results. In the demo, Apollo Sandbox shows the query plan next to each response.</aside>
+  </section>
+
+  <section class="slide-content">
+    <header class="band"><h2>Isn't This Just an ESB?</h2></header>
+    <div class="body">
+      <div class="compare">
+        <div class="panel">
+          <h3 class="panel-h">Classic ESB</h3>
+          <ul><li>Business logic lives in the hub</li><li>One central team owns changes</li><li>The hub becomes the bottleneck</li></ul>
+        </div>
+        <div class="panel">
+          <h3 class="panel-h">Distributed Graph</h3>
+          <ul><li>The router only plans and routes</li><li>Teams own schema and data</li><li>Composition checks enforce contracts</li></ul>
+        </div>
+      </div>
+      <p class="takeaway">Centralization vs.&nbsp;federation</p>
+    </div>
+    <aside class="notes">An enterprise service bus (ESB) was the central integration layer of the service-oriented architecture (SOA) era. Every system connected through it, and it held the routing, the data transformations, and the business rules. One central team usually owned it, so it became a bottleneck. A distributed graph also has a hub, but the router holds no business logic and no data. Each team changes its own subgraph on its own schedule. A schema check in CI, such as rover subgraph check or hive schema:check, stops a change that would break the graph. Every consumer, including AI agents, learns one graph instead of many APIs.</aside>
+  </section>
+
+  <!-- ===== Act 3: Let's build ===== -->
+
+  <section class="slide-statement">
+    <p class="kicker">Part 3</p>
+    <h2 class="headline">Let's Build It</h2>
+    <div class="dots-left"><i class="d-red"></i><i class="d-green"></i><i class="d-cyan"></i><i class="d-blue"></i></div>
+  </section>
+
+  <section class="slide-content">
+    <header class="band"><h2>What We're Building</h2></header>
+    <div class="body">
+      <p class="list-h">The same four teams, as four&nbsp;subgraphs:</p>
+      <div class="icon-cards">
+        <div class="icon-card">
+          <img class="icon line" src="assets/icons/people-pair.png" alt="">
+          <p class="icon-card-h">Speakers</p>
+          <p class="icon-card-t">Who is talking, plus their bio and&nbsp;company.</p>
+        </div>
+        <div class="icon-card">
+          <img class="icon line" src="assets/icons/calendar.png" alt="">
+          <p class="icon-card-h">Sessions</p>
+          <p class="icon-card-t">Talks, times, and who gives&nbsp;them.</p>
+        </div>
+        <div class="icon-card">
+          <img class="icon line" src="assets/icons/roadmap-pin.png" alt="">
+          <p class="icon-card-h">Rooms</p>
+          <p class="icon-card-t">Where each talk is, and how many it&nbsp;seats.</p>
+        </div>
+        <div class="icon-card">
+          <img class="icon line" src="assets/icons/speech-bubbles.png" alt="">
+          <p class="icon-card-h">Feedback</p>
+          <p class="icon-card-t">Ratings and comments after each&nbsp;talk.</p>
+        </div>
+      </div>
+    </div>
+    <aside class="notes">These are the same four teams from “Who Owns Speaker?”. This time the Speakers subgraph owns the Speaker type. Sessions adds a sessions field to Speaker and links each session to a Room. Feedback adds reviews and averageRating to Session, and averageRating to Speaker. Services refer to each other only by ID, so no service copies another service's data. The four services are written in Java, TypeScript, Go, and Python.</aside>
+  </section>
+
+  <section class="slide-content">
+    <header class="band"><h2>Three Parts of a Distributed Graph</h2></header>
+    <div class="body">
+      <figure class="figure">
+        <img src="assets/diagram-three-parts.svg" alt="A consumer sends one query to the router. The router calls the Speakers, Sessions, Rooms and Feedback subgraphs. At deploy time, the subgraphs publish their schemas to the registry, and the registry gives the composed schema to the router.">
+        <figcaption>Subgraphs publish schemas. The router serves&nbsp;queries.</figcaption>
+      </figure>
+    </div>
+    <aside class="notes">A distributed graph has three parts, and each part has several products to choose from. Solid arrows happen on every request. Dashed arrows happen when a team publishes a schema change. Subgraphs are the services that teams own. Any language works if its GraphQL library supports the Federation specification. The registry stores each subgraph's schema, composes the supergraph, and gives the composed schema to the router. The simplest registry is a file that rover supergraph compose writes. Apollo GraphOS, Hive, and Cosmo add schema checks, history, and usage data. The router takes client queries, plans them across the subgraphs, and merges the results. In the demo, the subgraphs use four languages, the registry is a self-hosted Hive instance in Docker, and the router is the Apollo Router with Hive's plugin.</aside>
+  </section>
+
+  <section class="slide-statement">
+    <p class="kicker">Live demo</p>
+    <h2 class="headline">Let's build a distributed&nbsp;graph</h2>
+    <p class="cue"><b>Demo:</b> switch to the editor.</p>
+    <div class="dots-left"><i class="d-red"></i><i class="d-green"></i><i class="d-cyan"></i><i class="d-blue"></i></div>
+    <aside class="notes">The live demo builds the graph one subgraph at a time. Each service publishes its schema to Hive, and the router picks up each new supergraph within 10 seconds without a restart. The demo also shows a query plan in Apollo Sandbox. It ends with a schema change that fails composition: adding a name field to the Room type in the Sessions subgraph fails, because the Rooms subgraph already provides Room.name. To run the same steps yourself, see “Start it one step at a time” in the demo repository's README.</aside>
+  </section>
+
+
+  <!-- ===== Act 4: The graph as AI context ===== -->
+
+  <section class="slide-statement">
+    <p class="kicker">Part 4</p>
+    <h2 class="headline">The Graph as AI Context</h2>
+    <div class="dots-left"><i class="d-red"></i><i class="d-green"></i><i class="d-cyan"></i><i class="d-blue"></i></div>
+  </section>
+
+  <section class="slide-content">
+    <header class="band"><h2>Why Graphs Suit Agents</h2></header>
+    <div class="body">
+      <ul>
+        <li><span class="lab">Typed:</span> the schema says exactly what exists</li>
+        <li><span class="lab">Self-describing:</span> descriptions explain what fields mean</li>
+        <li><span class="lab">Connected:</span> relationships are explicit, not guessed</li>
+        <li><span class="lab">Precise:</span> agents ask for only what they need</li>
+      </ul>
+      <p class="takeaway">The schema is the&nbsp;context.</p>
+    </div>
+    <aside class="notes">An agent needs to know what data exists, what the data means, and how it connects. A schema with good descriptions answers all three questions. The demo schemas have a description on every type and field, because the agent reads them to decide what to query.</aside>
+  </section>
+
+  <section class="slide-content">
+    <header class="band"><h2>The Same Hub, for Agents</h2></header>
+    <div class="body">
+      <div class="compare">
+        <div class="panel">
+          <h3 class="panel-h">Tool Sprawl</h3>
+          <ul><li>One MCP server per service</li><li>Tools grow with every service</li><li>The agent stitches data together</li></ul>
+        </div>
+        <div class="compare-arrow one-way"></div>
+        <div class="panel">
+          <h3 class="panel-h">One Graph</h3>
+          <ul><li>One MCP endpoint</li><li>Same tools reach every domain</li><li>The router does the joins</li></ul>
+        </div>
+      </div>
+    </div>
+    <aside class="notes">This is hub and spoke again, applied to agents. Without a graph, an agent needs a set of tools for each service, and it has to combine the results itself. With a graph, the agent connects to one MCP endpoint, and the router does the joins. The demo runs both setups. The REST agent uses four MCP servers, one for each service. Each one is generated from that service's OpenAPI spec with openapi-to-mcp. The GraphQL agent uses one Apollo MCP Server in front of the router.</aside>
+  </section>
+
+  <section class="slide-content">
+    <header class="band"><h2>Apollo MCP Server</h2></header>
+    <div class="body">
+      <ol>
+        <li><span class="lab">Connect:</span> the server reads the schema and calls the&nbsp;router</li>
+        <li><span class="lab">Discover:</span> <code>search</code> and <code>introspect</code> show types and&nbsp;descriptions</li>
+        <li><span class="lab">Validate:</span> <code>validate</code> checks a query before it&nbsp;runs</li>
+        <li><span class="lab">Execute:</span> <code>execute</code> runs the query through the&nbsp;router</li>
+      </ol>
+    </div>
+    <aside class="notes">The Apollo MCP Server gives AI agents access to a GraphQL API as MCP tools. It can turn predefined operations into named tools, but the demo defines none. Instead, the agent gets four tools. The search tool finds types that match search terms. The introspect tool returns a type with its fields and their descriptions. The validate tool checks a query against the schema. The execute tool runs the query through the Apollo Router. The agent writes its own queries from what it learns. In the demo, the server downloads the current schema from Hive when it starts.</aside>
+  </section>
+
+
+  <section class="slide-statement">
+    <p class="kicker">Live demo</p>
+    <h2 class="headline">Let's give an agent the&nbsp;graph</h2>
+    <p class="cue"><b>Demo:</b> a REST agent and a GraphQL agent answer the same&nbsp;questions.</p>
+    <div class="dots-left"><i class="d-red"></i><i class="d-green"></i><i class="d-cyan"></i><i class="d-blue"></i></div>
+    <aside class="notes">The demo runs a Jupyter notebook that builds two LangChain agents. Both use Claude Sonnet 5.5 through Amazon Bedrock. Both agents get the same system prompt and the same questions, such as “For each track, which session has the highest average rating, and which room is it in?” The REST agent can only use the four REST MCP servers. The GraphQL agent can only use the Apollo MCP Server. The notebook compares the tool calls, model calls, tokens, and time for each question. It is in the ai folder of the demo repository.</aside>
+  </section>
+
+  <!-- ===== In the real world ===== -->
+
+  <section class="slide-statement">
+    <p class="kicker">Part 5</p>
+    <h2 class="headline">In the Real World</h2>
+    <div class="dots-left"><i class="d-red"></i><i class="d-green"></i><i class="d-cyan"></i><i class="d-blue"></i></div>
+  </section>
+
+  <section class="slide-content">
+    <header class="band"><h2>Inside Source Allies: Ask&nbsp;Source</h2></header>
+    <div class="body">
+      <figure class="figure">
+        <img src="assets/diagram-ask-source.svg" width="1090" alt="People reach the Ask Source AI agent through Slack or a web UI. The agent has two tools. Wiki RAG searches Confluence. The Unified Graph is one GraphQL API over HR, time tracking, case studies, Azure, GitHub and home-grown systems. Vendor REST APIs get GraphQL wrappers.">
+      </figure>
+      <p class="takeaway">New data in the graph makes the agent smarter, with zero AI&nbsp;work.</p>
+    </div>
+    <aside class="notes">Ask Source is the internal AI agent at Source Allies. People use it in Slack or in a web UI. It has two tools. The first is a RAG tool over the company's Confluence pages. The second is the Unified Graph, which combines data from HR, time tracking, case studies, Azure, GitHub, and systems that Source Allies built. Most vendor systems only have REST APIs, so the team wrote small GraphQL wrappers over them and added them as subgraphs. When a team adds new data to the graph, the agent can use it right away. Nobody changes the agent, its prompts, or its tools.</aside>
+  </section>
+
+  <section class="slide-content">
+    <header class="band"><h2>Client Story: Agriculture</h2></header>
+    <div class="body">
+      <ul>
+        <li><span class="lab">The problem:</span> Many strong APIs, but sprawl makes them hard to find and&nbsp;maintain</li>
+        <li><span class="lab">The approach:</span> One federated graph across their APIs, plus an enablement team to help teams move&nbsp;onto&nbsp;it</li>
+        <li><span class="lab">The result:</span> One experience for consumers, one portal to see and manage every API, and automatic schema conflict&nbsp;checks</li>
+      </ul>
+    </div>
+    <aside class="notes">This client works in agriculture. They have many well-built APIs, but they have too many to manage. Internal teams struggle to maintain them, and consumers struggle to find out what exists and how to use it. Source Allies is working with them to build one federated graph across their APIs. An enablement team supports each team as it moves onto the graph. The outcome is one consistent experience for consumers and one portal to see and manage the APIs. Composition checks also catch schema conflicts automatically.</aside>
+  </section>
+
+  <section class="slide-content">
+    <header class="band"><h2>Client Story: Education</h2></header>
+    <div class="body">
+      <ul>
+        <li><span class="lab">The problem:</span> Rewriting many systems, backend included, with AI assistants for students as a&nbsp;priority</li>
+        <li><span class="lab">The approach:</span> Distributed GraphQL instead of distributed REST&nbsp;services</li>
+        <li><span class="lab">The result:</span> The graph built for the web and mobile rewrites serves AI with almost no extra work. The AI agent is months ahead of&nbsp;schedule.</li>
+      </ul>
+    </div>
+    <aside class="notes">This client runs an education platform. They were rewriting many of their systems, including the backend. One priority was making their data easy for AI to find and use, so they could build AI assistants for students. Source Allies worked with them to adopt a distributed GraphQL backend instead of distributed REST services. The graph that the web and mobile rewrites needed anyway now supports their AI work with almost no extra effort. Their AI agent work is months ahead of schedule. The agent quickly finds the data that students and admins need.</aside>
+  </section>
+
+  <!-- ===== Wrap-up ===== -->
+
+
+  <section class="slide-content">
+    <header class="band"><h2>Thank you!</h2></header>
+    <div class="body thanks four-qr">
+      <div class="thanks-text">
+        <ul><li>Questions?</li></ul>
+      </div>
+      <div class="qr-cards">
+        <figure class="qr-card">
+          <figcaption>Source Allies</figcaption>
+          <div class="qr" data-url="https://www.sourceallies.com"></div>
+        </figure>
+        <figure class="qr-card">
+          <figcaption>LinkedIn</figcaption>
+          <div class="qr" data-url="https://www.linkedin.com/in/grey-lovelace-baa73948"></div>
+        </figure>
+        <figure class="qr-card">
+          <figcaption>Sessionize</figcaption>
+          <div class="qr" data-url="https://sessionize.com/grey-lovelace/"></div>
+        </figure>
+        <figure class="qr-card">
+          <figcaption>Code &amp; Slides</figcaption>
+          <div class="qr" data-url="https://github.com/grey-lovelace/distributed-graph-demo"></div>
+        </figure>
+      </div>
+    </div>
+    <aside class="notes">The four codes link to the Source Allies website (sourceallies.com), my LinkedIn profile, my Sessionize speaker profile, and the GitHub repository with the demo code and these slides (github.com/grey-lovelace/distributed-graph-demo).</aside>
+  </section>
+
+<!-- SLIDES END -->
+</div>
+</div>
+
+<script src="vendor/reveal/reveal.min.js"></script>
+<script src="vendor/reveal/plugin/notes/notes.min.js"></script>
+<script src="vendor/qrcode/qrcode.js"></script>
+<script src="deck.js"></script>
+</body>
+</html>

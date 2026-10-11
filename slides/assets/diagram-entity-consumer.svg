@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 660" font-family="Lato, 'Helvetica Neue', Arial, sans-serif">
+<rect width="400" height="660" fill="#fff"/>
+<rect x="40" y="40" width="320" height="580" rx="16" fill="#E8F2FA" stroke="#061A40" stroke-width="4"/>
+<path d="M40 120 V56 a16 16 0 0 1 16 -16 H344 a16 16 0 0 1 16 16 V120 Z" fill="#1A80C7"/>
+<text x="200.0" y="92" text-anchor="middle" font-size="28" font-weight="700" fill="#fff">What consumers see</text>
+<text x="68" y="186" font-family="Menlo, Consolas, monospace" font-size="28" font-weight="700" fill="#061A40">type Speaker {</text>
+<text x="104" y="242" font-family="Menlo, Consolas, monospace" font-size="28" fill="#061A40">id</text>
+<text x="104" y="294" font-family="Menlo, Consolas, monospace" font-size="28" fill="#061A40">name</text>
+<text x="104" y="346" font-family="Menlo, Consolas, monospace" font-size="28" fill="#061A40">company</text>
+<text x="104" y="398" font-family="Menlo, Consolas, monospace" font-size="28" fill="#061A40">bio</text>
+<text x="104" y="450" font-family="Menlo, Consolas, monospace" font-size="28" fill="#061A40">sessions</text>
+<text x="104" y="502" font-family="Menlo, Consolas, monospace" font-size="28" fill="#061A40">averageRating</text>
+<text x="68" y="554" font-family="Menlo, Consolas, monospace" font-size="28" font-weight="700" fill="#061A40">}</text>
+
+</svg>

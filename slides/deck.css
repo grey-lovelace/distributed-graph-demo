@@ -1,0 +1,360 @@
+/* Source Allies brand theme for reveal.js, built from the UX team's slide template.
+   This file is the brand. Decks should not need to edit it: build slides in
+   index.html from the layouts in references/layouts.md.
+
+   Brand rules this file follows (from the template's color + accessibility pages):
+   - primary colors: navy, blue, green, red, gray. Cyan and teal are secondary,
+     only to avoid repeating a primary color.
+   - navy is the text color. No green or cyan text on white.
+   - on green or cyan backgrounds, text is navy. White text only goes on navy,
+     navy-alt, blue (large/bold) and red (large/bold).
+   - red and green never sit next to each other. */
+
+:root{
+  --navy:#061A40; --navy-alt:#085889; --blue:#1A80C7; --green:#19B95C; --red:#E53049;
+  --gray:#767676; --light-grey:#E2E0E0;
+  --cyan:#16BAED; --teal:#6AC8D5;   /* secondary */
+  --panel:#E8F4FF; --card:#EEEEEE;
+}
+
+/* ---------- base ---------- */
+.reveal{ font-family:'Lato',-apple-system,Segoe UI,Roboto,sans-serif; color:var(--navy); font-weight:400; }
+.reveal .slides{ text-align:left; }
+.reveal .slides > section{ width:1280px; height:720px; box-sizing:border-box; padding:0; overflow:hidden; }
+/* :where keeps this at low priority so layout classes like .section-title can set their own color */
+:where(.reveal) :is(h1,h2,h3){ font-family:'Lato',sans-serif; text-transform:none; letter-spacing:normal; margin:0; color:inherit; }
+.reveal p{ margin:0; }
+.reveal .progress{ color:var(--blue); }
+.reveal code{ background:var(--panel); color:var(--navy-alt); padding:1px 8px; border-radius:5px; font-size:.9em; font-family:Consolas,Menlo,monospace; }
+
+/* Source Allies mark, top-right of every slide except the title (added by deck.js) */
+.corner-mark{ position:absolute; top:38px; right:28px; width:76px; height:76px; display:block; z-index:30; }
+
+/* ---------- title slide (navy) ---------- */
+/* !important beats reveal's inline display:block on the present slide */
+.reveal .slides > section.slide-title{ padding:0 52px 40px; display:flex !important; flex-direction:column; justify-content:center; }
+.logo{ position:absolute; top:48px; left:40px; }
+.logo img{ height:66px; display:block; }
+.slide-title h1{ color:#fff; font-size:76px; font-weight:900; line-height:1.05; max-width:1100px; }
+.subtitle{ color:#fff; font-style:italic; font-size:40px; margin-top:44px !important; line-height:1.2; }
+.meta{ color:var(--light-grey); font-size:26px; margin-top:14px !important; }
+.rule-light{ position:absolute; left:0; right:222px; bottom:51px; height:4px; background:#fff; }
+.dots-right{ position:absolute; right:26px; bottom:22px; display:flex; align-items:center; gap:6px; }
+.dots-right i{ width:36px; height:36px; border-radius:50%; display:inline-block; }
+.dots-right i.big{ width:62px; height:62px; }
+.d-red{ background:var(--red);} .d-green{ background:var(--green);} .d-cyan{ background:var(--cyan);} .d-blue{ background:var(--blue);}
+
+/* ---------- content slides (white, navy title band) ---------- */
+.reveal .slides > section.slide-content{ background:#fff; display:flex !important; flex-direction:column; }
+.band{ flex:0 0 auto; min-height:109px; box-sizing:border-box; background:var(--navy); margin-top:24px;
+  display:flex; align-items:center; padding:10px 130px 10px 56px; }
+.band h2{ color:#fff; font-size:48px; font-weight:900; line-height:1.05; }
+/* content sits centered between the title band and the footer, so short slides don't look half-empty */
+.body{ flex:1 1 auto; padding:26px 64px 100px; font-size:31px; line-height:1.3;
+  display:flex; flex-direction:column; justify-content:center; }
+.body ul{ list-style:none; margin:0; padding:0; }
+.body li{ position:relative; margin:0 0 18px; }
+.body ul > li{ padding-left:48px; }
+.body ul > li::before{ content:""; position:absolute; left:6px; top:.45em; width:13px; height:13px; border-radius:50%; background:var(--navy); }
+/* sub-bullets: hollow circles, a size down */
+.body ul ul{ margin-top:12px; }
+.body ul ul > li{ font-size:.86em; margin-bottom:12px; }
+.body ul ul > li::before{ width:9px; height:9px; background:transparent; border:2px solid var(--navy); top:.5em; }
+
+/* numbered steps: <ol> gets number circles instead of dots */
+.body ol{ list-style:none; margin:0; padding:0; counter-reset:step; }
+.body ol > li{ padding-left:68px; margin-bottom:22px; counter-increment:step; }
+.body ol > li::before{ content:counter(step); position:absolute; left:0; top:-.1em; width:48px; height:48px; border-radius:50%;
+  background:var(--blue); color:#fff; font-size:24px; font-weight:900; display:flex; align-items:center; justify-content:center;
+  /* A navy outline keeps the white numbers readable on the light green and cyan circles. */
+  text-shadow:-1.5px -1.5px 0 var(--navy), 1.5px -1.5px 0 var(--navy), -1.5px 1.5px 0 var(--navy), 1.5px 1.5px 0 var(--navy),
+    0 -1.5px 0 var(--navy), 0 1.5px 0 var(--navy), -1.5px 0 0 var(--navy), 1.5px 0 0 var(--navy); }
+.body ol > li:nth-child(4n+2)::before{ background:var(--navy-alt); }
+.body ol > li:nth-child(4n+3)::before{ background:var(--green); }
+.body ol > li:nth-child(4n+4)::before{ background:var(--cyan); }
+
+/* bold lead-in on a bullet (<span class="lab">Why:</span>) and a bold heading over a list */
+.lab{ font-weight:900; }
+.lab.blue{ color:var(--blue); } .lab.red{ color:var(--red); }
+.list-h{ font-weight:900; margin:0 0 10px !important; }
+.list-h ~ .list-h{ margin-top:30px !important; }
+
+/* one-line takeaway under the slide content */
+.takeaway{ margin-top:28px !important; font-weight:700; font-size:26px; line-height:1.35; text-align:center; }
+
+/* two columns of bullets */
+.twocol{ display:flex; gap:56px; }
+.twocol .col{ flex:1; }
+.col-h{ font-size:32px; font-weight:900; margin:0 0 14px !important; }
+.col-h.blue{ color:var(--blue); } .col-h.red{ color:var(--red); }
+.twocol li{ font-size:27px; margin-bottom:12px; }
+
+/* term + definition rows */
+.terms{ display:grid; grid-template-columns:max-content 1fr; column-gap:64px; row-gap:22px; margin:0; font-size:30px; }
+.terms dt{ font-weight:900; }
+.terms dd{ margin:0; }
+
+/* comparison: two light-blue panels with a double arrow between */
+.compare{ display:flex; align-items:stretch; gap:36px; }
+.panel{ flex:1; background:var(--panel); border-radius:40px; padding:30px 40px 34px; }
+.panel-h{ font-size:40px; font-weight:900; margin-bottom:14px !important; }
+.panel ul > li{ padding:14px 0 16px; margin:0; font-size:26px; line-height:1.25; border-top:2px solid var(--navy-alt); }
+.panel ul > li:first-child{ border-top:0; padding-top:0; }
+.panel ul > li::before{ display:none; }
+.compare-arrow{ flex:0 0 200px; height:92px; align-self:center; background:var(--navy-alt);
+  clip-path:polygon(0 50%,25% 0,25% 28%,75% 28%,75% 0,100% 50%,75% 100%,75% 72%,25% 72%,25% 100%); }
+/* one-way arrow for before -> after */
+.compare-arrow.one-way{ flex-basis:150px; clip-path:polygon(0 28%,62% 28%,62% 0,100% 50%,62% 100%,62% 72%,0 72%); }
+
+/* three sticky notes */
+.cards{ display:flex; gap:52px; justify-content:center; margin-top:26px; }
+.card{ position:relative; width:282px; min-height:230px; padding:40px 26px 26px; color:var(--navy); box-sizing:border-box;
+  display:flex; flex-direction:column; gap:12px; box-shadow:0 12px 24px rgba(6,26,64,.22); transform:rotate(var(--rot,0deg)); }
+.card:nth-child(1){ background:var(--red); --rot:-3deg; color:#fff; }
+.card:nth-child(2){ background:var(--cyan); --rot:2deg; }
+.card:nth-child(3){ background:var(--green); --rot:-2deg; }
+.card-h{ font-size:32px; font-weight:900; line-height:1; }
+.card-t{ font-size:23px; line-height:1.3; font-weight:700; }
+.card::before{ content:""; position:absolute; top:-12px; left:50%; width:128px; height:36px;
+  transform:translateX(-50%) rotate(-4deg); background:rgba(255,255,255,.45);
+  clip-path:polygon(0 0,100% 0,100% 68%,93% 100%,85% 70%,77% 100%,69% 72%,61% 100%,
+    53% 70%,45% 100%,37% 72%,29% 100%,21% 70%,13% 100%,5% 72%,0 96%); }
+
+/* icon cards: 3-4 grey panels, each with an icon on top (core values style) */
+.icon-cards{ display:flex; gap:28px; justify-content:center; align-items:stretch; margin-top:60px; }
+/* A lead-in needs room for the icons, which rise 70px above their cards. */
+.list-h + .icon-cards{ margin-top:110px; }
+.icon-card{ flex:1; max-width:270px; background:var(--card); padding:96px 22px 26px; position:relative; text-align:center; box-sizing:border-box; }
+.icon-card .icon{ position:absolute; top:-70px; left:50%; transform:translateX(-50%); width:150px; height:150px; object-fit:contain; }
+.icon-card .icon.line{ background:#fff; border-radius:50%; padding:26px; box-sizing:border-box; box-shadow:0 6px 16px rgba(6,26,64,.14); }
+.icon-card-h{ font-size:24px; font-weight:900; text-transform:uppercase; letter-spacing:.5px; line-height:1.15; margin-bottom:10px !important; }
+.icon-card-t{ font-size:20px; line-height:1.35; }
+
+/* big numbers */
+.stats{ display:flex; gap:40px; justify-content:center; margin-top:10px; }
+.stat{ flex:1; max-width:340px; text-align:center; border-top:6px solid var(--blue); padding-top:26px; }
+.stat:nth-child(2){ border-color:var(--navy-alt); } .stat:nth-child(3){ border-color:var(--green); } .stat:nth-child(4){ border-color:var(--cyan); }
+.stat-n{ display:block; font-size:88px; font-weight:900; line-height:1; }
+.stat-l{ display:block; font-size:24px; font-weight:700; color:var(--gray); margin-top:14px; line-height:1.3; }
+
+/* timeline: 4-6 chevrons, each with a ring and a label below */
+.timeline{ display:flex; margin-top:10px; }
+.t-step{ flex:1; display:flex; flex-direction:column; align-items:center; text-align:center; --c:var(--red); }
+.t-step:nth-child(2){ --c:var(--gray); } .t-step:nth-child(3){ --c:var(--blue); } .t-step:nth-child(4){ --c:var(--green); }
+.t-step:nth-child(5){ --c:var(--teal); } .t-step:nth-child(6){ --c:var(--navy-alt); }
+.t-bar{ align-self:stretch; height:46px; margin-right:-16px; background:var(--c); position:relative;
+  clip-path:polygon(0 0,calc(100% - 22px) 0,100% 50%,calc(100% - 22px) 100%,0 100%,22px 50%); }
+.t-step:first-child .t-bar{ clip-path:polygon(0 0,calc(100% - 22px) 0,100% 50%,calc(100% - 22px) 100%,0 100%); }
+.t-step:last-child .t-bar{ margin-right:0; }
+/* Each bar except the last extends 16px under the next chevron. Its dot moves back 8px so that it sits over the stem. */
+.t-step:last-child .t-bar::after{ left:50%; }
+.t-bar::after{ content:""; position:absolute; left:calc(50% - 8px); top:50%; width:20px; height:20px; margin:-10px 0 0 -10px; border-radius:50%; background:#fff; }
+.t-stem{ width:3px; height:26px; background:var(--gray); }
+.t-ring{ width:112px; height:112px; border-radius:50%; border:12px solid var(--c); background:#fff; box-sizing:border-box;
+  display:flex; align-items:center; justify-content:center; font-size:24px; font-weight:900; line-height:1.05; padding:6px;
+  box-shadow:0 6px 14px rgba(6,26,64,.18); }
+.t-ring .icon{ width:68px; height:68px; object-fit:contain; }
+.t-label{ font-size:23px; font-weight:900; margin-top:16px !important; padding:0 8px; line-height:1.2; }
+.t-text{ font-size:19px; margin-top:6px !important; padding:0 10px; line-height:1.3; }
+
+/* speakers: round photo with a colored ring, name and bullets beside it */
+.speakers{ display:flex; flex-direction:column; gap:30px; }
+.speaker{ display:flex; align-items:center; gap:50px; }
+.avatar{ flex:0 0 190px; height:190px; margin:0; border-radius:50%; border:6px solid var(--green); overflow:hidden; box-sizing:border-box;
+  background:var(--card); display:flex; align-items:center; justify-content:center; font-size:56px; font-weight:900; color:var(--gray); }
+.speaker:nth-child(2) .avatar{ border-color:var(--cyan); }
+.avatar img{ width:100%; height:100%; object-fit:cover; }
+.speaker-name{ font-size:34px; font-weight:900; margin-bottom:8px !important; }
+.speaker-role{ font-size:24px; font-weight:700; color:var(--gray); margin-bottom:10px !important; }
+.speaker li{ font-size:25px; margin-bottom:6px; }
+.speakers.one .avatar{ flex-basis:260px; height:260px; }
+
+/* screenshot or photo on the left, heading + bullets on the right (case study) */
+.case{ display:flex; flex-direction:row; gap:48px; align-items:center; }
+.shot{ flex:0 0 46%; margin:0; }
+.shot img{ display:block; }
+.shot img,.shot .placeholder{ width:100%; max-height:470px; object-fit:contain; border-radius:6px; box-shadow:0 8px 24px rgba(6,26,64,.16); }
+.shot .placeholder{ height:400px; }
+.case-text{ flex:1; }
+.case-h{ font-size:30px; font-weight:900; padding-bottom:12px; border-bottom:3px solid var(--green); margin-bottom:22px !important; }
+.case-text li{ font-size:25px; margin-bottom:14px; line-height:1.3; }
+
+/* full-width picture with a caption */
+.figure{ margin:0; display:flex; flex-direction:column; align-items:center; gap:14px; }
+.figure img,.figure .placeholder{ max-width:100%; max-height:400px; border-radius:6px; box-shadow:0 10px 28px rgba(6,26,64,.16); }
+.figure figcaption{ font-size:24px; color:var(--gray); font-weight:700; }
+.figure .placeholder{ width:900px; height:380px; }
+
+/* 2-3 photos side by side */
+.photos{ display:flex; gap:24px; justify-content:center; }
+.photos img,.photos .placeholder{ flex:1 1 0; min-width:0; height:420px; object-fit:cover; }
+
+/* stand-in until a real image is added */
+.placeholder{ display:flex; align-items:center; justify-content:center; text-align:center; box-sizing:border-box;
+  background:#F3F5FA; border:3px dashed var(--light-grey); color:var(--gray); font-size:22px; font-weight:700; padding:20px; }
+
+/* quote in a box: cyan border on white slides, white border on navy (statement) slides */
+.quote{ display:flex; gap:32px; align-items:flex-start; border:3px solid var(--cyan); padding:56px 48px; margin:0 40px; }
+.quote-mark{ flex:0 0 96px; width:96px; height:auto; margin-top:10px; }
+.quote-body{ border-left:3px solid var(--navy); padding-left:32px; }
+.quote-text{ font-size:43px; line-height:1.3; }
+.quote-by{ font-size:25px; font-weight:300; margin-top:24px !important; }
+.slide-statement .quote{ border-color:#fff; }
+.slide-statement .quote-body{ border-left-color:#fff; }
+.slide-statement .quote-text,.slide-statement .quote-by{ color:#fff; }
+
+/* certification badges and logos */
+.badges{ margin-top:12px; display:flex; flex-wrap:wrap; gap:14px 18px; align-items:center; justify-content:center; }
+.badges img{ height:104px; width:auto; }
+.badges img.wide{ height:120px; }
+
+/* Alternative About Source Allies layout. */
+.about-source-allies .corner-mark{ display:none; }
+.about-source-allies .band{ padding-left:56px; }
+.about-source-allies .band h2 img{ display:block; width:450px; height:auto; }
+.about-source-allies .anniversary-banner{ position:absolute; top:0; right:0; width:304px; height:auto; z-index:35; }
+.about-source-allies .body{ justify-content:flex-start; padding:11px 82px 0; color:#111; }
+.about-source-allies .body ul > li::before{ background:#111; }
+.about-source-allies .body ul ul{ margin-top:8px; margin-left:24px; }
+.about-source-allies .body ul ul > li{ font-size:29px; line-height:1.25; max-width:900px; }
+.about-source-allies .body ul ul > li::before{ background:transparent; border-color:#111; }
+.about-source-allies .badge-strip{ position:absolute; left:20px; top:463px; width:1240px; height:auto; }
+
+/* buttons (links): white rim + shadow, like the template's button designs */
+.button{ display:inline-block; width:fit-content; padding:18px 36px; border-radius:18px; font-size:26px; font-weight:900; text-decoration:none;
+  background:var(--blue); color:#fff !important; box-shadow:0 0 0 5px #fff, 0 0 0 8px var(--blue), 0 8px 22px rgba(6,26,64,.28); }
+.button.green{ background:var(--green); color:var(--navy) !important; box-shadow:0 0 0 5px #fff, 0 0 0 8px var(--green), 0 8px 22px rgba(6,26,64,.28); }
+.button.red{ background:var(--red); box-shadow:0 0 0 5px #fff, 0 0 0 8px var(--red), 0 8px 22px rgba(6,26,64,.28); }
+
+.button.cyan{ background:var(--cyan); color:var(--navy) !important; box-shadow:0 0 0 5px #fff, 0 0 0 8px var(--cyan), 0 8px 22px rgba(6,26,64,.28); }
+/* two things side by side, e.g. a list and a score tile */
+.row{ display:flex; align-items:center; gap:70px; }
+.button-grid{ display:grid; grid-template-columns:repeat(2, 330px); gap:44px 40px; }
+.button-grid .button{ width:auto; text-align:center; padding:34px 20px; }
+
+/* score tile: one number on a navy-to-blue gradient */
+.stat-tile{ flex:0 0 auto; width:220px; height:220px; border-radius:26px; border:4px solid var(--blue); box-sizing:border-box;
+  background:linear-gradient(140deg,var(--navy) 35%,var(--blue) 100%); color:#fff;
+  display:flex; flex-direction:column; align-items:center; justify-content:center; }
+.stat-tile-n{ font-size:74px; font-weight:900; color:var(--cyan); line-height:1; }
+.stat-tile-l{ font-size:24px; margin-top:8px !important; }
+
+/* thank-you slide: questions on the left, up to two QR codes on the right */
+.thanks{ display:flex; flex-direction:row; align-items:center; gap:60px; }
+.thanks-text{ flex:1; }
+.thanks-text .button{ margin-top:24px; }
+.qr-cards{ display:flex; gap:44px; }
+.qr-card{ margin:0; display:flex; flex-direction:column; align-items:center; text-align:center; gap:14px; }
+.qr-card figcaption{ font-size:24px; font-weight:900; line-height:1.2; max-width:250px; }
+.qr{ width:240px; height:240px; position:relative; }
+/* This deck has four QR codes. "Questions?" goes on its own line above one row of smaller codes. */
+.thanks.four-qr{ flex-direction:column; align-items:stretch; gap:28px; }
+.thanks.four-qr .thanks-text{ flex:0 0 auto; }
+.thanks.four-qr .qr-cards{ justify-content:center; gap:48px; }
+.thanks.four-qr .qr{ width:220px; height:220px; }
+.qr svg{ width:100%; height:100%; display:block; }
+/* logo covers ~22% of the code's width; much bigger and phones stop reading it */
+.qr-logo{ position:absolute; top:50%; left:50%; width:22%; height:22%; transform:translate(-50%,-50%);
+  background:#fff; padding:3%; border-radius:12%; box-sizing:content-box; }
+
+/* ---------- statement slides (navy): one big idea ---------- */
+.reveal .slides > section.slide-statement{ padding:0 90px 40px 70px; display:flex !important; flex-direction:column; justify-content:center; }
+.kicker{ color:var(--cyan); font-weight:900; letter-spacing:2px; font-size:20px; margin-bottom:16px !important; text-transform:uppercase; }
+.headline{ color:#fff; font-size:56px; font-weight:900; line-height:1.08; margin:0 0 24px !important; max-width:1080px; }
+.lead{ color:var(--light-grey); font-size:31px; line-height:1.4; max-width:1060px; }
+.lead b{ color:#fff; }
+.cue{ color:#fff; font-size:31px; line-height:1.4; max-width:1060px; margin-top:18px !important; }
+.cue::before{ content:"\25B6"; color:var(--cyan); font-size:.66em; margin-right:14px; vertical-align:2px; }
+.cue b{ color:var(--cyan); font-weight:900; }
+/* a call-to-action button under a statement (the ask) */
+.slide-statement .button{ margin-top:34px; }
+.dots-left{ position:absolute; left:28px; bottom:24px; display:flex; gap:4px; }
+.dots-left i{ width:30px; height:30px; border-radius:50%; }
+
+/* ---------- section divider ---------- */
+/* field color is set by deck.js: cyan by default, or add class green / blue / red */
+.reveal .slides > section.slide-section{ padding:0; display:flex !important; align-items:center; justify-content:center; }
+.section-band{ width:91.4%; min-height:171px; padding:30px 60px; box-sizing:border-box; display:flex; align-items:center; justify-content:center; background:var(--blue); }
+.section-title{ color:#fff; font-size:76px; font-weight:900; text-align:center; line-height:1.08; text-shadow:0 5px 8px rgba(0,0,0,.35); }
+.slide-section.green .section-band{ background:var(--navy); }
+.slide-section.blue .section-band{ background:var(--cyan); }
+.slide-section.blue .section-title{ color:var(--navy); text-shadow:none; }
+.slide-section.red .section-band{ background:#fff; }
+.slide-section.red .section-title{ color:var(--navy); text-shadow:none; }
+
+/* ---------- brand footer (added by deck.js to white slides) ---------- */
+.brandbar{ position:absolute; left:26px; right:26px; bottom:19px; display:flex; align-items:center; }
+.brandbar i{ width:34px; height:34px; border-radius:50%; display:inline-block; margin-right:5px; }
+.brandbar .line{ flex:1; height:5px; background:var(--navy); margin-left:18px; }
+.brandbar .num{ flex:0 0 auto; margin-left:22px; width:62px; height:62px; border-radius:50%; background:var(--blue); color:#fff;
+  display:flex; align-items:center; justify-content:center; font-weight:700; font-size:22px; }
+
+/* ---------- "too much on this slide" warning (added by deck.js) ---------- */
+.overflow-flag{ position:absolute; top:4px; left:50%; transform:translateX(-50%); z-index:50; background:var(--red); color:#fff;
+  font:900 16px/1 'Lato',sans-serif; padding:6px 14px; border-radius:6px; white-space:nowrap; }
+@media print{ .overflow-flag{ display:none; } }
+
+/* ---------- entrance animations (replayed each time a slide is shown) ---------- */
+@keyframes riseIn{ from{ opacity:0; transform:translateY(18px); } to{ opacity:1; transform:translateY(0); } }
+@keyframes dropIn{ from{ opacity:0; transform:translateY(-12px); } to{ opacity:1; transform:translateY(0); } }
+@keyframes popIn{ from{ opacity:0; transform:scale(.4); } to{ opacity:1; transform:scale(1); } }
+@keyframes drawRule{ from{ transform:scaleX(0); } to{ transform:scaleX(1); } }
+@keyframes slap{
+  0%{ opacity:0; transform:scale(1.55) rotate(calc(var(--rot) + 9deg)); }
+  55%{ opacity:1; transform:scale(.9) rotate(calc(var(--rot) - 3deg)); }
+  78%{ transform:scale(1.05) rotate(calc(var(--rot) + 1deg)); }
+  100%{ opacity:1; transform:scale(1) rotate(var(--rot)); }
+}
+
+.slide-title.anim .logo{ animation:dropIn .55s ease both; }
+.slide-title.anim h1{ animation:riseIn .6s ease .15s both; }
+.slide-title.anim .subtitle{ animation:riseIn .6s ease .35s both; }
+.slide-title.anim .meta{ animation:riseIn .55s ease .5s both; }
+.slide-title.anim .rule-light{ transform-origin:left center; animation:drawRule .7s cubic-bezier(.22,.61,.36,1) .7s both; }
+.anim .dots-right i,.anim .dots-left i{ animation:popIn .4s ease both; }
+.anim .dots-right i:nth-child(1){ animation-delay:.95s; }
+.anim .dots-right i:nth-child(2){ animation-delay:1.05s; }
+.anim .dots-right i:nth-child(3){ animation-delay:1.15s; }
+.anim .dots-right i:nth-child(4){ animation-delay:1.25s; }
+
+.anim .brandbar i{ animation:popIn .4s ease both; }
+.anim .brandbar i:nth-child(1){ animation-delay:.12s; }
+.anim .brandbar i:nth-child(2){ animation-delay:.22s; }
+.anim .brandbar i:nth-child(3){ animation-delay:.32s; }
+.anim .brandbar i:nth-child(4){ animation-delay:.42s; }
+.anim .brandbar .line{ transform-origin:left center; animation:drawRule .6s cubic-bezier(.22,.61,.36,1) .5s both; }
+.anim .brandbar .num{ animation:popIn .4s ease 1s both; }
+
+.anim .cards .card{ animation:slap .72s ease-out both; }
+.anim .cards .card:nth-child(1){ animation-delay:.14s; }
+.anim .cards .card:nth-child(2){ animation-delay:.46s; }
+.anim .cards .card:nth-child(3){ animation-delay:.78s; }
+
+.anim .stat,.anim .icon-card,.anim .t-step,.anim .speaker,.anim .panel{ animation:riseIn .5s ease both; }
+.anim .stat:nth-child(2),.anim .icon-card:nth-child(2),.anim .t-step:nth-child(2),.anim .speaker:nth-child(2){ animation-delay:.12s; }
+.anim .stat:nth-child(3),.anim .icon-card:nth-child(3),.anim .t-step:nth-child(3),.anim .panel:nth-child(3){ animation-delay:.24s; }
+.anim .stat:nth-child(4),.anim .icon-card:nth-child(4),.anim .t-step:nth-child(4){ animation-delay:.36s; }
+.anim .t-step:nth-child(5){ animation-delay:.48s; } .anim .t-step:nth-child(6){ animation-delay:.6s; }
+.anim .compare-arrow{ animation:popIn .45s cubic-bezier(.34,1.56,.64,1) .15s both; }
+
+.slide-statement.anim .kicker{ animation:dropIn .5s ease both; }
+.slide-statement.anim .headline{ animation:riseIn .6s ease .1s both; }
+.slide-statement.anim .lead{ animation:riseIn .55s ease .25s both; }
+.slide-statement.anim .cue{ animation:riseIn .55s ease .4s both; }
+.anim .quote{ animation:riseIn .6s ease .1s both; }
+
+/* deckCheck() measures with animations off */
+.no-anim *{ animation:none !important; }
+
+/* ---------- PDF export (?print-pdf) ---------- */
+/* The PDF prints right after the layout is ready, so turn off the entrance animations. Otherwise the current slide prints mid-animation, or blank. */
+html.print-pdf .reveal *{ animation:none !important; }
+/* reveal.js puts a page break after every slide, including the last one, which adds a blank page at the end. */
+html.print-pdf .reveal .slides .pdf-page:last-child{ page-break-after:auto; break-after:auto; }
+/* in print mode reveal wraps each slide in .pdf-page (so `.slides > section` stops matching)
+   and forces display:block / padding:0 on every slide; put the layouts back */
+html.print-pdf .reveal .pdf-page > section{ width:1280px !important; height:720px !important; top:0 !important; left:0 !important; overflow:hidden; }
+html.print-pdf .reveal .pdf-page > section.slide-content{ display:flex !important; flex-direction:column; background:#fff; }
+html.print-pdf .reveal .pdf-page > section.slide-title{ display:flex !important; flex-direction:column; justify-content:center; padding:0 52px 40px !important; }
+html.print-pdf .reveal .pdf-page > section.slide-statement{ display:flex !important; flex-direction:column; justify-content:center; padding:0 90px 40px 70px !important; }
+html.print-pdf .reveal .pdf-page > section.slide-section{ display:flex !important; align-items:center; justify-content:center; }
