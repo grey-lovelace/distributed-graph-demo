@@ -27,8 +27,14 @@ schema:
 introspection:
   introspect:
     enabled: true
+    hint: >-
+      If you introspect the Query type, use depth 2. That returns the entry points
+      and the types they return in one call.
   search:
     enabled: true
+    hint: >-
+      Prefer this tool to find the types you need. Search with the main nouns from the question,
+      for example ["session", "rating", "room"]. The results include every field's description.
   validate:
     enabled: true
   execute:

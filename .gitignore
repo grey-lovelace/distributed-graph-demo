@@ -3,5 +3,8 @@ services/speakers/build/
 services/speakers/.gradle/
 services/sessions/node_modules/
 services/feedback/.venv/
+ai/.venv/
+ai/results/
+.ipynb_checkpoints/
 __pycache__/
 .DS_Store

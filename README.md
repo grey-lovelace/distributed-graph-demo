@@ -358,6 +358,12 @@ docker compose -f mcp/docker-compose.yml up -d
 
 See [`mcp/README.md`](mcp/README.md) for the servers, their URLs and their tools.
 
+## An AI agent that uses them
+
+The [`ai/`](ai) folder holds a Jupyter notebook that builds two LangChain agents. One uses the REST
+MCP servers and the other uses the GraphQL MCP server. The notebook asks both the same questions and compares
+their tool calls, tokens and time. See [`ai/README.md`](ai/README.md) to run it.
+
 ## Ports and URLs
 
 | Service | GraphQL | REST | OpenAPI spec | Swagger UI |
@@ -379,10 +385,10 @@ into memory at startup. There is no database.
 
 | File | Service | Records |
 |---|---|---|
-| `data/speakers.json` | speakers | 30 speakers from consultancies, product companies, enterprises, and non-profits |
-| `data/rooms.json` | rooms | 6 rooms, with capacities from 40 to 800 |
-| `data/sessions.json` | sessions | 40 sessions over two days in five tracks |
-| `data/reviews.json` | feedback | 383 reviews |
+| `data/speakers.json` | speakers | 90 speakers from consultancies, product companies, enterprises, and non-profits |
+| `data/rooms.json` | rooms | 18 rooms, with capacities from 30 to 800 |
+| `data/sessions.json` | sessions | 120 sessions over two days in five tracks |
+| `data/reviews.json` | feedback | 1,153 reviews |
 
 `docker-compose.yml` mounts each file into its own service container at `/app/data/<file>.json`.
 A service receives only its own file, so no service can read another service's data.
@@ -390,7 +396,7 @@ A service receives only its own file, so no service can read another service's d
 The IDs line up across the files. Every speaker ID and room ID in `sessions.json` exists in the
 other files, and every session ID and speaker ID in `reviews.json` exists too.
 
-The last session of the conference has no reviews, so its `averageRating` is `null`.
+One session, `session-40`, has no reviews yet, so its `averageRating` is `null`.
 
 ## Hive and router files
 
