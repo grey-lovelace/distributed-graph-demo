@@ -1,4 +1,4 @@
-# Conference Platform: an Apollo Federation demo
+# Conference Platform: A Federated Graph demo
 
 This repository is the demo from the talk **"The Apollo Supergraph: Unifying APIs for AI and the Enterprise."**
 You can run the whole thing on your own machine and try everything from the talk yourself.
