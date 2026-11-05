@@ -281,10 +281,16 @@ section.about-us::before{ content:""; position:absolute; left:0; top:0; bottom:0
 .thanks.four-qr .thanks-text{ flex:0 0 auto; }
 .thanks.four-qr .qr-cards{ justify-content:center; gap:48px; }
 .thanks.four-qr .qr{ width:220px; height:220px; }
+/* With a fifth code, the codes and the gaps shrink so that all five fit in one row. */
+.thanks.four-qr .qr-cards:has(> :nth-child(5)){ gap:30px; }
+.thanks.four-qr .qr-cards:has(> :nth-child(5)) .qr{ width:190px; height:190px; }
 .qr svg{ width:100%; height:100%; display:block; }
 /* logo covers ~22% of the code's width; much bigger and phones stop reading it */
 .qr-logo{ position:absolute; top:50%; left:50%; width:22%; height:22%; transform:translate(-50%,-50%);
   background:#fff; padding:3%; border-radius:12%; box-sizing:content-box; }
+/* The trivia podcast code shows the podcast's logo instead of the Source Allies mark.
+   deck.js adds the mark as an <img>, and content:url() swaps the picture that the <img> shows. */
+.qr.sftc .qr-logo{ content:url(assets/sftc-logo.png); padding:0; border-radius:8%; }
 
 /* ---------- statement slides (navy): one big idea ---------- */
 .reveal .slides > section.slide-statement{ padding:0 90px 40px 70px; display:flex !important; flex-direction:column; justify-content:center; }
