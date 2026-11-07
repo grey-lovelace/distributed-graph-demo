@@ -62,10 +62,10 @@ first, so that no step has to wait for a build.
 | Step | Command | What happens |
 |---|---|---|
 | 1. Start Hive | `docker compose up -d hive-setup` | Starts all of Hive and runs the setup. Open http://localhost:8080 to see the empty project. |
-| 2. Start a subgraph | `docker compose up -d speakers` | Starts the Speakers service. Hive does not know about it yet. |
+| 2. Start a subgraph | `docker compose up -d --build speakers` | Starts the Speakers service. Hive does not know about it yet. |
 | 3. Publish its schema | `docker compose run --rm --no-deps publish-speakers` | Publishes the schema file and prints a link to the new version in Hive. |
 | 4. Start the router | `docker compose up -d router` | Downloads the supergraph from Hive. The graph has only the Speakers fields. |
-| 5. Add each other subgraph | `docker compose up -d sessions`<br>`docker compose run --rm --no-deps publish-sessions` | The router picks up the new supergraph within 10 seconds, without a restart. Repeat for `rooms` and `feedback`. |
+| 5. Add each other subgraph | `docker compose up -d --build sessions`<br>`docker compose run --rm --no-deps publish-sessions` | The router picks up the new supergraph within 10 seconds, without a restart. Repeat for `rooms` and `feedback`. |
 
 Start the router only after at least one schema is published. Before that, Hive has no supergraph,
 so the router exits. The `--no-deps` flag stops Compose from running `hive-setup` again, which it
