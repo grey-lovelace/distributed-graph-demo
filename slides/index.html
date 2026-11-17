@@ -94,10 +94,40 @@
     <aside class="notes">Source Allies is an IT consultancy with more than 20 years of development and operations work. It serves financial services, insurance, agriculture, energy, healthcare, manufacturing, and retail. Its engineers cover data, AI and machine learning, software, cloud, mobile, UI and UX, quality, DevOps, and delivery leadership. They work as embedded coaches, delivery pairs, and teams, and they teach client teams as they build.</aside>
   </section>
 
-  <!-- ===== Act 1: The problem ===== -->
+  <!-- ===== Act 1: What is GraphQL? ===== -->
 
   <section class="slide-statement">
     <p class="kicker">Part 1</p>
+    <h2 class="headline">What Is GraphQL?</h2>
+    <div class="dots-left"><i class="d-red"></i><i class="d-green"></i><i class="d-cyan"></i><i class="d-blue"></i></div>
+  </section>
+
+  <section class="slide-content">
+    <header class="band"><h2>REST: One URL per&nbsp;Resource</h2></header>
+    <div class="body">
+      <figure class="figure">
+        <img src="assets/diagram-rest-primer.svg" alt="A session page calls three REST URLs: GET /api/sessions/session-12, GET /api/speakers/speaker-08, and GET /api/rooms/room-05. A fourth call gets the second speaker. Each response has every field of that resource. The page uses only the title, the speaker IDs, the room ID, the speaker name, and the room name.">
+      </figure>
+      <p class="takeaway">REST builds&nbsp;services.</p>
+    </div>
+    <aside class="notes">REST is the style most APIs use today. Each kind of data has its own URL, and the server decides what each response contains. Take a conference app that shows one session on a page. The app has a Sessions service, a Speakers service, and a Rooms service. To show the page, the client calls the Sessions service for the session. The session only has the speaker IDs and the room ID, so the client then calls the Speakers service once for each speaker, and the Rooms service for the room. That is four requests for one page. Each response has every field of that resource, and the page shows only a few of them. The client also has to know which service has which data, and it has to combine the responses itself.</aside>
+  </section>
+
+  <section class="slide-content">
+    <header class="band"><h2>GraphQL: Ask for What You&nbsp;Need</h2></header>
+    <div class="body">
+      <figure class="figure">
+        <img src="assets/diagram-graphql-primer.svg" alt="One GraphQL query to POST /graphql asks for the session's title, the room's name, and the speakers' names. The response has exactly those fields, in the same shape as the query.">
+      </figure>
+      <p class="takeaway">GraphQL defines&nbsp;relationships.</p>
+    </div>
+    <aside class="notes">GraphQL has one endpoint. The client sends a query that lists the fields it wants, and the response has exactly those fields, in the same shape as the query. Here the page gets the title, the room name, and both speaker names in one request. A GraphQL API has a schema. The schema lists every type and field, and it has a description for each one. Tools and AI agents can read the schema to learn what data exists. In this example, one service answers the whole query. Part 3 shows how one query can span many services.</aside>
+  </section>
+
+  <!-- ===== Act 2: The problem ===== -->
+
+  <section class="slide-statement">
+    <p class="kicker">Part 2</p>
     <h2 class="headline">The Problem</h2>
     <div class="dots-left"><i class="d-red"></i><i class="d-green"></i><i class="d-cyan"></i><i class="d-blue"></i></div>
   </section>
@@ -195,7 +225,7 @@
         <figcaption>Every consumer wires itself to every service it&nbsp;needs.</figcaption>
       </figure>
     </div>
-    <aside class="notes">Five consumers and four services can need up to 20 integrations. Each integration has its own contract, authentication, and error handling. Each consumer has to find out which service has the data, and each consumer writes its own code to combine the results. The AI agent has a dashed border because the talk returns to it in Part 4.</aside>
+    <aside class="notes">Five consumers and four services can need up to 20 integrations. Each integration has its own contract, authentication, and error handling. Each consumer has to find out which service has the data, and each consumer writes its own code to combine the results. The AI agent has a dashed border because the talk returns to it in Part 5.</aside>
   </section>
 
   <section class="slide-content">
@@ -224,13 +254,13 @@
       </div>
       <p class="takeaway">An AI agent hits all the same&nbsp;problems.</p>
     </div>
-    <aside class="notes">A developer works around discovery, composition, and ownership problems by asking teammates and reading old code. An AI agent can't do that. It only knows what its tools describe, and it guesses when context is missing. Part 4 returns to this point after the graph is built.</aside>
+    <aside class="notes">A developer works around discovery, composition, and ownership problems by asking teammates and reading old code. An AI agent can't do that. It only knows what its tools describe, and it guesses when context is missing. Part 5 returns to this point after the graph is built.</aside>
   </section>
 
-  <!-- ===== Act 2: How a distributed graph works ===== -->
+  <!-- ===== Act 3: How a distributed graph works ===== -->
 
   <section class="slide-statement">
-    <p class="kicker">Part 2</p>
+    <p class="kicker">Part 3</p>
     <h2 class="headline">One Distributed Graph</h2>
     <div class="dots-left"><i class="d-red"></i><i class="d-green"></i><i class="d-cyan"></i><i class="d-blue"></i></div>
   </section>
@@ -319,10 +349,10 @@
     <aside class="notes">An enterprise service bus (ESB) was the central integration layer of the service-oriented architecture (SOA) era. Every system connected through it, and it held the routing, the data transformations, and the business rules. One central team usually owned it, so it became a bottleneck. A distributed graph also has a hub, but the router holds no business logic and no data. Each team changes its own subgraph on its own schedule. A schema check in CI, such as rover subgraph check or hive schema:check, stops a change that would break the graph. Every consumer, including AI agents, learns one graph instead of many APIs.</aside>
   </section>
 
-  <!-- ===== Act 3: Let's build ===== -->
+  <!-- ===== Act 4: Let's build ===== -->
 
   <section class="slide-statement">
-    <p class="kicker">Part 3</p>
+    <p class="kicker">Part 4</p>
     <h2 class="headline">Let's Build It</h2>
     <div class="dots-left"><i class="d-red"></i><i class="d-green"></i><i class="d-cyan"></i><i class="d-blue"></i></div>
   </section>
@@ -362,7 +392,6 @@
     <div class="body">
       <figure class="figure">
         <img src="assets/diagram-three-parts.svg" alt="A consumer sends one query to the router. The router calls the Speakers, Sessions, Rooms and Feedback subgraphs. At deploy time, the subgraphs publish their schemas to the registry, and the registry gives the composed schema to the router.">
-        <figcaption>Subgraphs publish schemas. The router serves&nbsp;queries.</figcaption>
       </figure>
     </div>
     <aside class="notes">A distributed graph has three parts, and each part has several products to choose from. Solid arrows happen on every request. Dashed arrows happen when a team publishes a schema change. Subgraphs are the services that teams own. Any language works if its GraphQL library supports the Federation specification. The registry stores each subgraph's schema, composes the supergraph, and gives the composed schema to the router. The simplest registry is a file that rover supergraph compose writes. Apollo GraphOS, Hive, and Cosmo add schema checks, history, and usage data. The router takes client queries, plans them across the subgraphs, and merges the results. In the demo, the subgraphs use four languages, the registry is a self-hosted Hive instance in Docker, and the router is the Apollo Router with Hive's plugin.</aside>
@@ -377,10 +406,10 @@
   </section>
 
 
-  <!-- ===== Act 4: The graph as AI context ===== -->
+  <!-- ===== Act 5: The graph as AI context ===== -->
 
   <section class="slide-statement">
-    <p class="kicker">Part 4</p>
+    <p class="kicker">Part 5</p>
     <h2 class="headline">The Graph as AI Context</h2>
     <div class="dots-left"><i class="d-red"></i><i class="d-green"></i><i class="d-cyan"></i><i class="d-blue"></i></div>
   </section>
@@ -430,6 +459,22 @@
     <aside class="notes">The Apollo MCP Server gives AI agents access to a GraphQL API as MCP tools. It can turn predefined operations into named tools, but the demo defines none. Instead, the agent gets four tools. The search tool finds types that match search terms. The introspect tool returns a type with its fields and their descriptions. The validate tool checks a query against the schema. The execute tool runs the query through the Apollo Router. The agent writes its own queries from what it learns. In the demo, the server downloads the current schema from Hive when it starts.</aside>
   </section>
 
+  <section class="slide-content">
+    <header class="band"><h2>What We're Building for&nbsp;Agents</h2></header>
+    <div class="body">
+      <figure class="figure">
+        <div class="hl-wrap">
+          <img src="assets/diagram-ai-demo.svg" alt="On the left, an AI agent connects to one Apollo MCP Server, which calls the router, and the router calls all four services. On the right, another AI agent connects to four REST MCP servers, one for each service. Each REST MCP server reads its service's Swagger docs and calls its REST API. Hive gives the schema to the router and to the Apollo MCP Server at startup.">
+          <!-- Click 1 outlines the GraphQL side. Click 2 outlines the REST side. Click 3 removes the outline. -->
+          <div class="hl-box ai-graphql fragment fade-in-then-out" data-fragment-index="0"></div>
+          <div class="hl-box ai-rest fragment fade-in-then-out" data-fragment-index="1"></div>
+          <span class="fragment" data-fragment-index="2"></span>
+        </div>
+      </figure>
+    </div>
+    <aside class="notes">Both agents reach the same four services. On the right, the REST agent uses four MCP servers, one for each service. Each server is openapi-to-mcp. It reads that service's OpenAPI spec when it starts, which is the same spec that the Swagger UI at /docs shows. It creates one tool for each endpoint, so the agent gets nine tools across four servers, and it has to combine the results itself. On the left, the GraphQL agent uses one Apollo MCP Server with four tools: search, introspect, validate, and execute. The server sends every query to the router, and the router does the joins. Hive gives the composed schema to the router and to the Apollo MCP Server when each one starts. Both agents use the same model, the same system prompt, and the same questions.</aside>
+  </section>
+
 
   <section class="slide-statement">
     <p class="kicker">Live demo</p>
@@ -442,7 +487,7 @@
   <!-- ===== In the real world ===== -->
 
   <section class="slide-statement">
-    <p class="kicker">Part 5</p>
+    <p class="kicker">Part 6</p>
     <h2 class="headline">In the Real World</h2>
     <div class="dots-left"><i class="d-red"></i><i class="d-green"></i><i class="d-cyan"></i><i class="d-blue"></i></div>
   </section>

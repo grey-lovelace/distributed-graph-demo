@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 100 1600 660" font-family="Lato, 'Helvetica Neue', Arial, sans-serif">
+<rect width="1600" height="800" fill="#fff"/>
+<defs><marker id="solid" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#061A40"/></marker><marker id="dash" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#767676"/></marker></defs>
+<rect x="1410" y="360" width="170" height="130" rx="16" fill="#fff" stroke="#061A40" stroke-width="4"/>
+<text x="1495" y="436" text-anchor="middle" font-size="30" font-weight="700" fill="#061A40">AI Agent</text>
+<text x="1235" y="150" text-anchor="middle" font-size="24" font-weight="700" fill="#061A40" letter-spacing="3">REST MCP SERVERS</text>
+<line x1="1410" y1="425" x2="1346" y2="230" stroke="#061A40" stroke-width="4" marker-end="url(#solid)"/>
+<rect x="1130" y="185" width="210" height="90" rx="16" fill="#fff" stroke="#767676" stroke-width="4"/>
+<text x="1235" y="239" text-anchor="middle" font-size="26" font-weight="700" fill="#061A40">Speakers MCP</text>
+<line x1="1410" y1="425" x2="1346" y2="360" stroke="#061A40" stroke-width="4" marker-end="url(#solid)"/>
+<rect x="1130" y="315" width="210" height="90" rx="16" fill="#fff" stroke="#767676" stroke-width="4"/>
+<text x="1235" y="369" text-anchor="middle" font-size="26" font-weight="700" fill="#061A40">Sessions MCP</text>
+<line x1="1410" y1="425" x2="1346" y2="490" stroke="#061A40" stroke-width="4" marker-end="url(#solid)"/>
+<rect x="1130" y="445" width="210" height="90" rx="16" fill="#fff" stroke="#767676" stroke-width="4"/>
+<text x="1235" y="499" text-anchor="middle" font-size="26" font-weight="700" fill="#061A40">Rooms MCP</text>
+<line x1="1410" y1="425" x2="1346" y2="620" stroke="#061A40" stroke-width="4" marker-end="url(#solid)"/>
+<rect x="1130" y="575" width="210" height="90" rx="16" fill="#fff" stroke="#767676" stroke-width="4"/>
+<text x="1235" y="629" text-anchor="middle" font-size="26" font-weight="700" fill="#061A40">Feedback MCP</text>
+<text x="900" y="150" text-anchor="middle" font-size="24" font-weight="700" fill="#061A40" letter-spacing="3">SERVICES</text>
+<line x1="1130" y1="230" x2="1046" y2="230" stroke="#061A40" stroke-width="4" marker-end="url(#solid)"/>
+<rect x="750" y="180" width="290" height="100" rx="16" fill="#E8F2FA" stroke="#1A80C7" stroke-width="4"/>
+<rect x="922" y="202" width="104" height="56" rx="10" fill="#fff" stroke="#19B95C" stroke-width="3"/>
+<text x="974" y="238" text-anchor="middle" font-size="20" font-weight="700" fill="#061A40">Swagger</text>
+<text x="836" y="241" text-anchor="middle" font-size="30" font-weight="700" fill="#061A40">Speakers</text>
+<line x1="1130" y1="360" x2="1046" y2="360" stroke="#061A40" stroke-width="4" marker-end="url(#solid)"/>
+<rect x="750" y="310" width="290" height="100" rx="16" fill="#E8F2FA" stroke="#1A80C7" stroke-width="4"/>
+<rect x="922" y="332" width="104" height="56" rx="10" fill="#fff" stroke="#19B95C" stroke-width="3"/>
+<text x="974" y="368" text-anchor="middle" font-size="20" font-weight="700" fill="#061A40">Swagger</text>
+<text x="836" y="371" text-anchor="middle" font-size="30" font-weight="700" fill="#061A40">Sessions</text>
+<line x1="1130" y1="490" x2="1046" y2="490" stroke="#061A40" stroke-width="4" marker-end="url(#solid)"/>
+<rect x="750" y="440" width="290" height="100" rx="16" fill="#E8F2FA" stroke="#1A80C7" stroke-width="4"/>
+<rect x="922" y="462" width="104" height="56" rx="10" fill="#fff" stroke="#19B95C" stroke-width="3"/>
+<text x="974" y="498" text-anchor="middle" font-size="20" font-weight="700" fill="#061A40">Swagger</text>
+<text x="836" y="501" text-anchor="middle" font-size="30" font-weight="700" fill="#061A40">Rooms</text>
+<line x1="1130" y1="620" x2="1046" y2="620" stroke="#061A40" stroke-width="4" marker-end="url(#solid)"/>
+<rect x="750" y="570" width="290" height="100" rx="16" fill="#E8F2FA" stroke="#1A80C7" stroke-width="4"/>
+<rect x="922" y="592" width="104" height="56" rx="10" fill="#fff" stroke="#19B95C" stroke-width="3"/>
+<text x="974" y="628" text-anchor="middle" font-size="20" font-weight="700" fill="#061A40">Swagger</text>
+<text x="836" y="631" text-anchor="middle" font-size="30" font-weight="700" fill="#061A40">Feedback</text>
+<line x1="670" y1="425" x2="744" y2="230" stroke="#061A40" stroke-width="4" marker-end="url(#solid)"/>
+<line x1="670" y1="425" x2="744" y2="360" stroke="#061A40" stroke-width="4" marker-end="url(#solid)"/>
+<line x1="670" y1="425" x2="744" y2="490" stroke="#061A40" stroke-width="4" marker-end="url(#solid)"/>
+<line x1="670" y1="425" x2="744" y2="620" stroke="#061A40" stroke-width="4" marker-end="url(#solid)"/>
+<rect x="500" y="360" width="170" height="130" rx="16" fill="#061A40" stroke="#061A40" stroke-width="4"/>
+<text x="585" y="438" text-anchor="middle" font-size="36" font-weight="700" fill="#fff">Router</text>
+<rect x="360" y="185" width="200" height="90" rx="16" fill="#fff" stroke="#1A80C7" stroke-width="4"/>
+<text x="460" y="241" text-anchor="middle" font-size="32" font-weight="700" fill="#061A40">Hive</text>
+<line x1="500" y1="275" x2="560" y2="354" stroke="#767676" stroke-width="4" stroke-dasharray="14 10" marker-end="url(#dash)"/>
+<line x1="420" y1="275" x2="360" y2="354" stroke="#767676" stroke-width="4" stroke-dasharray="14 10" marker-end="url(#dash)"/>
+<line x1="440" y1="425" x2="494" y2="425" stroke="#061A40" stroke-width="4" marker-end="url(#solid)"/>
+<rect x="240" y="360" width="200" height="130" rx="16" fill="#1A80C7" stroke="#1A80C7" stroke-width="4"/>
+<text x="340" y="419" text-anchor="middle" font-size="28" font-weight="700" fill="#fff">Apollo</text>
+<text x="340" y="455" text-anchor="middle" font-size="28" font-weight="700" fill="#fff">MCP Server</text>
+<line x1="180" y1="425" x2="234" y2="425" stroke="#061A40" stroke-width="4" marker-end="url(#solid)"/>
+<rect x="20" y="360" width="160" height="130" rx="16" fill="#fff" stroke="#061A40" stroke-width="4"/>
+<text x="100" y="436" text-anchor="middle" font-size="30" font-weight="700" fill="#061A40">AI Agent</text>
+<line x1="40" y1="712" x2="120" y2="712" stroke="#061A40" stroke-width="5"/>
+<text x="136" y="721" text-anchor="start" font-size="26" font-weight="400" fill="#767676">At request time</text>
+<line x1="40" y1="745" x2="120" y2="745" stroke="#767676" stroke-width="4" stroke-dasharray="14 10"/>
+<text x="136" y="754" text-anchor="start" font-size="26" font-weight="400" fill="#767676">Schema at startup</text>
+</svg>
